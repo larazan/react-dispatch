@@ -1,0 +1,34 @@
+[
+    {
+      "name" : "family",
+      "slug": "family"
+    },
+    {
+      "name" : "tutor",
+      "slug": "tutor"
+    },
+    {
+      "name" : "murder",
+      "slug": "murder"
+    },
+    {
+      "name" : "crime",
+      "slug": "crime"
+    },
+    {
+      "name" : "wealthy",
+      "slug": "wealthy"
+    },
+    {
+      "name" : "basement",
+      "slug": "basement"
+    },
+    {
+      "name" : "con artist",
+      "slug": "con artist"
+    },
+    {
+      "name" : "dark comedy",
+      "slug": "dark comedy"
+    }
+  ]

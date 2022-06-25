@@ -1,0 +1,74 @@
+[
+    {
+        "name": "song kang-ho",
+        "role": "kim ki-taek",
+        "desc": "main role",
+        "image": ""
+    },
+    {
+        "name": "Lee Sun-kyun",
+        "role": "Park Dong-ik",
+        "desc": "main role",
+        "image": ""
+    },
+    {
+        "name": "Cho Yeo-jeong",
+        "role": "Yeon-kyo",
+        "desc": "main role",
+        "image": ""
+    },
+    {
+        "name": "Choi Woo-shik",
+        "role": "Ki-woo",
+        "desc": "main role",
+        "image": ""
+    },
+    {
+        "name": "Park So-dam",
+        "role": "Ki-jung",
+        "desc": "main role",
+        "image": ""
+    },
+    {
+        "name": "Lee Jung-eun",
+        "role": "Moon-gwang",
+        "desc": "main role",
+        "image": ""
+    },
+    {
+        "name": "Jang Hye-jin",
+        "role": "Chung-sook",
+        "desc": "main role",
+        "image": ""
+    },
+    {
+        "name": "Park Myung-hoon",
+        "role": "Geun-se",
+        "desc": "main role",
+        "image": ""
+    },
+    {
+        "name": "Jung Ji-so",
+        "role": "Da-hye",
+        "desc": "support role",
+        "image": ""
+    },
+    {
+        "name": "Jung Hyeon-jun",
+        "role": "Da-song",
+        "desc": "support role",
+        "image": ""
+    },
+    {
+        "name": "Park Keun-rok",
+        "role": "Driver Yoon",
+        "desc": "support role",
+        "image": ""
+    },
+    {
+        "name": "Jung Yi-seo",
+        "role": "Pizza manager",
+        "desc": "support role",
+        "image": ""
+    }
+]
