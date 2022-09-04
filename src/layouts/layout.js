@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Footer2 from '../components/Footer2'
 
 class Layout extends Component {
   render() {
@@ -11,7 +11,7 @@ class Layout extends Component {
           <div className="w-full">
             {this.props.children}
           </div>
-          <Footer />
+          <Footer2 />
     </div>
     )
   }

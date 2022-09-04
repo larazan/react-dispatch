@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "title": "mix miwa",
+        "artist": "miwa",
+        "description": "change, don't cry anymore, hikarie and many more",
+        "image": "miwa"
+    },
+    {
+        "id": 2,
+        "title": "mix milet",
+        "artist": "milet",
+        "description": "inside you, us, fly high and many more",
+        "image": "milet"
+    },
+    {
+        "id": 3,
+        "title": "mix aimer",
+        "artist": "aimer",
+        "description": "black bird, stand alone, stars in the rain and many more",
+        "image": "aimer"
+    },
+    {
+        "id": 4,
+        "title": "mix lisa",
+        "artist": "lisa",
+        "description": "gurenge and many more",
+        "image": "lisa"
+    },
+    {
+        "id": 5,
+        "title": "do as infinity",
+        "artist": "do as infinity",
+        "description": "change, don't cry anymore, hikarie and many more",
+        "image": "doinfinity"
+    },
+    {
+        "id": 6,
+        "title": "mix radwimps",
+        "artist": "radwimps",
+        "description": "change, don't cry anymore, hikarie and many more",
+        "image": "radwimps"
+    },
+    {
+        "id": 7,
+        "title": "mix kana boon",
+        "artist": "kana boon",
+        "description": "change, don't cry anymore, hikarie and many more",
+        "image": "kanaboon"
+    },
+    {
+        "id": 8,
+        "title": "mix one ok rock",
+        "artist": "one ok rock",
+        "description": "change, don't cry anymore, hikarie and many more",
+        "image": "okrock"
+    },
+    {
+        "id": 9,
+        "title": "mix asian kungfu generation",
+        "artist": "asian kungfu generation",
+        "description": "change, don't cry anymore, hikarie and many more",
+        "image": "asiankungfu"
+    },
+    {
+        "id": 10,
+        "title": "mix yui",
+        "artist": "yui",
+        "description": "change, don't cry anymore, hikarie and many more",
+        "image": "yui"
+    },
+    {
+        "id": 11,
+        "title": "mix kenshi yonezu",
+        "artist": "kenshi yonezu",
+        "description": "change, don't cry anymore, hikarie and many more",
+        "image": "kenshi"
+    }
+]

@@ -3,29 +3,29 @@ import React from 'react'
 const Review = () => {
   return (
     <>
-    <div className="py-2 border-b border-gray-300">
+    <div className="py-2 border-b-2 border-[#1f364d]">
               <div className="flex-col pt-4">
                 <div>
-                  <span className="font-semibold text-xl capitalize">
+                  <span className="font-semibold text-xl text-[#9cb3c9] capitalize">
                     Review
                   </span>
                 </div>
                 <div className="py-4">
                   <div className="flex items-center justify-center">
                     {" "}
-                    <div className="rounded border p-3 shadow-md bg-white">
-                      <div className="flex w-full items-center justify-between border-b pb-3">
+                    <div className="relative rounded  p-3 shadow-md bg-[#162c41]">
+                      <div className="flex w-full items-center justify-between border-b-2 border-[#0e2439] pb-3">
                         <div className="flex items-center space-x-3">
                           <div className="h-8 w-8 rounded-full bg-slate-400 bg-[url('https://i.pravatar.cc/32')]"></div>
-                          <div className="text-lg font-bold text-slate-700">
+                          <div className="text-lg font-bold text-[#5aa3ed]">
                             Joe Smith
                           </div>
                         </div>
                         <div className="flex items-center space-x-8">
-                          <button className="rounded-2xl border border-green-300 bg-green-100 px-3 py-1 text-xs text-green-500 font-semibold">
+                          <button className="rounded-2xl border border-green-300 bg-[#5cd68d] px-3 py-1 text-xs text-white font-semibold">
                             Completed
                           </button>
-                          <div className="flex-col space-y-1 text-xs text-neutral-500 w-32">
+                          <div className="flex-col space-y-1 text-xs font-semibold2 text-white w-32">
                             <span>2 hours ago</span>
                             <div>
                               <span>49 people found this review helpful</span>
@@ -34,12 +34,12 @@ const Review = () => {
                         </div>
                       </div>
 
-                      <div className="flex mt-4 mb-6 space-x-4">
+                      <div className="flex mt-4 mb-10 space-x-4">
                         <div className="w-2/3">
-                          <div className="mb-3 font-bold">
+                          <div className="mb-3 font-bold text-white">
                             Nulla sed leo tempus, feugiat velit vel?
                           </div>
-                          <div className="text-sm text-neutral-600">
+                          <div className="text-sm text-[#9cb3c9]">
                             Aliquam a tristique sapien, nec bibendum urna.
                             Maecenas convallis dignissim turpis, non suscipit
                             mauris interdum at. Morbi sed gravida nisl, a
@@ -50,64 +50,64 @@ const Review = () => {
                           </div>
                         </div>
                         <div className="w-1/3">
-                          <div className="rounded border border-gray-300 shadow">
-                            <div className="flex justify-between border-b border-gray-300 bg-sky-300 px-4 py-1.5">
+                          <div className="rounded shadow">
+                            <div className="flex rounded-t justify-between  bg-[#5aa3ed] px-4 py-1.5">
                               <div>
-                                <span className="text-sm text-sky-600 font-semibold">
+                                <span className="text-sm text-white font-semibold">
                                   Overall
                                 </span>
                               </div>
                               <div>
-                                <span className="text-sm text-sky-600 font-semibold">
+                                <span className="text-sm text-white font-semibold">
                                   10
                                 </span>
                               </div>
                             </div>
-                            <div className="py-2 px-3 bg-white">
+                            <div className="py-2 px-3 bg-[#0e2439]">
                               <div className="flex justify-between">
                                 <div>
-                                  <span className="text-sm text-neutral-600">
+                                  <span className="text-sm text-white">
                                     Story
                                   </span>
                                 </div>
                                 <div>
-                                  <span className="text-sm text-neutral-600">
+                                  <span className="text-sm text-white">
                                     10
                                   </span>
                                 </div>
                               </div>
                               <div className="flex justify-between">
                                 <div>
-                                  <span className="text-sm text-neutral-600">
+                                  <span className="text-sm text-white">
                                     Acting/Cast
                                   </span>
                                 </div>
                                 <div>
-                                  <span className="text-sm text-neutral-600">
+                                  <span className="text-sm text-white">
                                     10
                                   </span>
                                 </div>
                               </div>
                               <div className="flex justify-between">
                                 <div>
-                                  <span className="text-sm text-neutral-600">
+                                  <span className="text-sm text-white">
                                     Music
                                   </span>
                                 </div>
                                 <div>
-                                  <span className="text-sm text-neutral-600">
+                                  <span className="text-sm text-white">
                                     10
                                   </span>
                                 </div>
                               </div>
                               <div className="flex justify-between">
                                 <div>
-                                  <span className="text-sm text-neutral-600">
+                                  <span className="text-sm text-white">
                                     Rewatch Value
                                   </span>
                                 </div>
                                 <div>
-                                  <span className="text-sm text-neutral-600">
+                                  <span className="text-sm text-white">
                                     10
                                   </span>
                                 </div>
@@ -117,10 +117,10 @@ const Review = () => {
                         </div>
                       </div>
 
-                      <div>
-                        <div className="flex items-center justify-between text-slate-500">
+                      <div className='absolute bottom-2 left-3'>
+                        <div className="flex items-center justify-between text-white text-sm">
                           <div className="flex space-x-4 md:space-x-8">
-                            <div className="flex cursor-pointer items-center transition hover:text-slate-600">
+                            <div className="flex cursor-pointer items-center transition hover:text-[#9cb3c9]">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="mr-1.5 h-5 w-5"
@@ -137,7 +137,7 @@ const Review = () => {
                               </svg>
                               <span>125</span>
                             </div>
-                            <div className="flex cursor-pointer items-center transition hover:text-slate-600">
+                            <div className="flex cursor-pointer items-center transition hover:text-[#9cb3c9]">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="mr-1.5 h-5 w-5"

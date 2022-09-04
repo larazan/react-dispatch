@@ -13,6 +13,8 @@ import Actors from "./pages/Actors";
 import Person from "./pages/Person";
 import Musics from "./pages/Musics";
 import Coba from "./pages/Coba";
+import Login from "./pages/Login";
+import Content from "./pages/Content";
 
 function App() {
   return (
@@ -20,13 +22,16 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/movies" element={<Movies />} /> 
-        <Route path="/movie" element={<Movie />} /> 
-        <Route path="/actors" element={<Actors />} />
-        <Route path="/person" element={<Person />} />
-        <Route path="/musics" element={<Musics />} />
-        <Route path="/coba" element={<Coba />} />
+        <Route path="news" element={<News />} />
+        <Route path="content" element={<Content />} />
+        <Route path="movies" element={<Movies />} /> 
+        <Route path="musics" element={<Musics />} /> 
+        <Route path="movie" element={<Movie />} /> 
+        <Route path="actors" element={<Actors />} />
+        <Route path="person" element={<Person />} />
+        <Route path="musics" element={<Musics />} />
+        <Route path="coba" element={<Coba />} />
+        <Route path="login" element={<Login />} />
       </Routes>    
       </Layout> 
     </>

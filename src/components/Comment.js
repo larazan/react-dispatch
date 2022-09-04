@@ -3,28 +3,28 @@ import React from 'react'
 const Comment = () => {
   return (
     <>
-    <div className="py-2 border-b border-gray-300">
+    <div className="py-2 border-b-2 border-[#1f364d]">
               <div className="flex-col pt-4">
                 <div>
-                  <span className="font-semibold text-xl capitalize">
+                  <span className="font-semibold text-xl text-[#9cb3c9] capitalize">
                     Comments
                   </span>
                 </div>
                 <div className="py-4">
-                  <div class="antialiased p-3 mx-auto max-w-screen-sm border rounded shadow-md bg-white">
+                  <div class="antialiased p-3 mx-auto max-w-screen-sm bg-transparent">
                     <div class="space-y-4 py-4 ml-2">
                       <div class="flex">
                         <div class="flex-shrink-0 mr-0">
                           <img
-                            class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10"
+                            class="mt-2 border rounded-full w-8 h-8 sm:w-10 sm:h-10"
                             src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80"
                             alt=""
                           />
                         </div>
                         <div class="flex-1 px-4 py-2 sm:px-4 sm:py-2 leading-relaxed">
-                          <strong>Sarah</strong>{" "}
+                          <strong className='text-[#5aa3ed]'>Sarah</strong>{" "}
                           <span class="text-xs text-gray-400">3:34 PM</span>
-                          <p class="text-sm">
+                          <p class="text-sm text-[#9cb3c9]">
                             Lorem ipsum dolor sit amet, consetetur sadipscing
                             elitr, sed diam nonumy eirmod tempor invidunt ut
                             labore et dolore magna aliquyam erat, sed diam

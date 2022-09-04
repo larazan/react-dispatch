@@ -1,72 +1,96 @@
-import React from 'react'
+import React from "react";
 
 import Filter from "../components/Filter";
-import Pagination from "../components/Pagination";
 
 import podcast from "../assets/images/podcast-header-bg.jpg";
-import photo1 from "../assets/images/1.jpg";
-import photo2 from "../assets/images/2.jpg";
-import photo3 from "../assets/images/3.jpg";
-import photo4 from "../assets/images/4.jpg";
-import photo5 from "../assets/images/5.jpg";
-import photo6 from "../assets/images/6.jpg";
-import photo7 from "../assets/images/7.jpg";
-import photo8 from "../assets/images/8.jpg";
-import photo9 from "../assets/images/9.jpg";
-import photo10 from "../assets/images/10.jpg";
-import photo11 from "../assets/images/11.jpg";
-import photo12 from "../assets/images/12.jpg";
+import hero from "../assets/images/hero.jpg";
 
-import casts from "../assets/data/casts.json";
+import Rating from "../components/Rating";
+import Pagination from "../components/Pagination";
 
-const photos = (imgName) => {
-  let photo = "";
+import parasite from "../assets/images/parasite.jpg";
+import allofus from "../assets/images/allofus.jpg";
+import batman from "../assets/images/batman.jpg";
+import blackphone from "../assets/images/blackphone.jpg";
+import boys from "../assets/images/boys.jpg";
+import django from "../assets/images/django.jpg";
+import invisible from "../assets/images/invisible.jpg";
+import joker from "../assets/images/joker.jpg";
+import lotr from "../assets/images/lotr.jpg";
+import moon from "../assets/images/moon.jpg";
+import nobody from "../assets/images/nobody.jpg";
+import obiwan from "../assets/images/obiwan.jpg";
+import pianist from "../assets/images/pianist.jpg";
+import spirited from "../assets/images/spirited.jpg";
+import stranger from "../assets/images/stranger.jpg";
+import topgun from "../assets/images/topgun.jpg";
+import memory from "../assets/images/memory.jpg";
+
+import movies from "../assets/data/movies.json";
+
+const images = (imgName) => {
+  let cover = "";
   switch (imgName) {
-    case "song kang-ho":
-      photo = photo1;
+    case "allofus":
+      cover = allofus;
       break;
-    case "Lee Sun-kyun":
-      photo = photo2;
+    case "batman":
+      cover = batman;
       break;
-    case "Cho Yeo-jeong":
-      photo = photo3;
+    case "blackphone":
+      cover = blackphone;
       break;
-    case "Choi Woo-shik":
-      photo = photo4;
+    case "parasite":
+      cover = parasite;
       break;
-    case "Park So-dam":
-      photo = photo5;
+    case "boys":
+      cover = boys;
       break;
-    case "Lee Jung-eun":
-      photo = photo6;
+    case "django":
+      cover = django;
       break;
-    case "Jang Hye-jin":
-      photo = photo7;
+    case "invisible":
+      cover = invisible;
       break;
-    case "Park Myung-hoon":
-      photo = photo8;
+    case "joker":
+      cover = joker;
       break;
-    case "Jung Ji-so":
-      photo = photo9;
+    case "lotr":
+      cover = lotr;
       break;
-    case "Jung Hyeon-jun":
-      photo = photo10;
+    case "moon":
+      cover = moon;
       break;
-    case "Park Keun-rok":
-      photo = photo11;
+    case "nobody":
+      cover = nobody;
       break;
-    case "Jung Yi-seo":
-      photo = photo12;
+    case "obiwan":
+      cover = obiwan;
+      break;
+    case "pianist":
+      cover = pianist;
+      break;
+    case "stranger":
+      cover = stranger;
+      break;
+    case "topgun":
+      cover = topgun;
+      break;
+    case "spirited":
+      cover = spirited;
+      break;
+    case "memory":
+      cover = memory;
       break;
   }
 
-  return photo;
+  return cover;
 };
 
-const Actors = () => {
+const Content = () => {
   return (
     <>
-        <div className="relative flex min-h-screen w-full bg-[#0e2439]">
+      <div className="relative flex min-h-screen w-full bg-[#0e2439]">
         <div className=" sticky top-0 left-0 flex flex-col justify-between2 items-center w-[5rem] h-screen bg-[#ffc500]">
           <div className="mt-5  h-1/4">
             <button className="text-white p-4 rounded-full bg-[#ef5753] shadow-lg">
@@ -377,25 +401,45 @@ const Actors = () => {
               </div>
               {/*  */}
               <div className="px-4 ">
-              {casts.map((cast, id) => (
+              {movies.map((movie, id) => (
             <div className="my-6 drop-shadow-sm hover:drop-shadow-lg">
-              <div className="relative block overflow-hidden bg-[#162c41] hover:bg-[#1f364d] cursor-pointer rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">
+              <div className="relative block overflow-hidden bg-[#182e42] rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">
                 <div className="w-1/4">
                   <div className="relative block w-40 h-auto">
-                    <img src={photos(cast.name)} className="relative w-full " />
+                    <img
+                      src={images(movie.image)}
+                      className="relative w-full "
+                    />
                   </div>
                 </div>
                 <div className="w-3/4">
-                  <div className="pt-3 pb-2 pr-3">
-                    <div className="flex justify-between">
-                      <div className="flex-col text-lg font-bold ">
-                        <span className="text-white">{cast.name}</span>
-                        <div className="text-sm text-[#9cb3c9] capitalize">
-                          <span>south korean</span>
-                        </div>
+                  <div className=" pt-3 pb-2 pr-3">
+                    <div className="flex-col text-lg font-bold">
+                      <span className="text-white">{movie.title}</span>
+                      <div className="text-sm text-[#9cb3c9]  capitalize">
+                        <span>{movie.category} </span>
+                        <span>{movie.country}</span>
+                        <span> - {movie.year},</span>
+                        <span> 10 episodes</span>
                       </div>
-                      <div className="flex ">
-                        <button className="flex items-center justify-center space-x-1 text-[#9cb3c9]">
+                      <div className="text-white">
+                        <Rating count={5} value={3} />
+                      </div>
+                    </div>
+                    <div className="mt-4">
+                      <div className="text-sm text-[#9cb3c9]">
+                        {movie.description.substring(0, 230)}....
+                      </div>
+                    </div>
+                    <div className="flex justify-between">
+                      <div className="absolute bottom-3">
+                      <span className="text-white text-sm">9.6.2022</span>
+                      </div>
+                      <div className="absolute bottom-3 right-3">
+                      
+                        
+                        <div className="flex space-x-3 text-sm">
+                        <button className="flex text-white items-center space-x-1">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -410,18 +454,26 @@ const Actors = () => {
                               d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                             />
                           </svg>
-                          <span className="text-sm">15,343</span>
+                          <span>33</span>
                         </button>
-                      </div>
-                    </div>
-                    <div className="mt-4">
-                      <div className="text-sm text-[#9cb3c9]">
-                        Song Joong Ki is a South Korean actor under History D&C
-                        Entertainment. He rose to fame through the 2010
-                        historical coming-of-age drama "Sungkyunkwan Scandal"
-                        and the variety show "Running Man" as one of the
-                        original cast members. Since then, he played a diverse
-                        spectrum of roles in the television series,…
+                        <button className="flex text-white items-center space-x-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={1}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                            />
+                          </svg>
+                          <span>33</span>
+                        </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -430,13 +482,12 @@ const Actors = () => {
             </div>
           ))}
               </div>
-              <Pagination />
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Actors
+export default Content;
