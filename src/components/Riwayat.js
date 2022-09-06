@@ -4,7 +4,7 @@ const Riwayat = () => {
   return (
     <>
         <div className="w-full">
-            <div className="bg-white ">
+            <div className="bg-white shadow-lg shadow-gray-500/50">
               <div className="mt-4 overflow-x-auto">
                 <table className="w-full whitespace-nowrap">
                   <thead>
