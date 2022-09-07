@@ -1,6 +1,6 @@
 import React from "react";
 
-import hero from '../../assets/images/hero.jpg'
+import hero from '../assets/images/hero.jpg'
 
 const Jumbotron = () => {
   return (

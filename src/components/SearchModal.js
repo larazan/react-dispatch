@@ -64,12 +64,12 @@ function SearchModal({
         leaveStart="opacity-100 translate-y-0"
         leaveEnd="opacity-0 translate-y-4"
       >
-        <div ref={modalContent} className="bg-white overflow-auto max-w-2xl w-full max-h-full rounded shadow-lg">
+        <div ref={modalContent} className="bg-[#0e2439] overflow-auto max-w-2xl w-full max-h-full rounded shadow-lg">
           {/* Search form */}
-          <form className="border-b border-slate-200">
+          <form className="border-b border-[#0d2134]">
             <div className="relative">
               <label htmlFor={searchId} className="sr-only">Search</label>
-              <input id={searchId} className="w-full border-0 focus:ring-transparent placeholder-slate-400 appearance-none py-3 pl-10 pr-4" type="search" placeholder="Search Anything…" ref={searchInput} />
+              <input id={searchId} className="w-full border-0 focus:ring-transparent placeholder-slate-400 appearance-none py-3 pl-10 pr-4 outline-none bg-[#1f364d] text-[#9cb3c9]" type="search" placeholder="Search Anything…" ref={searchInput} />
               <button className="absolute inset-0 right-auto group" type="submit" aria-label="Search">
                 <svg className="w-4 h-4 shrink-0 fill-current text-slate-400 group-hover:text-slate-500 ml-4 mr-2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" />
@@ -82,10 +82,10 @@ function SearchModal({
             {/* Recent searches */}
             <div className="mb-3 last:mb-0">
               <div className="text-xs font-semibold text-slate-400 uppercase px-2 mb-2">Recent searches</div>
-              <ul className="text-sm">
+              <ul className="text-sm ">
                 <li>
                   <Link
-                    className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
+                    className="flex items-center p-2 text-slate-400 hover:text-white hover:bg-indigo-500 rounded group"
                     to="#0"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
@@ -97,7 +97,7 @@ function SearchModal({
                 </li>
                 <li>
                   <Link
-                    className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
+                    className="flex items-center p-2 text-slate-400 hover:text-white hover:bg-indigo-500 rounded group"
                     to="#0"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
@@ -109,7 +109,7 @@ function SearchModal({
                 </li>
                 <li>
                   <Link
-                    className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
+                    className="flex items-center p-2 text-slate-400 hover:text-white hover:bg-indigo-500 rounded group"
                     to="#0"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
@@ -121,7 +121,7 @@ function SearchModal({
                 </li>
                 <li>
                   <Link
-                    className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
+                    className="flex items-center p-2 text-slate-400 hover:text-white hover:bg-indigo-500 rounded group"
                     to="#0"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
@@ -133,7 +133,7 @@ function SearchModal({
                 </li>
                 <li>
                   <Link
-                    className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
+                    className="flex items-center p-2 text-slate-400 hover:text-white hover:bg-indigo-500 rounded group"
                     to="#0"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
@@ -145,7 +145,7 @@ function SearchModal({
                 </li>
                 <li>
                   <Link
-                    className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
+                    className="flex items-center p-2 text-slate-400 hover:text-white hover:bg-indigo-500 rounded group"
                     to="#0"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
@@ -163,26 +163,26 @@ function SearchModal({
               <ul className="text-sm">
                 <li>
                   <Link
-                    className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
+                    className="flex items-center p-2 text-slate-400 hover:text-white hover:bg-indigo-500 rounded group"
                     to="#0"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">
                       <path d="M14 0H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h8l5-5V1c0-.6-.4-1-1-1zM3 2h10v8H9v4H3V2z" />
                     </svg>
-                    <span><span className="font-medium text-slate-800 group-hover:text-white">Messages</span> - Conversation / … / Mike Mills</span>
+                    <span><span className="font-medium text-slate-400 group-hover:text-white">Messages</span> - Conversation / … / Mike Mills</span>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
+                    className="flex items-center p-2 text-slate-400 hover:text-white hover:bg-indigo-500 rounded group"
                     to="#0"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">
                       <path d="M14 0H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h8l5-5V1c0-.6-.4-1-1-1zM3 2h10v8H9v4H3V2z" />
                     </svg>
-                    <span><span className="font-medium text-slate-800 group-hover:text-white">Messages</span> - Conversation / … / Eva Patrick</span>
+                    <span><span className="font-medium text-slate-400 group-hover:text-white">Messages</span> - Conversation / … / Eva Patrick</span>
                   </Link>
                 </li>
               </ul>

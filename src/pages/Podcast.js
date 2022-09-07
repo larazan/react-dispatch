@@ -17,7 +17,7 @@ const Podcast = () => {
                     <img className="rounded" src={software} alt="" />
                   </div>
                 </div>
-                <div class="w-5/6">
+                <div className="w-5/6">
                   <div className="flex flex-col">
                     <div className="">
                       <span className="text-2xl font-bold capitalize">
@@ -42,25 +42,25 @@ const Podcast = () => {
                           <div className="bg-gray-300 border border-gray-300 rounded-full w-full h-2"></div>
                           <div className="flex justify-between items-center">
                             <div className="flex space-x-1.5">
-                              <button class="w-5 h-5 text-gray-500">
+                              <button className="w-5 h-5 text-gray-500">
                                 <svg
-                                  class="fill-current w-4"
+                                  className="fill-current w-4"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 20 20"
                                 >
                                   <path d="M6.59 12.83L4.4 15c-.58.58-1.59 1-2.4 1H0v-2h2c.29 0 .8-.2 1-.41l2.17-2.18 1.42 1.42zM16 4V1l4 4-4 4V6h-2c-.29 0-.8.2-1 .41l-2.17 2.18L9.4 7.17 11.6 5c.58-.58 1.59-1 2.41-1h2zm0 10v-3l4 4-4 4v-3h-2c-.82 0-1.83-.42-2.41-1l-8.6-8.59C2.8 6.21 2.3 6 2 6H0V4h2c.82 0 1.83.42 2.41 1l8.6 8.59c.2.2.7.41.99.41h2z"></path>
                                 </svg>
                               </button>
-                              <button class="w-5 h-5 text-gray-500">
+                              <button className="w-5 h-5 text-gray-500">
                                 <svg
-                                  class="fill-current w-5"
+                                  className="fill-current w-5"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 20 20"
                                 >
                                   <path d="M10 3v2a5 5 0 0 0-3.54 8.54l-1.41 1.41A7 7 0 0 1 10 3zm4.95 2.05A7 7 0 0 1 10 17v-2a5 5 0 0 0 3.54-8.54l1.41-1.41zM10 20l-4-4 4-4v8zm0-12V0l4 4-4 4z"></path>
                                 </svg>
                               </button>
-                              <button class="w-5 h-5 text-gray-500">
+                              <button className="w-5 h-5 text-gray-500">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   className="h-4 w-4"
@@ -76,13 +76,13 @@ const Podcast = () => {
                               </button>
                             </div>
                             <div>
-                              <span class="text-xs text-gray-500 font-light2">
+                              <span className="text-xs text-gray-500 font-light2">
                                 4:18
                               </span>{" "}
-                              <span class="text-xs text-gray-500 font-light2">
+                              <span className="text-xs text-gray-500 font-light2">
                                 -
                               </span>{" "}
-                              <span class="text-xs text-gray-500 font-light2">
+                              <span className="text-xs text-gray-500 font-light2">
                                 5:13
                               </span>
                             </div>
@@ -98,9 +98,9 @@ const Podcast = () => {
           {/*  */}
           <div className="flex flex-row space-x-0">
             <div className="flex w-1/3 px-3 mt-8">
-              <div class="flex-col py-4 px-4 text-[#9cb3c9]">
-                <span class="text-sm font-semibold">AUGUST 30, 2022</span>
-                <div class="flex-col space-y-3 pt-4">
+              <div className="flex-col py-4 px-4 text-[#9cb3c9]">
+                <span className="text-sm font-semibold">AUGUST 30, 2022</span>
+                <div className="flex-col space-y-3 pt-4">
                  
                     <div>
                       <span className="text-sm">by Michele Hansen & Colleen Schnettler</span>
@@ -155,18 +155,18 @@ const Podcast = () => {
                       <div className="h-32 w-32">
                         <img src={indie} />
                       </div>
-                      <div class="w-3/4">
-                        <div class="pt-3 pb-2 pr-3">
-                          <div class="flex justify-between">
-                            <div class="flex-col text-lg font-bold ">
-                              <span class="text-white">
+                      <div className="w-3/4">
+                        <div className="pt-3 pb-2 pr-3">
+                          <div className="flex justify-between">
+                            <div className="flex-col text-lg font-bold ">
+                              <span className="text-white">
                                 Ending the VC dream and pivoting to an indie
                                 company - David Kofoed Wind, Eduflow
                               </span>
                             </div>
                           </div>
-                          <div class="mt-4">
-                            <div class="text-sm text-[#9cb3c9]">
+                          <div className="mt-4">
+                            <div className="text-sm text-[#9cb3c9]">
                               <em>Aug 31st —</em>David Kofoed Wind is the
                               co-founder and CEO of Eduflow an education
                               platform started in 2015 as Peergrade, which was a
@@ -200,18 +200,18 @@ const Podcast = () => {
                       <div className="h-32 w-32">
                         <img className="rounded" src={software} alt="" />
                       </div>
-                      <div class="w-3/4">
-                        <div class="pt-3 pb-2 pr-3">
-                          <div class="flex justify-between">
-                            <div class="flex-col text-lg font-bold ">
-                              <span class="text-white">
+                      <div className="w-3/4">
+                        <div className="pt-3 pb-2 pr-3">
+                          <div className="flex justify-between">
+                            <div className="flex-col text-lg font-bold ">
+                              <span className="text-white">
                                 Ending the VC dream and pivoting to an indie
                                 company - David Kofoed Wind, Eduflow
                               </span>
                             </div>
                           </div>
-                          <div class="mt-4">
-                            <div class="text-sm text-[#9cb3c9]">
+                          <div className="mt-4">
+                            <div className="text-sm text-[#9cb3c9]">
                               <em>Aug 31st —</em>David Kofoed Wind is the
                               co-founder and CEO of Eduflow an education
                               platform started in 2015 as Peergrade, which was a

@@ -7,6 +7,7 @@ import SearchModal from "./SearchModal";
 import Explore from "./Explore";
 import SideMenu from "./SideMenu";
 import Notifications from "./Notifications";
+import UserMenu from "./UserMenu";
 
 import logo from "../assets/images/logo.svg";
 
@@ -76,12 +77,14 @@ const Header = () => {
         </div>
 
         <div className="flex justify-center w-1/3">
+          <Link to="">
           <img className="h-4 mx-auto" src={logo} alt="tmdb" />
+          </Link>
         </div>
 
         <div className="flex w-1/3 justify-end">
           <div className="flex flex-end pl-2 space-x-4 items-center">
-            <div className="flex flex-col text-[#9cb3c9] hidden md:flex">
+            <div className="flex flex-col text-[#01b4e4] hidden md:flex">
               <button
                 className="h-6 w-6 hidden md:flex"
                 onClick={(e) => {
@@ -96,7 +99,7 @@ const Header = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}
+                  strokeWidth={3}
                 >
                   <path
                     strokeLinecap="round"
@@ -125,18 +128,20 @@ const Header = () => {
               </button>
             </div> */}
             <Notifications />
-            <div>
-              <Avatar name={"Selena gomes"} size={"36"} round={true} />
-            </div>
+            <UserMenu />
             <div className="flex">
+              <Link to={"login"}>
               <button className="flex inline-flex items-center justify-center rounded px-4 py-1.5 bg-[#4799eb] opacity-90 hover:opacity-100">
                 <span className="font-semibold text-white">Login</span>
               </button>
+              </Link>
             </div>
             <div className="flex">
+              <Link to={"register"}>
               <button className="flex inline-flex items-center justify-center rounded  px-4 py-1.5 bg-[#fe2c55] opacity-90 hover:opacity-100">
                 <span className="font-semibold text-white">Daftar</span>
               </button>
+              </Link>
             </div>
           </div>
         </div>

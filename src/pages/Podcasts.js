@@ -108,15 +108,15 @@ const Podcasts = () => {
                       <div className="h-32 w-32">
                         <img src={indie} />
                       </div>
-                      <div class="w-3/4">
-                        <div class="pt-3 pb-2 pr-3">
-                          <div class="flex justify-between">
-                            <div class="flex-col text-lg font-bold ">
-                              <span class="text-white">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
+                      <div className="w-3/4">
+                        <div className="pt-3 pb-2 pr-3">
+                          <div className="flex justify-between">
+                            <div className="flex-col text-lg font-bold ">
+                              <span className="text-white">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
                             </div>
                           </div>
-                          <div class="mt-4">
-                            <div class="text-sm text-[#9cb3c9]">
+                          <div className="mt-4">
+                            <div className="text-sm text-[#9cb3c9]">
                             <em>Aug 31st —</em>David Kofoed Wind is the co-founder and CEO of Eduflow an education platform started in 2015 as Peergrade, which was a peer to peer ...
                             </div>
                           </div>
@@ -147,15 +147,15 @@ const Podcasts = () => {
                       <div className="h-32 w-32">
                         <img src={software} />
                       </div>
-                      <div class="w-3/4">
-                        <div class="pt-3 pb-2 pr-3">
-                          <div class="flex justify-between">
-                            <div class="flex-col text-lg font-bold ">
-                              <span class="text-white">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
+                      <div className="w-3/4">
+                        <div className="pt-3 pb-2 pr-3">
+                          <div className="flex justify-between">
+                            <div className="flex-col text-lg font-bold ">
+                              <span className="text-white">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
                             </div>
                           </div>
-                          <div class="mt-4">
-                            <div class="text-sm text-[#9cb3c9]">
+                          <div className="mt-4">
+                            <div className="text-sm text-[#9cb3c9]">
                             <em>Aug 31st —</em>David Kofoed Wind is the co-founder and CEO of Eduflow an education platform started in 2015 as Peergrade, which was a peer to peer ...
                             </div>
                           </div>

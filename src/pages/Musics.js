@@ -7,6 +7,7 @@ import Search from '../components/Search'
 import MusicList from '../components/MusicList'
 
 import podcast from "../assets/images/podcast-header-bg.jpg";
+import miletHead from "../assets/images/milet2.jpg";
 
 const Musics = () => {
   return (
@@ -17,7 +18,7 @@ const Musics = () => {
           <div
             className="flex relative bg-gray-100  py-24 justify-center"
             style={{
-              background: `url(${podcast}) center  no-repeat`,
+              background: `url(${miletHead}) center  no-repeat`,
             }}
           >
             <div className="p-12 max-w-2xl hero relative">
@@ -86,25 +87,25 @@ const Musics = () => {
                     </div>
                   </div>
                 </div>
-                <div class="grid grid-cols-3 gap-4">
-                  <div class="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
-                    <div class="relative pt-full mb-4">
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                    <div className="relative pt-full mb-4">
                       <img
-                        class="block w-full rounded-md inset-0"
+                        className="block w-full rounded-md inset-0"
                         src="https://picsum.photos/129.webp?random=1"
                         alt=""
                       />
                     </div>
-                    <div class="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
                       Chinese Lo-FI
                     </div>
-                    <div class="relative pb-2">
-                      <span class="text-sm text-[#5aa3ed] font-semibold">
+                    <div className="relative pb-2">
+                      <span className="text-sm text-[#5aa3ed] font-semibold">
                         Nike1nike
                       </span>
-                      <button class="absolute right-0 top-0 w-10 h-10 bg-[#5cd68d] rounded-full flex text-white">
+                      <button className="absolute right-0 top-0 w-10 h-10 bg-[#5cd68d] rounded-full flex text-white">
                         <svg
-                          class="fill-current h-5 w-5 m-auto"
+                          className="fill-current h-5 w-5 m-auto"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                         >
@@ -113,87 +114,87 @@ const Musics = () => {
                       </button>
                     </div>
                   </div>
-                  <div class="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
-                    <div class="relative pt-full mb-4">
+                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                    <div className="relative pt-full mb-4">
                       <img
-                        class="block w-full rounded-md inset-0"
+                        className="block w-full rounded-md inset-0"
                         src="https://picsum.photos/129.webp?random=2"
                         alt=""
                       />
                     </div>
-                    <div class="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
                       FLY
                     </div>
-                    <div class="relative pb-2">
-                      <span class="text-sm text-[#5aa3ed] font-semibold">
+                    <div className="relative pb-2">
+                      <span className="text-sm text-[#5aa3ed] font-semibold">
                         Gaho
                       </span>
                     </div>
                   </div>
-                  <div class="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
-                    <div class="relative pt-full mb-4">
+                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                    <div className="relative pt-full mb-4">
                       <img
-                        class="block w-full rounded-md inset-0"
+                        className="block w-full rounded-md inset-0"
                         src="https://picsum.photos/129.webp?random=3"
                         alt=""
                       />
                     </div>
-                    <div class="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
                       Ludwig van Beethoven
                     </div>
-                    <div class="relative pb-2">
-                      <span class="text-sm text-[#5aa3ed] font-semibold">
+                    <div className="relative pb-2">
+                      <span className="text-sm text-[#5aa3ed] font-semibold">
                         Artist
                       </span>
                     </div>
                   </div>
-                  <div class="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
-                    <div class="relative pt-full mb-4">
+                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                    <div className="relative pt-full mb-4">
                       <img
-                        class="block w-full rounded-md inset-0"
+                        className="block w-full rounded-md inset-0"
                         src="https://picsum.photos/129.webp?random=4"
                         alt=""
                       />
                     </div>
-                    <div class="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
                       Hotel Del Luna OST
                     </div>
-                    <div class="relative pb-2">
-                      <span class="text-sm text-[#5aa3ed] font-semibold">
+                    <div className="relative pb-2">
+                      <span className="text-sm text-[#5aa3ed] font-semibold">
                         By Jamie Lee
                       </span>
                     </div>
                   </div>
-                  <div class="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
-                    <div class="relative pt-full mb-4">
+                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                    <div className="relative pt-full mb-4">
                       <img
-                        class="block w-full rounded-md inset-0"
+                        className="block w-full rounded-md inset-0"
                         src="https://picsum.photos/129.webp?random=5"
                         alt=""
                       />
                     </div>
-                    <div class="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
                       ITAEWON CLASS (Original Television Soundtrack) Pt.2
                     </div>
-                    <div class="relative pb-2">
-                      <span class="text-sm text-[#5aa3ed] font-semibold">
+                    <div className="relative pb-2">
+                      <span className="text-sm text-[#5aa3ed] font-semibold">
                         Gaho
                       </span>
                     </div>
                   </div>
-                  <div class="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
-                    <div class="relative pt-full mb-4">
+                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                    <div className="relative pt-full mb-4">
                       <img
-                        class="block w-full rounded-md inset-0"
+                        className="block w-full rounded-md inset-0"
                         src="https://picsum.photos/129.webp?random=6"
                         alt=""
                       />
                     </div>
-                    <div class="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
                       Preparation For a Journey
                     </div>
-                    <div class="relative pb-2">
-                      <span class="text-sm text-[#5aa3ed] font-semibold">
+                    <div className="relative pb-2">
+                      <span className="text-sm text-[#5aa3ed] font-semibold">
                         Gaho
                       </span>
                     </div>

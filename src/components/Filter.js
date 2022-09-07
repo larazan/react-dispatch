@@ -126,7 +126,7 @@ const Filter = () => {
           <div className="w-full p-2 rounded">
             <div className="py-2 px-2">
               <div className="">
-                <span className="text-white font-semibold">
+                <span className="text-xl text-[#9cb3c9] font-bold">
                   Advance filter
                 </span>
               </div>
@@ -144,7 +144,7 @@ const Filter = () => {
                     <div className="py-2">
                       <h1 className="font-semibold text-white">{item.title}</h1>
                     </div>
-                    <span className="text-[12px] text-white font-thin ">
+                    <span className="text-[12px] text-[#9cb3c9]  ">
                       {item.desc}
                     </span>
                   </div>
@@ -174,16 +174,16 @@ const Filter = () => {
                       </div> */}
                       {/* <div className="flex flex-wrap w-full">
                         {countries.map((country, id) => (
-                          <div class="flex items-center w-32 items-start mb-1 px-2">
+                          <div className="flex items-center w-32 items-start mb-1 px-2">
                             <input
                               id="checkbox-1"
                               aria-describedby="checkbox-1"
                               type="checkbox"
-                              class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
+                              className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
                             />
                             <label
                               for="checkbox-1"
-                              class="text-sm ml-1.5  text-gray-900 capitalize"
+                              className="text-sm ml-1.5  text-gray-900 capitalize"
                             >
                               {country.name}
                             </label>

@@ -282,8 +282,8 @@ const Movie = () => {
                   <button>twitter</button>
                   <button>instagram</button>
                   <button>link</button> */}
-                  <div class="flex justify-around my-4">
-                    <div class="border hover:bg-[#1877f2] w-10 h-10 fill-[#1877f2] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-blue-500/50 cursor-pointer">
+                  <div className="flex justify-around my-4">
+                    <div className="border hover:bg-[#1877f2] w-10 h-10 fill-[#1877f2] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-blue-500/50 cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -294,7 +294,7 @@ const Movie = () => {
                       </svg>
                     </div>
 
-                    <div class="border hover:bg-[#1d9bf0] w-10 h-10 fill-[#1d9bf0] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-sky-500/50 cursor-pointer">
+                    <div className="border hover:bg-[#1d9bf0] w-10 h-10 fill-[#1d9bf0] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-sky-500/50 cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -305,7 +305,7 @@ const Movie = () => {
                       </svg>
                     </div>
 
-                    <div class="border hover:bg-[#bc2a8d] w-10 h-10 fill-[#bc2a8d] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-pink-500/50 cursor-pointer">
+                    <div className="border hover:bg-[#bc2a8d] w-10 h-10 fill-[#bc2a8d] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-pink-500/50 cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -318,7 +318,7 @@ const Movie = () => {
                       </svg>
                     </div>
 
-                    <div class="border hover:bg-[#25D366] w-10 h-10 fill-[#25D366] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-green-500/50 cursor-pointer">
+                    <div className="border hover:bg-[#25D366] w-10 h-10 fill-[#25D366] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-green-500/50 cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -333,7 +333,7 @@ const Movie = () => {
                       </svg>
                     </div>
 
-                    <div class="border hover:bg-[#229ED9] w-10 h-10 fill-[#229ED9] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-sky-500/50 cursor-pointer">
+                    <div className="border hover:bg-[#229ED9] w-10 h-10 fill-[#229ED9] hover:fill-white border-[#5aa3ed] rounded-full flex items-center justify-center shadow-xl hover:shadow-sky-500/50 cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"

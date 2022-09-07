@@ -5,6 +5,7 @@ import Pagination from "../components/Pagination";
 import PodcastPlayer from '../components/PodcastPlayer';
 
 import podcast from "../assets/images/podcast-header-bg.jpg";
+import suzy from "../assets/images/suzy.jpg";
 import photo1 from "../assets/images/1.jpg";
 import photo2 from "../assets/images/2.jpg";
 import photo3 from "../assets/images/3.jpg";
@@ -73,7 +74,7 @@ const Actors = () => {
           <div
             className="flex relative bg-gray-100  py-24 justify-center"
             style={{
-              background: `url(${podcast}) center  no-repeat`,
+              background: `url(${suzy}) center  no-repeat`,
             }}
           >
             <div className="p-12 max-w-2xl hero relative">
