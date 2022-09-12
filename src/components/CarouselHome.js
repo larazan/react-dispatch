@@ -1,10 +1,30 @@
 import React, { useState, useEffect } from "react";
 
-import sliders from "../assets/data/slides.json";
-import slides from "../assets/data/slides.json";
+import sliders from "../assets/data/swiper.json";
+import slides from "../assets/data/swiper.json";
 
+import strange from "../assets/images/strange.jpg"
+import mandalorian from "../assets/images/mandalorian.jpg"
+import ring from "../assets/images/ring.jpg"
 
-const Carousel = () => {
+const getImage = (imgName) => {
+    let imgGal = "";
+    switch (imgName) {
+      case "strange":
+        imgGal = strange;
+        break;
+      case "mandalorian":
+        imgGal = mandalorian;
+        break;
+      case "ring":
+        imgGal = ring;
+        break;
+    }
+  
+    return imgGal;
+  };
+
+const CarouselHome = () => {
     const [current, setCurrent] = useState(0);
     const [autoPlay, setAutoPlay] = useState(true);
     const length = slides.length;
@@ -188,9 +208,10 @@ const Carousel = () => {
                 <img
                   // src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
                   className="block w-full"
-                  src={slide.image}
+                  src={getImage(slide.image)}
                   alt="..."
                 />
+                
               )}
               <div className="carousel-caption hidden md:block absolute text-center">
                 <h5 className="text-xl">First slide label</h5>
@@ -258,4 +279,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselHome;
