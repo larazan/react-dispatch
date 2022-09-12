@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Rate from "../components/Rate";
+import CarouselWrapper from "../components/CarouselWrapper";
 
 const Coba = () => {
   const [rating, setRating] = useState(3);
@@ -13,6 +14,7 @@ const Coba = () => {
     <>
       <main className="relative px-0 z-9 ">
         <div className="top-10 px-5 py-3 mt-5">
+          <CarouselWrapper />
           <div className="sm:px-6 w-full">
             <div className="bg-white py-4 md:py-7 px-4 md:px-8 xl:px-10">
               <div className="mt-7 overflow-x-auto">

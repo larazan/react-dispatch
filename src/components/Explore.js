@@ -66,6 +66,7 @@ function Explore() {
             Explore
           </div>
           <ul>
+            
             <li className=" last:border-0">
               <Link
                 className="flex justify-center2 items-center space-x-3 block py-3 px-4  hover:bg-[#162c41]"
@@ -197,7 +198,28 @@ function Explore() {
             <li className=" last:border-0">
               <Link
                 className="flex justify-center2 items-center space-x-3 block py-3 px-4  hover:bg-[#162c41]"
-                to="stores"
+                to="news"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+              >
+                <div className="flex justify-center items-center w-12 h-12 rounded-full bg-[#e25a91] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                </svg>
+                </div>
+                <div className="flex flex-col">
+                  <div>
+                    <span className="text-lg text-[#e25a91] font-semibold">
+                      News
+                    </span>
+                  </div>
+                  <span className="text-sm">see what everyone working on</span>
+                </div>
+              </Link>
+            </li>
+            <li className=" last:border-0">
+              <Link
+                className="flex justify-center2 items-center space-x-3 block py-3 px-4  hover:bg-[#162c41]"
+                to="store"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 <div className="flex justify-center items-center w-12 h-12 rounded-full bg-[#9270c2] text-white">
@@ -226,6 +248,7 @@ function Explore() {
                 </div>
               </Link>
             </li>
+           
           </ul>
         </div>
       </Transition>

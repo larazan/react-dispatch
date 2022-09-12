@@ -81,7 +81,7 @@ const Movie = () => {
         <div className="flex px-6 space-x-7">
           <div className="flex w-1/3 ">
             <div className=" w-full">
-              <img src={parasite} className="" />
+              <img src={parasite} className="" alt="" />
             </div>
           </div>
           <div className="flex-col w-2/3 justify-center ">

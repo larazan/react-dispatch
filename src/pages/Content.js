@@ -3,7 +3,6 @@ import React from "react";
 import Filter from "../components/Filter";
 
 import podcast from "../assets/images/podcast-header-bg.jpg";
-import hero from "../assets/images/hero.jpg";
 
 import Rating from "../components/Rating";
 import Pagination from "../components/Pagination";
@@ -408,6 +407,7 @@ const Content = () => {
                   <div className="relative block w-40 h-auto">
                     <img
                       src={images(movie.image)}
+                      alt=""
                       className="relative w-full "
                     />
                   </div>

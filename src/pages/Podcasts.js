@@ -106,7 +106,7 @@ const Podcasts = () => {
                   <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-3 cursor-pointer">
                     <div className="flex space-x-2 justify-center items-center">
                       <div className="h-32 w-32">
-                        <img src={indie} />
+                        <img src={indie} alt="" />
                       </div>
                       <div className="w-3/4">
                         <div className="pt-3 pb-2 pr-3">
@@ -145,7 +145,7 @@ const Podcasts = () => {
                   <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-3 cursor-pointer">
                     <div className="flex space-x-2 justify-center items-center">
                       <div className="h-32 w-32">
-                        <img src={software} />
+                        <img src={software} alt="" />
                       </div>
                       <div className="w-3/4">
                         <div className="pt-3 pb-2 pr-3">

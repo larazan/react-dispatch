@@ -1,6 +1,5 @@
 import React from "react";
 
-import podcast from "../assets/images/podcast-header-bg.jpg";
 import software from "../assets/images/software.jpg";
 import indie from "../assets/images/Indie.png";
 
@@ -153,7 +152,7 @@ const Podcast = () => {
                   <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-3 cursor-pointer">
                     <div className="flex space-x-3 justify-center items-center">
                       <div className="h-32 w-32">
-                        <img src={indie} />
+                        <img src={indie} alt="" />
                       </div>
                       <div className="w-3/4">
                         <div className="pt-3 pb-2 pr-3">

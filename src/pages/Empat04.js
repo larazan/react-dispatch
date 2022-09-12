@@ -8,7 +8,7 @@ const Empat04 = () => {
           <div className="w-full max-w-3xl px-0 md:px-10 py-1 md:py-8 ">
             <div className="mx-auto px-3 ">
               <div className="container flex flex-col items-center px-6 mx-auto">
-                <h1 className="text-6xl font-semibold text-gray-700 dark:text-gray-200">
+                <h1 className="text-4xl md:text-8xl font-semibold text-gray-700 dark:text-gray-200">
                   404
                 </h1>
                 <p className="mt-5 text-gray-700 dark:text-gray-300">

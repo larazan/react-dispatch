@@ -20,9 +20,14 @@ import Podcasts from "./pages/Podcasts";
 import Podcast from "./pages/Podcast";
 import Profile from "./pages/Profile";
 import Empat04 from "./pages/Empat04";
+import Checkout from "./pages/Checkout";
+import Store from "./pages/Store";
+import Detail from "./pages/Detail";
+import Blog from "./pages/Blog";
 
 import Frontend from "./hoc/Frontend"
 import Register from "./pages/Register";
+
 // import Profile from "./hoc/Frontend"
 
 function App() {
@@ -47,6 +52,10 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="podcasts" element={<Podcasts />} />
           <Route path="podcast" element={<Podcast />} />
+          <Route path="store" element={<Store />} />
+          <Route path="checkout" element={<Checkout />} />
+          <Route path="product" element={<Detail />} />
+          <Route path="blog" element={<Blog />} />
           <Route path="*" element={<Empat04 />} />
         </Route>
       </Routes>    

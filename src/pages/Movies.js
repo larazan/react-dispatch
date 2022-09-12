@@ -148,6 +148,7 @@ const Movies = () => {
                   <div className="relative block w-40 h-auto">
                     <img
                       src={images(movie.image)}
+                      alt=""
                       className="relative w-full "
                     />
                   </div>
