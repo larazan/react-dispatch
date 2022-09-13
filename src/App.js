@@ -18,17 +18,28 @@ import Login from "./pages/Login";
 import Content from "./pages/Content";
 import Podcasts from "./pages/Podcasts";
 import Podcast from "./pages/Podcast";
-import Profile from "./pages/Profile";
+// import Profile from "./pages/Profile";
 import Empat04 from "./pages/Empat04";
 import Checkout from "./pages/Checkout";
 import Store from "./pages/Store";
 import Detail from "./pages/Detail";
 import Blog from "./pages/Blog";
+import List from "./pages/List";
+import Overview from "./pages/Overview";
+import Rating from "./pages/Rating";
+import Discuss from "./pages/Discuss";
 
 import Frontend from "./hoc/Frontend"
 import Register from "./pages/Register";
 
-// import Profile from "./hoc/Frontend"
+import Profile from "./hoc/Profile"
+import Setting from "./hoc/Setting";
+import SettingProfile from "./pages/SettingProfile";
+import SettingAccount from "./pages/SettingAccount";
+import SettingNotification from "./pages/SettingNotification";
+import SettingSharing from "./pages/SettingSharing";
+import SettingSession from "./pages/SettingSession";
+import SettingDelete from "./pages/SettingDelete";
 
 function App() {
   return (
@@ -49,7 +60,20 @@ function App() {
           <Route path="coba" element={<Coba />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="profile" element={<Profile />} />
+          <Route path="profile" element={<Profile />} >
+            <Route index element={<Overview />} />
+            <Route path="discussion" element={<Discuss />} />
+            <Route path="list" element={<List />} />
+            <Route path="rating" element={<Rating />} />
+          </Route>
+          <Route path="settings" element={<Setting />} >
+            <Route index element={<SettingProfile />} />
+            <Route path="account" element={<SettingAccount />} />
+            <Route path="notification" element={<SettingNotification />} />
+            <Route path="sharing" element={<SettingSharing />} />
+            <Route path="session" element={<SettingSession />} />
+            <Route path="delete-account" element={<SettingDelete />} />
+          </Route>
           <Route path="podcasts" element={<Podcasts />} />
           <Route path="podcast" element={<Podcast />} />
           <Route path="store" element={<Store />} />

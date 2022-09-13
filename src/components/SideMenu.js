@@ -1,18 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 import { useOnClickOutside } from "../hooks/useOnClickOutside";
 import { Link, NavLink } from "react-router-dom";
 
-import bmc from "../assets/images/bmc.svg";
 import logo from "../assets/images/logo.svg";
 
 const menus = [
   {
     title: "edit profile",
-    link: "",
+    link: "settings",
   },
   {
     title: "Account Settings",
-    link: "",
+    link: "settings/account",
   },
   {
     title: "streaming services",
@@ -20,7 +19,7 @@ const menus = [
   },
   {
     title: "notification settings",
-    link: "",
+    link: "settings/notification",
   },
   {
     title: "blocked user",
@@ -32,11 +31,11 @@ const menus = [
   },
   {
     title: "sharing settings",
-    link: "",
+    link: "settings/sharing",
   },
   {
     title: "sessions",
-    link: "",
+    link: "settings/session",
   },
   {
     title: "API",
@@ -44,7 +43,7 @@ const menus = [
   },
   {
     title: "delete account",
-    link: "",
+    link: "settings/delete-account",
   },
 ];
 
@@ -71,7 +70,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
         <span className="flex w-full items-center p-5 border-b border-[#0d2134]">
           <img src={logo} alt="Logo" className="h-auto w-32 mx-auto" />
         </span>
-        <Link className="block md:hidden" to="news">
+        <Link className="block md:hidden" to="news" onClick={() => setIsOpen(false)}>
           <span className="flex items-center px-4 py-3 space-x-3 hover:bg-[#162c41] text-[#9cb3c9]">
             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-[#e25a91] text-white">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -87,7 +86,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
             </div>
           </span>
         </Link>
-        <Link className="block md:hidden" to="movies">
+        <Link className="block md:hidden" to="movies" onClick={() => setIsOpen(false)}>
           <span className="flex items-center px-4 py-3 space-x-3 hover:bg-[#162c41] text-[#9cb3c9]">
             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-[#e6375a] text-white">
               <svg
@@ -114,7 +113,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
             </div>
           </span>
         </Link>
-        <Link className="block md:hidden" to="musics">
+        <Link className="block md:hidden" to="musics" onClick={() => setIsOpen(false)}>
           <span className="flex items-center px-4 py-3 space-x-3 hover:bg-[#162c41] text-[#9cb3c9]">
             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-[#f9af1a] text-white">
               <svg
@@ -141,7 +140,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
             </div>
           </span>
         </Link>
-        <Link className="block md:hidden" to="movies">
+        <Link className="block md:hidden" to="movies" onClick={() => setIsOpen(false)}>
           <span className="flex items-center px-4 py-3 space-x-3 hover:bg-[#162c41] text-[#9cb3c9]">
             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-[#49b66d] text-white">
               <svg
@@ -168,7 +167,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
             </div>
           </span>
         </Link>
-        <Link className="block md:hidden" to="podcasts">
+        <Link className="block md:hidden" to="podcasts" onClick={() => setIsOpen(false)}>
           <span className="flex items-center px-4 py-3 space-x-3 hover:bg-[#162c41] text-[#9cb3c9]">
             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-[#4799eb] text-white">
               <svg
@@ -195,7 +194,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
             </div>
           </span>
         </Link>
-        <Link className="block md:hidden" to="stores">
+        <Link className="block md:hidden" to="stores" onClick={() => setIsOpen(false)}>
           <span className="flex items-center px-4 py-3 space-x-3 hover:bg-[#162c41] text-[#9cb3c9]">
             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-[#9270c2] text-white">
               <svg
@@ -223,7 +222,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
           </span>
         </Link>
         {menus.map((menu, index) => (
-          <Link to={menu.link}>
+          <Link to={menu.link} onClick={() => setIsOpen(false)}>
             <span className="flex items-center px-4 py-3 hover:bg-[#162c41] text-[#9cb3c9]">
               <span className="font-bold capitalize">{menu.title}</span>
             </span>
