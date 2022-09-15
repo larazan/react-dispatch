@@ -71,7 +71,7 @@ function UserMenu() {
             <li className="last:border-0">
               <Link
                 className="block py-2 px-4 hover:bg-slate-50"
-                to="#0"
+                to="settings"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 <span className="block text-sm text-slate-500  mb-0">Ubah profil</span>
@@ -80,7 +80,7 @@ function UserMenu() {
             <li className="border-b border-slate-00 last:border-0">
               <Link
                 className="block py-2 px-4 hover:bg-slate-50"
-                to="#0"
+                to="settings/account"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 <span className="block text-sm text-slate-500  mb-0">Pengaturan</span>

@@ -131,7 +131,7 @@ function Profile(props) {
 
          
           <div className="absolute2 bottom-0 md:px-3">
-            <ul className="flex items-center justify-around md:justify-center space-x-12 uppercase tracking-widest font-semibold text-xs text-[#b6cce2] ">
+            <ul className="flex items-center justify-around md:justify-center space-x-4 uppercase tracking-widest font-semibold text-xs text-[#b6cce2] ">
               
               <li
                 className={` ${
@@ -187,6 +187,43 @@ function Profile(props) {
                   <span className="hidden2 md:inline">list</span>
                 </NavLink>
               </li>
+              <li
+                className={` ${
+                  lastUrl === "rating"
+                    ? "border-b-4 border-[#4799eb] md:-mt-px"
+                    : ""
+                } `}
+              >
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "inline-block p-3 text-white md:text-white font-bold"
+                      : "inline-block p-3"
+                  }
+                  to="rating"
+                >
+                  <span className="hidden2 md:inline">rating</span>
+                </NavLink>
+                
+              </li>
+              <li
+                className={` ${
+                  lastUrl === "watchlist"
+                    ? "border-b-4 border-[#4799eb] md:-mt-px"
+                    : ""
+                } `}
+              >
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "inline-block p-3 text-white md:text-white font-bold"
+                      : "inline-block p-3"
+                  }
+                  to="watchlist"
+                >
+                  <span className="hidden2 md:inline">watchlist</span>
+                </NavLink>
+              </li>
             </ul>
             
           </div>
@@ -200,7 +237,7 @@ function Profile(props) {
 
   return (
     <>
-      <div className="flex flex-col h-screen max-h-screen">
+      <div className="flex flex-col min-h-screen ">
         {/* {renderHeader()} */}
         {renderContent()}
         <Outlet />

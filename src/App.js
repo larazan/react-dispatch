@@ -40,6 +40,7 @@ import SettingNotification from "./pages/SettingNotification";
 import SettingSharing from "./pages/SettingSharing";
 import SettingSession from "./pages/SettingSession";
 import SettingDelete from "./pages/SettingDelete";
+import Watchlist from "./pages/Watchlist";
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
             <Route path="discussion" element={<Discuss />} />
             <Route path="list" element={<List />} />
             <Route path="rating" element={<Rating />} />
+            <Route path="watchlist" element={<Watchlist />} />
           </Route>
           <Route path="settings" element={<Setting />} >
             <Route index element={<SettingProfile />} />

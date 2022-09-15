@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NewsHome = () => {
   return (
     <>
-       <div className="min-h-full mt-8">
+      <div className="min-h-full mt-8">
         <div className="flex justify-between items-center mb-4 border-b-4 border-[#fe2c55]">
           <div className="px-6 py-2 bg-[#fe2c55]">
             <span className="text-white text-xl font-bold">News</span>
@@ -13,9 +13,18 @@ const NewsHome = () => {
             <Link to={"news"}>
               <div className="flex items-center text-white hover:text-[#fe2c55]">
                 <span className="font-bold ">View All</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-  <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-</svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </div>
             </Link>
           </div>
@@ -110,7 +119,7 @@ const NewsHome = () => {
                 <div className="px-3">
                   <div className="py-4 px-4">
                     <div className="text-lg">
-                    <span className="p-1 bg-[#ffc500] text-gray-900 font-bold">
+                      <span className="p-1 bg-[#ffc500] text-gray-900 font-bold">
                         News
                       </span>
                       <span className="text-[#b6ccd7] text-xl font-bold">
@@ -174,8 +183,7 @@ const NewsHome = () => {
               </div>
             </div>
           </div>
-          </div>
-
+        </div>
       </div>
     </>
   );

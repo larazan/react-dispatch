@@ -46,8 +46,8 @@ function Setting(props) {
                 <img
                   className="rounded-full border-8 border-[#284057]"
                   src="https://preview.cruip.com/mosaic/images/user-128-01.jpg"
-                  width="158"
-                  height="158"
+                  width="128"
+                  height="128"
                   alt="Avatar"
                 />
               </div>
@@ -73,7 +73,7 @@ function Setting(props) {
 
   return (
     <>
-      <div className="flex flex-col h-screen max-h-screen">
+      <div className="flex flex-col min-h-screen">
         {renderContent()}
         <Outlet />
       </div>
