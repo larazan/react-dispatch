@@ -5,6 +5,9 @@ import Search from '../components/Search'
 import PodcastPlayer from '../components/PodcastPlayer';
 
 import hero from "../assets/images/21.jpg"
+import NewsContent from '../components/NewsContent';
+import PaginationTwo from '../components/PaginationTwo';
+import HeadNews from '../components/HeadNews';
 
 const News = () => {
   return (
@@ -25,8 +28,8 @@ const News = () => {
             </div>
           </div>
           {/*  */}
-          <div className="flex flex-row space-x-0">
-            <div className="px-4">
+          <div className="flex w-full flex-row space-x-0">
+            <div className="px-4 w-full">
               <div className="relative w-full flex px-3 py-5 border-b border-[#0d2134]">
                 <input
                   type="search"
@@ -57,14 +60,22 @@ const News = () => {
               </div>
               {/*  */}
 
-              <div className="flex flex-col py-5 px-4 space-y-4">
+              {/* <div className="flex flex-col py-5 px-4 space-y-4">
                 
                 <div className="px-2">
                   <NewsList />
                 </div>
-              </div>
+
+              </div> */}
+
+              
             </div>
+            
           </div>
+          <HeadNews />
+          <NewsContent />
+
+          <PaginationTwo />
         </div>
       </div>
       {/*  */}
