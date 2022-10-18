@@ -49,3 +49,24 @@ code {
 .active {
   color: red;
 }
+
+.styled-counter-playlist li:before {
+  content: ">";
+  text-align: unset;
+  padding-left: 9px;
+  top: 4px;
+  background-color: rgb(19 19 19/var(1));
+  font-size: 13px;
+}
+
+.styled-counter li:before {
+  /* content: counter(counter); */
+  position: absolute;
+  left: -4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  font-family: Poly Sans,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}

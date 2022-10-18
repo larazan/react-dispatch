@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import Filter from "../components/Filter";
 import PodcastPlayer from '../components/PodcastPlayer';
@@ -143,6 +144,7 @@ const Movies = () => {
               <div className="px-4 ">
               {movies.map((movie, id) => (
             <div className="my-6 drop-shadow-sm hover:drop-shadow-lg">
+              <Link to={"/movie"}>
               <div className="relative block overflow-hidden bg-[#162c41] hover:bg-[#1f364d] cursor-pointer rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">
                 <div className="w-1/4">
                   <div className="relative block w-40 h-auto">
@@ -220,6 +222,7 @@ const Movies = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             </div>
           ))}
               </div>

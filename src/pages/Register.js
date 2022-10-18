@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import movies from '../assets/images/3000.jpeg'
 
@@ -15,18 +16,19 @@ const Register = () => {
                 Brand
               </a>
             </div>
-            <div className="space-y-5">
+            <div className="space-y-8">
               {/* <h1 className="lg:text-3xl xl:text-5xl xl:leading-snug font-extrabold ">
                 Get benefits with being member
               </h1> */}
-              <h1 className="lg:text-5xl xl:text-5xl xl:leading-snug font-extrabold ">
+              <h1 className="lg:text-3xl xl:text-4xl md:leading-tight tracking-1 font-extrabold ">
               Find something to watch on your subscribed streaming services & track of your favourite movies and TV shows
               </h1>
-           
-              {/* <p className="text-lg">You do not have an account?</p>
-              <button className="inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium border-black bg-black text-white">
-                Create account here
-              </button> */}
+           <div className='space-y-2'>
+              <p className="text-lg font-semibold">Already have an account?</p>
+              <Link to={"/login"} className="inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium border-black bg-black text-white">
+                Signin here
+              </Link>
+              </div>
             </div>
             <p className="font-medium">© 2022 Company</p>
           </div>
@@ -41,9 +43,9 @@ const Register = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <span>Already have account? </span>
-                <a href="#" className="underline font-medium text-[#070eff]">
+                <Link to="/login" className="underline font-medium text-[#070eff]">
                   Signin now
-                </a>
+                </Link>
               </div>
             </div>
 

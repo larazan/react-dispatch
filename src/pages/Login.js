@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -12,14 +13,16 @@ const Login = () => {
                 Brand
               </a>
             </div>
-            <div className="space-y-5">
+            <div className="space-y-7">
               <h1 className="lg:text-3xl xl:text-5xl xl:leading-snug font-extrabold">
                 Enter your account and discover new experiences
               </h1>
-              <p className="text-lg">You do not have an account?</p>
-              <button className="inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium border-black bg-black text-white">
+              <div className="space-y-2">
+              <p className="text-lg font-semibold">You do not have an account?</p>
+              <Link to={"/register"} className="inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium border-black bg-black text-white">
                 Create account here
-              </button>
+              </Link>
+              </div>
             </div>
             <p className="font-medium">© 2022 Company</p>
           </div>
@@ -34,9 +37,9 @@ const Login = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <span>Not a member? </span>
-                <a href="#" className="underline font-medium text-[#070eff]">
+                <Link to="/register" className="underline font-medium text-[#070eff]">
                   Sign up now
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -95,7 +98,7 @@ const Login = () => {
               </div>
             </div>
 
-            <div className="flex justify-center flex-col m-auto mb-16 text-center text-lg dark:text-slate-200 ">
+            {/* <div className="flex justify-center flex-col m-auto mb-16 text-center text-lg dark:text-slate-200 ">
               <p className="font-bold mb-1">
                 Built by{" "}
                 <a href="#" className="underline dark:text-white">
@@ -277,7 +280,7 @@ const Login = () => {
                   </svg>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

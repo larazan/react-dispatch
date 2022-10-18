@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import Filter from "../components/Filter";
 import PodcastPlayer from '../components/PodcastPlayer';
@@ -41,6 +42,7 @@ const Podcasts = () => {
                   
                 </div>
                 <div className="relative">
+                  <Link to={"/podcast"}>
                   <div className="absolute left-4 top-4">
                     <button className="text-pink-600">
                       <svg
@@ -78,8 +80,10 @@ const Podcasts = () => {
                       </div>
                     </div>
                   </div>
+                  </Link>
                 </div>
                 <div className="relative">
+                <Link to={"/podcast"}>
                   <div className="absolute left-4 top-4">
                     <button className="text-pink-600">
                       <svg
@@ -117,6 +121,7 @@ const Podcasts = () => {
                       </div>
                     </div>
                   </div>
+                  </Link>
                 </div>
               </div>
             </div>

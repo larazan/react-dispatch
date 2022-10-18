@@ -9,6 +9,7 @@ import NewsContent from '../components/NewsContent';
 import PaginationTwo from '../components/PaginationTwo';
 import HeadNews from '../components/HeadNews';
 import SosmedNews from '../components/SosmedNews';
+import PodcastHome from '../components/PodcastHome';
 
 const News = () => {
   return (
@@ -20,6 +21,7 @@ const News = () => {
           <HeadNews />
           <NewsContent />
           <SosmedNews />
+          <PodcastHome />
           <PaginationTwo />
         </div>
       </div>

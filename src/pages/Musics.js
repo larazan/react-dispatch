@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import Filter from "../components/Filter";
 import Player from '../components/Player';
@@ -88,7 +89,8 @@ const Musics = () => {
                   </div>
                 </div>
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                    
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -113,8 +115,8 @@ const Musics = () => {
                         </svg>
                       </button>
                     </div>
-                  </div>
-                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  </Link>
+                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -130,8 +132,8 @@ const Musics = () => {
                         Gaho
                       </span>
                     </div>
-                  </div>
-                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  </Link>
+                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -147,8 +149,8 @@ const Musics = () => {
                         Artist
                       </span>
                     </div>
-                  </div>
-                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  </Link>
+                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -164,8 +166,8 @@ const Musics = () => {
                         By Jamie Lee
                       </span>
                     </div>
-                  </div>
-                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  </Link>
+                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -181,8 +183,8 @@ const Musics = () => {
                         Gaho
                       </span>
                     </div>
-                  </div>
-                  <div className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  </Link>
+                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -198,7 +200,7 @@ const Musics = () => {
                         Gaho
                       </span>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col py-5 px-4 space-y-2">
