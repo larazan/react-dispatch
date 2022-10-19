@@ -5,10 +5,11 @@ import batman from '../assets/images/batman.jpg'
 const HeadNews = () => {
   return (
     <>
-      <div className="flex relative flex-col px-0 mb-12 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg home-hero">
-        <div className="w-full lg:pt-150 lg:mr-[380px]">
-          <div className="group pt-16 mb-12 md:mb-12 lg:top-150 lg:pr-40 lg:mb-0 lg:min-h-[750px]">
-            <div className="relative pl-40 md:pr-40 md:pl-0 lg:pr-70 lg:pl-20">
+    {/* <div className="flex flex-row flex-wrap justify-center mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-10 mb-16"> */}
+      <div className="flex relative flex-col px-0 mb-16 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg home-hero">
+        <div className="">
+          <div className="group pt-16 mb-12 md:mb-12 lg:top-150 lg:pr-36 lg:mb-0 lg:min-h-[450px]">
+            <div className="relative pl-40 md:pr-40 md:pl-0 lg:pr-0 lg:pl-20">
               <div className="block relative w-full aspect-five-four rounded-md">
                 <a href="" className="block w-full h-full">
                   <span>
@@ -44,7 +45,7 @@ const HeadNews = () => {
                   </a>
                 </span>
                 <span>
-                  <span className='text-gray-300 px-1 font-light'>&nbsp;and&nbsp;</span>
+                  <span className='text-gray-300 px-1 '>&nbsp;and&nbsp;</span>
                   <a
                     class="text-franklin hover:shadow-underline-inherit mr-8"
                     href="/authors/nilay-patel"
@@ -52,7 +53,7 @@ const HeadNews = () => {
                     Nilay Patel
                   </a>
                 </span>
-                <span className='text-gray-300 px-1 font-light'>1:25 AM GMT+7</span>
+                <span className='text-gray-300 px-1 font-light2'>1:25 AM GMT+7</span>
               </span>
             </div>
           </div>

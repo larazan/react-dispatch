@@ -72,7 +72,7 @@ const ActorList = () => {
         <div className="w-2/3 min-h-full ">
           {casts.map((cast, id) => (
             <div className="my-6 drop-shadow-sm hover:drop-shadow-lg">
-              <div className="relative block overflow-hidden bg-white rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">
+              <div className="relative block overflow-hidden rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">
                 <div className="w-1/4">
                   <div className="relative block w-40 h-auto">
                     <img src={photos(cast.name)} className="relative w-full " />

@@ -6,9 +6,9 @@ const PodcastHome = () => {
     <>
       <div className="flex flex-row flex-wrap justify-center mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-10 mb-16">
         <div className="flex flex-col-reverse items-center w-full lg:flex-row lg:items-start">
-          <div className="duet--layout--rail max-w-desktop-breaker h-full block z-0 text-white lg:flex lg:flex-col lg:flex-1">
+          <div className="max-w-desktop-breaker h-full2 block z-0 text-white lg:flex lg:flex-col lg:flex-1">
             <div className="flex-auto">
-              <div className=" relative p-8 ml:m-auto mt-40 mb-50 ml-[65px] min-h-[300px] rounded-[4px] sm:w-tablet-breaker md:ml-14 lg:overflow-hidden lg:sticky lg:top-40 lg:my-0 lg:mb-10 lg:ml-0 lg:w-desktop-breaker lg:min-h-[500px] lg:rounded-[20px] bg-[#c3dd1e] text-black">
+              <div className=" relative p-8 ml:m-auto mt-10 mb-50 ml-[65px] min-h-[300px] rounded-[4px] sm:w-tablet-breaker md:ml-14 lg:overflow-hidden lg:sticky lg:top-40 lg:my-0 lg:mb-10 lg:ml-0 lg:w-desktop-breaker lg:min-h-[300px] lg:rounded-[20px] bg-[#c3dd1e] text-black">
                 <h2
                   className="flex absolute top-[15px] left-[-55px] -z-10 text-[60px] font-ultra tracking-1 leading-tight text-white rotate-180 lg:hidden"
                   style={{
@@ -18,7 +18,7 @@ const PodcastHome = () => {
                 >
                   Podcasts
                 </h2>
-                <div className="flex relative z-10 justify-between mb-[20px] font-semibold text-[11px] tracking-15 uppercase ">
+                <div className="flex relative z-10 justify-between mb-[20px] font-semibold text-[11px] lg:text-[14px] tracking-15 uppercase ">
                   <span>Podcasts</span>
                   <Link
                     to="/podcasts"
@@ -28,7 +28,7 @@ const PodcastHome = () => {
                   </Link>
                 </div>
                 <div
-                  className="hidden absolute right-0 bottom-[-10px] mr-[-25px] h-full font-manuka text-[200px] font-ultra leading-100 opacity-50 rotate-180 lg:flex text-[#309875]"
+                  className="hidden absolute right-0 bottom-[-10px] mr-[-25px] h-full2 font-manuka text-[100px] font-ultra leading-100 opacity-50 rotate-180 lg:flex text-[#309875]"
                   style={{
                     writingMode: "vertical-rl",
                     textOrientation: "sideways",
@@ -36,8 +36,8 @@ const PodcastHome = () => {
                 >
                   Podcasts
                 </div>
-                <ol className="w-full lg:mt-20 lg:w-2/3">
-                  <li className="pb-[20px] last:pb-0 mb-[20px] last:mb-0 text-franklin last:border-0 border-b lg:last:mb-[20px] lg:w-[300px] border-b-[#309875]">
+                <ol className="w-full lg:mt-10 lg:w-3/4">
+                  <li className="pb-[20px] last:pb-0 mb-[20px] last:mb-0 text-franklin last:border-0 border-b lg:last:mb-[20px] lg:w-[350px] border-b-[#309875]">
                     <div className="flex space-x-2">
                       <div className="w-8 text-[#309875]">
                         <svg
@@ -74,7 +74,7 @@ const PodcastHome = () => {
                       </div>
                     </div>
                   </li>
-                  <li className="pb-[20px] last:pb-0 mb-[20px] last:mb-0 text-franklin last:border-0 border-b lg:last:mb-[20px] lg:w-[300px] border-b-[#309875]">
+                  <li className="pb-[20px] last:pb-0 mb-[20px] last:mb-0 text-franklin last:border-0 border-b lg:last:mb-[20px] lg:w-[350px] border-b-[#309875]">
                     <div className="flex space-x-2">
                       <div className="w-8 text-[#309875]">
                         <svg
@@ -111,7 +111,7 @@ const PodcastHome = () => {
                       </div>
                     </div>
                   </li>
-                  <li className="pb-[20px] last:pb-0 mb-[20px] last:mb-0 text-franklin last:border-0 border-b lg:last:mb-[20px] lg:w-[300px] border-b-[#309875]">
+                  <li className="pb-[20px] last:pb-0 mb-[20px] last:mb-0 text-franklin last:border-0 border-b lg:last:mb-[20px] lg:w-[350px] border-b-[#309875]">
                     <div className="flex space-x-2">
                       <div className="w-8 text-[#309875]">
                         <svg
@@ -148,7 +148,7 @@ const PodcastHome = () => {
                       </div>
                     </div>
                   </li>
-                  <li className="pb-[20px] last:pb-0 mb-[20px] last:mb-0 text-franklin last:border-0 border-b lg:last:mb-[20px] lg:w-[300px] border-b-[#309875]">
+                  <li className="pb-[20px] last:pb-0 mb-[20px] last:mb-0 text-franklin last:border-0 border-b lg:last:mb-[20px] lg:w-[350px] border-b-[#309875]">
                     <div className="flex space-x-2">
                       <div className="w-8 text-[#309875]">
                         <svg

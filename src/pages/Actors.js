@@ -133,7 +133,7 @@ const Actors = () => {
                   <div className="pt-3 pb-2 pr-3">
                     <div className="flex justify-between">
                       <div className="flex-col text-lg font-bold ">
-                        <span className="text-white">{cast.name}</span>
+                        <span className="text-white capitalize">{cast.name}</span>
                         <div className="text-sm text-[#9cb3c9] capitalize">
                           <span>south korean</span>
                         </div>

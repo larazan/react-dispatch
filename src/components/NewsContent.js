@@ -5,10 +5,10 @@ import news1 from "../assets/images/news1.jpg";
 const NewsContent = () => {
   return (
     <>
-      <div className="flex flex-row flex-wrap justify-center mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-10 mb-16">
+      <div className="flex flex-row flex-wrap justify-center mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-1 mb-16">
         <div className="flex flex-col-reverse items-center w-full lg:flex-row lg:items-start">
-          <div className="flex flex-col flex-1 max-w-[560px] mx-auto sm:max-w-container-sm lg:mr-60">
-            <div className="flex relative flex-row justify-between items-center py-6 first-of-type:pt-0 text-white border-b last-of-type:border-b-0 border-gray-700 last-of-type:pb-0 max-w-container-sm md:px-10 lg:py-20">
+          <div className="flex flex-col flex-1 max-w-[560px] mx-auto sm:max-w-container-sm ">
+            <div className="flex relative flex-row justify-between items-center py-6 first-of-type:pt-0 text-white border-b last-of-type:border-b-0 border-gray-700 last-of-type:pb-0 max-w-container-sm md:px-10 lg:py-10">
               <div className="w-1/12">
                 <div className="text-[12px] tracking-15 leading-120 text-green-500 font-semibold uppercase hidden md:block pl-0 border-l border-l-green-500 -rotate-180" style={{ writingMode: 'vertical-lr', textOrientation: 'sideways'}}>
                   <span className="capitalize">movie</span>
@@ -47,7 +47,7 @@ const NewsContent = () => {
                 </div>
               </div>
             </div>
-            <div className="flex relative flex-row justify-between items-center py-6 first-of-type:pt-0 text-white border-b last-of-type:border-b-0 border-gray-700 last-of-type:pb-0 max-w-container-sm md:px-10 lg:py-20">
+            <div className="flex relative flex-row justify-between items-center py-6 first-of-type:pt-0 text-white border-b last-of-type:border-b-0 border-gray-700 last-of-type:pb-0 max-w-container-sm md:px-10 lg:py-10">
               <div className="w-1/12">
                 <div className="text-[12px] tracking-15 leading-120 text-green-500 font-semibold uppercase hidden md:block pl-0 border-l border-l-green-500 -rotate-180" style={{ writingMode: 'vertical-lr', textOrientation: 'sideways'}}>
                   <span className="capitalize">movie</span>

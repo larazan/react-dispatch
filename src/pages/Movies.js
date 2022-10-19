@@ -158,8 +158,8 @@ const Movies = () => {
                 <div className="w-3/4">
                   <div className=" pt-3 pb-2 pr-3">
                     <div className="flex-col text-lg font-bold">
-                      <span className="text-white">{movie.title}</span>
-                      <div className="text-sm text-[#9cb3c9]  capitalize">
+                      <span className="text-white text-xl capitalize">{movie.title}</span>
+                      <div className="text-sm text-[#24f4d0]  capitalize">
                         <span>{movie.category} </span>
                         <span>{movie.country}</span>
                         <span> - {movie.year},</span>

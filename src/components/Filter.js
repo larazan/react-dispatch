@@ -124,9 +124,9 @@ const Filter = () => {
       <div className=" ">
         <div className="my-2 drop-shadow-sm2 shadow2 hover:drop-shadow-lg flex-col">
           <div className="w-full p-2 rounded">
-            <div className="py-2 px-2">
+            <div className="py-0">
               <div className="">
-                <span className="text-xl text-[#9cb3c9] font-bold">
+                <span className="text-lg text-white font-bold">
                   Advance filter
                 </span>
               </div>
@@ -140,9 +140,9 @@ const Filter = () => {
                     type="checkbox"
                     className=" peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
                   />
-                  <div className="min-h-[50px] py-2 w-[250px] pl-3 flex-col items-center leading-none">
+                  <div className="min-h-[40px] py-2 w-[250px] pl-3 flex-col items-center leading-none">
                     <div className="py-2">
-                      <h1 className="font-semibold text-white">{item.title}</h1>
+                      <h1 className="font-semibold text-sm text-[#2affc4]">{item.title}</h1>
                     </div>
                     <span className="text-[12px] text-[#9cb3c9]  ">
                       {item.desc}

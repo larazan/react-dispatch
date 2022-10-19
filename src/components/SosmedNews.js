@@ -4,7 +4,7 @@ const SosmedNews = () => {
   return (
     <>
       <div className="flex flex-row flex-wrap justify-center mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-10 mb-16">
-        <div className=" flex flex-row py-6 px-10 border-b last-of-type:border-b-0 border-gray-700 border-solid first-of-type:pt-0 last-of-type:pb-0 max-w-container-sm last-of-type:border-b-0 lg:py-24 lg:px-10 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg">
+        <div className=" flex flex-row py-6 px-10 border-b last-of-type:border-b-0 border-gray-700 border-solid first-of-type:pt-0 last-of-type:pb-0 max-w-container-sm last-of-type:border-b-0 lg:py-14 lg:px-10 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg">
           <div className="flex relative flex-col pr-3 min-w-[20px]">
             <div className="flex flex-col z-10 space-y-1 justify-center items-center rounded-full bg-[#3cffd0] py-7 px-4 w-4 h-4 text-center">
               <div className="font-bold">E</div>
@@ -104,7 +104,7 @@ const SosmedNews = () => {
             </div>
           </div>
         </div>
-        <div className=" flex flex-row py-6 px-10 border-b last-of-type:border-b-0 border-gray-700 border-solid first-of-type:pt-0 last-of-type:pb-0 max-w-container-sm last-of-type:border-b-0 lg:py-24 lg:px-10 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg">
+        <div className=" flex flex-row py-6 px-10 border-b last-of-type:border-b-0 border-gray-700 border-solid first-of-type:pt-0 last-of-type:pb-0 max-w-container-sm last-of-type:border-b-0 lg:py-14 lg:px-10 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg">
           <div className="flex relative flex-col pr-3 min-w-[20px]">
             <div className="flex flex-col z-10 space-y-1 justify-center items-center rounded-full bg-[#3cffd0] py-7 px-4 w-4 h-4 text-center">
               <div className="font-bold">E</div>

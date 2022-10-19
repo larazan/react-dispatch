@@ -7,8 +7,8 @@ import PodcastPlayer from '../components/PodcastPlayer';
 import Search from '../components/Search'
 import MusicList from '../components/MusicList'
 
-import podcast from "../assets/images/podcast-header-bg.jpg";
 import miletHead from "../assets/images/milet2.jpg";
+import AlbumList from '../components/AlbumList';
 
 const Musics = () => {
   return (
@@ -17,7 +17,7 @@ const Musics = () => {
         <PodcastPlayer />
         <div className="w-full ">
           <div
-            className="flex relative bg-gray-100  py-24 justify-center"
+            className="flex relative bg-gray-100 hidden md:flex py-24  justify-center"
             style={{
               background: `url(${miletHead}) center  no-repeat`,
             }}
@@ -30,15 +30,15 @@ const Musics = () => {
           </div>
           {/*  */}
           <div className="flex flex-row space-x-0">
-            <div className="flex w-1/3 px-3">
+            <div className="flex w-1/3 hidden md:flex px-3">
               <Filter />
             </div>
-            <div className="border-l border-[#0d2134] w-2/3  ">
+            <div className="relative border-l border-[#0d2134] w-full md:w-2/3  ">
               <div className="relative w-full flex px-3 py-5 border-b border-[#0d2134]">
                 <input
                   type="search"
                   name="serch"
-                  className="w-full border-1 px-4 py-3.5 outline-none bg-[#1f364d] pl-10 rounded-full text-xl text-[#9cb3c9] placeholder-[#9cb3c9] focus:placeholder-[#9cb3c9] focus:border-purple-300 focus:outline-none focus:shadow-outline-purple"
+                  className="w-full border-1 px-4 py-2 md:py-3.5 outline-none bg-[#1f364d] pl-10 rounded-full text-lg md:text-xl text-[#9cb3c9] placeholder-[#9cb3c9] focus:placeholder-[#9cb3c9] focus:border-purple-300 focus:outline-none focus:shadow-outline-purple"
                   // value={value}
                   // onChange={(e) => handleChange(e.target.value)}
                   // onFocus={() => setShowOptions(true)}
@@ -63,33 +63,22 @@ const Musics = () => {
                 </div>
               </div>
               {/*  */}
+              
+              
               <div className="flex flex-col py-5 px-4 space-y-2">
+                
                 <div className="flex justify-between">
                   <div>
-                    <span className="text-xl font-bold text-[#9cb3c9]">
+                    <span className="text-xl font-bold text-white">
                       Album
                     </span>
                   </div>
-                  <div className="flex justify-center items-center text-[#5aa3ed] text-sm cursor-pointer">
-                    <span>View All</span>
-                    <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
+                  <div className="flex justify-center items-center text-[#37d36e] font-semibold text-xs cursor-pointer uppercase">
+                    <span>See All Album</span>
                   </div>
                 </div>
-                <div className="grid grid-cols-3 gap-4">
-                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
                     
                     <div className="relative pt-full mb-4">
                       <img
@@ -98,11 +87,11 @@ const Musics = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-white capitalize leading-tight font-semibold mb-1 block">
                       Chinese Lo-FI
                     </div>
                     <div className="relative pb-2">
-                      <span className="text-sm text-[#5aa3ed] font-semibold">
+                      <span className="text-sm text-white ">
                         Nike1nike
                       </span>
                       <button className="absolute right-0 top-0 w-10 h-10 bg-[#5cd68d] rounded-full flex text-white">
@@ -116,7 +105,7 @@ const Musics = () => {
                       </button>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -124,16 +113,16 @@ const Musics = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-white capitalize leading-tight font-semibold mb-1 block">
                       FLY
                     </div>
                     <div className="relative pb-2">
-                      <span className="text-sm text-[#5aa3ed] font-semibold">
+                      <span className="text-sm text-white">
                         Gaho
                       </span>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -141,16 +130,16 @@ const Musics = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-white capitalize leading-tight font-semibold mb-1 block">
                       Ludwig van Beethoven
                     </div>
                     <div className="relative pb-2">
-                      <span className="text-sm text-[#5aa3ed] font-semibold">
+                      <span className="text-sm text-white">
                         Artist
                       </span>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -158,16 +147,16 @@ const Musics = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-white capitalize leading-tight font-semibold mb-1 block">
                       Hotel Del Luna OST
                     </div>
                     <div className="relative pb-2">
-                      <span className="text-sm text-[#5aa3ed] font-semibold">
+                      <span className="text-sm text-white">
                         By Jamie Lee
                       </span>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -175,16 +164,16 @@ const Musics = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-white capitalize leading-tight font-semibold mb-1 block">
                       ITAEWON CLASS (Original Television Soundtrack) Pt.2
                     </div>
                     <div className="relative pb-2">
-                      <span className="text-sm text-[#5aa3ed] font-semibold">
+                      <span className="text-sm text-white">
                         Gaho
                       </span>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#162c41] hover:bg-[#1f364d] rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -192,11 +181,11 @@ const Musics = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-[#9cb3c9] capitalize font-semibold mb-1 block">
+                    <div className="text-white capitalize leading-tight font-semibold mb-1 block">
                       Preparation For a Journey
                     </div>
                     <div className="relative pb-2">
-                      <span className="text-sm text-[#5aa3ed] font-semibold">
+                      <span className="text-sm text-white">
                         Gaho
                       </span>
                     </div>
@@ -206,26 +195,12 @@ const Musics = () => {
               <div className="flex flex-col py-5 px-4 space-y-2">
                 <div className="flex justify-between">
                   <div>
-                    <span className="text-xl font-bold text-[#9cb3c9]">
+                    <span className="text-xl font-bold text-white">
                       Music
                     </span>
                   </div>
-                  <div className="flex justify-center items-center text-[#5aa3ed] text-sm cursor-pointer">
-                    <span>View All</span>
-                    <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
+                  <div className="flex justify-center items-center text-[#37d36e] font-semibold text-xs cursor-pointer uppercase">
+                    <span>See All Music</span>
                   </div>
                 </div>
                 <div className="relative">
