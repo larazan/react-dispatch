@@ -1,18 +1,28 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Medsos = () => {
   return (
     <>
-    <div className="py-2 border-b-2 border-[#1f364d]">
+    <div className="py-2 border-b pb-8 border-gray-200">
               <div className="flex-col pt-4">
-                <div>
-                  <span className="font-semibold text-xl capitalize text-[#9cb3c9]">
-                    Media sosial
+              <div className="flex justify-between items-center ">
+                <div className="">
+                  <span className="text-lg font-bold capitalize">
+                    discussion
                   </span>
                 </div>
-                <div className="pt-5">
+                <div>
+                  <Link to={"movies"}>
+                    <div className="flex items-center text-sm text-blue-500 hover:text-blue-600">
+                      <span className="font-bold ">Go to discussion</span>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+                <div className="pt-3">
                   <div></div>
-                  <div>
+                  <div className='drop-shadow-md'>
                     <div className="flex justify-between bg-[#162c41] rounded shadow px-3 py-3">
                       <div className="flex space-x-2">
                         <button className="w-10 h-10 rounded-full bg-sky-400"></button>
@@ -21,16 +31,16 @@ const Medsos = () => {
                         </button>
                       </div>
                       <div className="flex items-center justify-center">
-                        <span className="text-sm font-semibold text-[#9cb3c9]">Open</span>
+                        <span className="text-sm font-semibold text-white">Open</span>
                       </div>
                       <div className="flex items-center justify-center">
-                        <span className="text-sm font-semibold text-[#9cb3c9]">33</span>
+                        <span className="text-sm font-semibold text-white">33</span>
                       </div>
                       <div className="flex-col items-center justify-center">
-                        <span className="text-sm text-white">
+                        <span className="text-xs text-white">
                           Feb 11, 2021 at 7:30 PM
                         </span>
-                        <div className="flex text-sm ">
+                        <div className="flex text-xs ">
                           <span className='text-white'>by{" "}</span>
                           <button>
                             <span className='ml-2 text-[#5aa3ed]'> JustinJackFlash</span>
@@ -40,13 +50,7 @@ const Medsos = () => {
                     </div>
                   </div>
                 </div>
-                <div className="py-5">
-                  <button>
-                    <span className="text-md font-semibold text-[#5aa3ed]">
-                      Go to discussion
-                    </span>
-                  </button>
-                </div>
+                
               </div>
             </div>
     </>

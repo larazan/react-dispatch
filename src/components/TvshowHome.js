@@ -20,12 +20,36 @@ import spirited from "../assets/images/spirited.jpg";
 import stranger from "../assets/images/stranger.jpg";
 import topgun from "../assets/images/topgun.jpg";
 import memory from "../assets/images/memory.jpg";
+import andor from "../assets/images/andro.jpg";
+import doctor from "../assets/images/doctor.jpg";
+import dragon from "../assets/images/dragon.jpg";
+import power from "../assets/images/power.jpg";
+import peripheral from "../assets/images/peripheral.jpg";
+import chainshaw from "../assets/images/chainshaw.jpg";
 
-import movies from "../assets/data/movies.json";
+import tv from "../assets/data/tv.json";
 
 const images = (imgName) => {
   let cover = "";
   switch (imgName) {
+    case "andor":
+      cover = andor;
+      break;
+    case "doctor":
+      cover = doctor;
+      break;
+    case "dragon":
+      cover = dragon;
+      break;
+    case "power":
+      cover = power;
+      break;
+    case "peripheral":
+      cover = peripheral;
+      break;
+    case "chainshaw":
+      cover = chainshaw;
+      break;
     case "allofus":
       cover = allofus;
       break;
@@ -82,37 +106,25 @@ const images = (imgName) => {
   return cover;
 };
 
-const MoviesHome = () => {
+const TvshowHome = () => {
   return (
     <>
       <div className="min-h-full w-full px-6">
         <div className="flex justify-between items-center mb-2">
           <div className="border-l-4 border-red-500 pl-2">
-            <span className="text-white text-lg font-bold uppercase">Movies</span>
+            <span className="text-white text-lg font-bold uppercase">TV show</span>
           </div>
           <div>
             <Link to={"movies"}>
               <div className="flex items-center text-sm text-blue-500 hover:text-blue-600">
                 <span className="font-bold ">View All</span>
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg> */}
               </div>
             </Link>
           </div>
         </div>
         <div className="py-2 pb-5 overflow-auto overflow-y-auto custom-scrollbar">
           <div className="inline-flex space-x-4">
-            {movies.map((movie, id) => (
+            {tv.map((movie, id) => (
               <div
                 className="relative flex-col justify-center w-48 space-y-2"
                 id={id}
@@ -140,9 +152,14 @@ const MoviesHome = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="text-center2 pt-3 text-sm text-white capitalize">
-                  <span>{movie.title}</span>
+                <div className="flex flex-col space-y-1">
+                  <div className="text-center2 pt-1 text-sm text-white capitalize">
+                    <span>{movie.title}</span>
+                  </div>
+                  <span className="text-white text-xs font-semibold">
+                    {" "}
+                    12 Episode
+                  </span>
                 </div>
               </div>
             ))}
@@ -153,4 +170,4 @@ const MoviesHome = () => {
   );
 };
 
-export default MoviesHome;
+export default TvshowHome;

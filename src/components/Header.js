@@ -30,7 +30,7 @@ const Header = () => {
     <>
       <header className="z-20 w-full h-18 top-0 px-3 md:px-5 py-3 flex items-center justify-between bg-[#1f364d]">
         <div className="flex w-1/3">
-          <div className="flex items-center text-[#9cb3c9] space-x-5">
+          <div className="flex items-center text-white space-x-5">
             <button className="h-6 w-6 flex " onClick={openDrawer}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

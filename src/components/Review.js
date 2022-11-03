@@ -1,15 +1,25 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Review = () => {
   return (
     <>
-    <div className="py-2 border-b-2 border-[#1f364d]">
+    <div className="py-2 border-b pb-8 border-gray-200">
               <div className="flex-col pt-4">
-                <div>
-                  <span className="font-semibold text-xl text-[#9cb3c9] capitalize">
-                    Review
+              <div className="flex justify-between items-center ">
+                <div className="">
+                  <span className="text-lg font-bold capitalize">
+                    review
                   </span>
                 </div>
+                <div>
+                  <Link to={"movies"}>
+                    <div className="flex items-center text-sm text-blue-500 hover:text-blue-600">
+                      <span className="font-bold ">View All</span>
+                    </div>
+                  </Link>
+                </div>
+              </div>
                 <div className="py-4">
                   <div className="flex items-center justify-center">
                     {" "}

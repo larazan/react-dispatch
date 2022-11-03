@@ -3,10 +3,10 @@ import React from 'react'
 const Comment = () => {
   return (
     <>
-    <div className="py-2 border-b-2 border-[#1f364d]">
+    <div className="py-2 mb-12 border-b pb-2 border-gray-200">
               <div className="flex-col pt-4">
                 <div>
-                  <span className="font-semibold text-lg text-[#9cb3c9] capitalize">
+                  <span className="font-semibold text-lg  capitalize">
                     Comments
                   </span>
                 </div>
@@ -24,7 +24,7 @@ const Comment = () => {
                         <div className="flex-1 px-4 py-2 sm:px-4 sm:py-2 leading-relaxed">
                           <strong className='text-[#5aa3ed]'>Sarah</strong>{" "}
                           <span className="text-xs text-gray-400">3:34 PM</span>
-                          <p className="text-sm text-[#9cb3c9]">
+                          <p className="text-sm leading-tight">
                             Lorem ipsum dolor sit amet, consetetur sadipscing
                             elitr, sed diam nonumy eirmod tempor invidunt ut
                             labore et dolore magna aliquyam erat, sed diam
@@ -61,7 +61,7 @@ const Comment = () => {
                         <div className="flex-1 px-4 py-2 sm:px-4 sm:py-2 leading-relaxed">
                         <strong className='text-[#5aa3ed]'>Sarah</strong>{" "}
                           <span className="text-xs text-gray-400">3:34 PM</span>
-                          <p className="text-sm text-[#9cb3c9]">
+                          <p className="text-sm leading-tight">
                             Lorem ipsum dolor sit amet, consetetur sadipscing
                             elitr, sed diam nonumy eirmod tempor invidunt ut
                             labore et dolore magna aliquyam erat, sed diam
@@ -115,7 +115,7 @@ const Comment = () => {
                         <div className="flex-1 px-4 py-2 sm:px-4 sm:py-2 leading-relaxed">
                         <strong className='text-[#5aa3ed]'>Sarah</strong>{" "}
                           <span className="text-xs text-gray-400">3:34 PM</span>
-                          <p className="text-sm text-[#9cb3c9]">
+                          <p className="text-sm leading-tight">
                             Lorem ipsum dolor sit amet, consetetur sadipscing
                             elitr, sed diam nonumy eirmod tempor invidunt ut
                             labore et dolore magna aliquyam erat, sed diam
@@ -138,7 +138,7 @@ const Comment = () => {
                                 <span className="text-xs text-gray-400">
                                   3:34 PM
                                 </span>
-                                <p className="text-xs text-[#9cb3c9] sm:text-sm">
+                                <p className="text-xs sm:text-sm">
                                   Lorem ipsum dolor sit amet, consetetur
                                   sadipscing elitr, sed diam nonumy eirmod
                                   tempor invidunt ut labore et dolore magna

@@ -10,6 +10,7 @@ import Quote from "../components/Quote";
 import MusicsHome from "../components/MusicsHome";
 
 import hero from "../assets/images/21.jpg";
+import TvshowHome from "../components/TvshowHome";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
             <div className="px-2">
               <div className="flex flex-col py-2 px-4 space-y-4">
                 <div className="">
-                  <NewsHome />
+                  {/* <NewsHome /> */}
                 </div>
               </div>
               
@@ -35,6 +36,9 @@ const Home = () => {
           </div>
           <div className="relative py-5">
             <MoviesHome />
+          </div>
+          <div className="relative py-5">
+            <TvshowHome />
           </div>
           <div className="relative py-5">
             <MusicsHome />

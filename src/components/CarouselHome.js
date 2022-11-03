@@ -201,7 +201,7 @@ const CarouselHome = () => {
         <div className="carousel-inner relative w-full overflow-hidden">
           {sliders.map((slide, index) => (
             <div
-              className="carousel-item active relative float-left w-full"
+              className="carousel-item active relative2 float-left2 w-full"
               key={index}
             >
               {index === current && (
@@ -213,11 +213,16 @@ const CarouselHome = () => {
                 />
                 
               )}
-              <div className="carousel-caption hidden md:block absolute text-center">
-                <h5 className="text-xl">First slide label</h5>
-                <p>
+              <div className="carousel-caption hidden md:block w-full absolute bottom-9 left-10 ">
+                <div className="flex flex-col space-y-1 bg-gray-900 opacity-80 w-full opacity-40 h-20 px-3 py-3 border-l-4 border-green-400">
+                  <div className="opacity-100">
+                  <h5 className="text-xl text-white font-semibold uppercase">First slide label</h5>
+                  </div>
+                  <p className="text-white leading-tight">
                   Some representative placeholder content for the first slide.
                 </p>
+                </div>
+                
               </div>
             </div>
           ))}
@@ -250,7 +255,7 @@ const CarouselHome = () => {
         </button>
         <button
           // className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-          className="flex absolute top-0 right-0 z-20 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          className="flex absolute top-0 right-0 z-10 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"

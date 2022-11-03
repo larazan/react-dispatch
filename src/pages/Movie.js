@@ -1,4 +1,7 @@
 import React from "react";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+import { Link } from "react-router-dom";
 
 import Medsos from "../components/Medsos";
 import Review from "../components/Review";
@@ -105,8 +108,21 @@ const Movie = () => {
                 </div>
               </div>
               <div className="flex py-5">
-                <div className="flex space-x-5">
-                  <div></div>
+                <div className="flex items-center space-x-5">
+                  <div className="h-16 w-16 p-1 rounded-full bg-[#0e2439]">
+                    <CircularProgressbar
+                      value={79}
+                      text={`${79}%`}
+                      styles={buildStyles({
+                        textSize: "30px",
+                        pathColor: "#20bd70",
+                        textColor: "#fff",
+                        trailColor: "#d6d6d6",
+                        backgroundColor: "#fff",
+                      })}
+                    />
+                    ;
+                  </div>
                   <div className="text-white">
                     <button className="rounded-full bg-[#032541] p-3">
                       <svg
@@ -191,8 +207,8 @@ const Movie = () => {
                     Kilasan Singkat
                   </span>
                 </div>
-                <div>
-                  <span className="text-white leading-none">
+                <div className="leading-tight">
+                  <span className="text-white">
                     Semua menganggur, keluarga Ki-taek memiliki minat khusus
                     pada Taman kaya dan glamor untuk mata pencaharian mereka
                     sampai mereka terjerat dalam insiden tak terduga.
@@ -222,17 +238,26 @@ const Movie = () => {
         </div>
       </div>
 
-      <div className="flex-col h-full relative bg-[#0e2439] px-8 py-8">
+      <div className="flex-col h-full relative bg-white px-8 py-8">
         <div className="flex space-x-6">
           <div className="w-2/3">
-            <div className="border-b-2 border-[#1f364d]">
-              <div>
-                <span className="text-xl font-semibold text-[#9cb3c9]">
-                  Aktor Utama
-                </span>
+            <div className="border-b pb-8 border-gray-200">
+              <div className="flex justify-between items-center mb-2">
+                <div className="">
+                  <span className="text-lg font-bold capitalize">
+                    Aktor utama
+                  </span>
+                </div>
+                <div>
+                  <Link to={"movies"}>
+                    <div className="flex items-center text-sm text-blue-500 hover:text-blue-600">
+                      <span className="font-bold ">View All</span>
+                    </div>
+                  </Link>
+                </div>
               </div>
               <div className="">
-                <div className="py-2 overflow-auto">
+                <div className="py-2 overflow-auto overflow-y-auto custom-scrollbar">
                   <div className="inline-flex space-x-3">
                     {casts.map((cast, id) => (
                       <div
@@ -247,25 +272,16 @@ const Movie = () => {
                           />
                         </div>
                         <div className="flex-col capitalize">
-                          <div className="text-md text-[#5aa3ed]">
-                            <span className="font-bold">{cast.name}</span>
+                          <div className="text-md">
+                            <span className="font-semibold">{cast.name}</span>
                           </div>
                           <div>
-                            <span className="text-sm text-white">
-                              {cast.role}
-                            </span>
+                            <span className="text-sm ">{cast.role}</span>
                           </div>
                         </div>
                       </div>
                     ))}
                   </div>
-                </div>
-                <div className="py-5">
-                  <button>
-                    <span className="text-md text-[#5aa3ed] font-semibold">
-                      Pemeran & kru lainnya
-                    </span>
-                  </button>
                 </div>
               </div>
             </div>
@@ -350,71 +366,71 @@ const Movie = () => {
                 <div className="flex-col space-y-3">
                   <div className="flex-col">
                     <div>
-                      <span className="text-md font-bold capitalize text-white">
+                      <span className="text-md font-bold capitalize">
                         judul asli
                       </span>
                     </div>
                     <div>
-                      <span className=" text-[#9cb3c9]">기생충</span>
+                      <span className=" text-gray-700">기생충</span>
                     </div>
                   </div>
                   <div className="flex-col">
                     <div>
-                      <span className="text-md font-bold capitalize text-white">
+                      <span className="text-md font-bold capitalize">
                         status
                       </span>
                     </div>
                     <div>
-                      <span className="capitalize text-[#9cb3c9]">Rilis</span>
+                      <span className="capitalize text-gray-700">Rilis</span>
                     </div>
                   </div>
                   <div className="flex-col">
                     <div>
-                      <span className="text-md font-bold capitalize text-white">
+                      <span className="text-md font-bold capitalize">
                         bahasa
                       </span>
                     </div>
                     <div>
-                      <span className="capitalize text-[#9cb3c9]">korea</span>
+                      <span className="capitalize text-gray-700">korea</span>
                     </div>
                   </div>
                   <div className="flex-col">
                     <div>
-                      <span className="text-md font-bold capitalize text-white">
+                      <span className="text-md font-bold capitalize ">
                         anggaran
                       </span>
                     </div>
                     <div>
-                      <span className="capitalize text-[#9cb3c9]">
+                      <span className="capitalize text-gray-700">
                         $11,363,000.00
                       </span>
                     </div>
                   </div>
                   <div className="flex-col">
                     <div>
-                      <span className="text-md font-bold capitalize text-white">
+                      <span className="text-md font-bold capitalize ">
                         pemasukan
                       </span>
                     </div>
                     <div>
-                      <span className="capitalize text-[#9cb3c9]">
+                      <span className="capitalize text-gray-700">
                         $257,591,776.00
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="py-5">
+              <div className="py-5 border-b pb-8 border-gray-200">
                 <div className="flex-col space-y-2">
                   <div>
-                    <span className="font-bold text-md text-white">
+                    <span className="font-bold text-md">
                       Kata kunci
                     </span>
                   </div>
-                  <div>
+                  <div className="">
                     <div className="flex-inline">
                       {tags.map((tag, id) => (
-                        <button className="bg-[#182e43] text-white rounded hover:bg-[#5aa3ed] leading-none px-2 py-1 mr-2 mb-2">
+                        <button key={id} className="bg-[#5aa3ed] text-white rounded hover:bg-blue-500 leading-none px-2 py-1 mr-2 mb-2">
                           <span className="text-sm ">{tag.name}</span>
                         </button>
                       ))}

@@ -42,7 +42,7 @@ function Explore() {
         aria-expanded={dropdownOpen}
       >
         {/* <span className="sr-only">Notifications</span> */}
-        <div className="flex text-[#9cb3c9] hidden md:flex">
+        <div className="flex text-white hidden md:flex">
           <span className="text-md font-bold capitalize">explore</span>
         </div>
       </button>
@@ -95,7 +95,7 @@ function Explore() {
                       Movies
                     </span>
                   </div>
-                  <span className="text-sm">see what everyone working on</span>
+                  <span className="text-sm text-white">Explore Movies & TV shows</span>
                 </div>
               </Link>
             </li>
@@ -127,7 +127,7 @@ function Explore() {
                       Musics
                     </span>
                   </div>
-                  <span className="text-sm">see what everyone working on</span>
+                  <span className="text-sm text-white">Explore & Listen Musics</span>
                 </div>
               </Link>
             </li>
@@ -159,7 +159,7 @@ function Explore() {
                       Actors
                     </span>
                   </div>
-                  <span className="text-sm">see what everyone working on</span>
+                  <span className="text-sm text-white capitalize">explore actors & crew</span>
                 </div>
               </Link>
             </li>
@@ -191,7 +191,7 @@ function Explore() {
                       Podcasts
                     </span>
                   </div>
-                  <span className="text-sm">see what everyone working on</span>
+                  <span className="text-sm text-white">Explore Podcasts</span>
                 </div>
               </Link>
             </li>
@@ -212,7 +212,7 @@ function Explore() {
                       News
                     </span>
                   </div>
-                  <span className="text-sm">see what everyone working on</span>
+                  <span className="text-sm text-white capitalize">read all news</span>
                 </div>
               </Link>
             </li>
@@ -244,7 +244,7 @@ function Explore() {
                       Store
                     </span>
                   </div>
-                  <span className="text-sm">see what everyone working on</span>
+                  <span className="text-sm text-white capitalize">see best fit for you</span>
                 </div>
               </Link>
             </li>
