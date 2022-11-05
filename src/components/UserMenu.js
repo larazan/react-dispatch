@@ -31,7 +31,7 @@ function UserMenu() {
   });
 
   return (
-    <div className="relative inline-flex ">
+    <div className="relative inline-flex ml-3">
       <button
         ref={trigger}
         // className={`w-8 h-8 flex items-center justify-center bg-slate-100 hover:bg-slate-200 transition duration-150 rounded-full ${dropdownOpen && 'bg-slate-200'}`}
@@ -43,7 +43,7 @@ function UserMenu() {
       </button>
 
       <Transition
-        className="origin-top-right z-10 absolute top-full right-0 -mr-48 sm:mr-0 min-w-80 w-40 bg-white border border-slate-200 py-1.5 rounded shadow-lg overflow-hidden mt-1"
+        className="origin-top-right z-10 absolute top-full right-0 -mr-2 md:-mr-48 sm:mr-0 min-w-80 w-40 bg-white border border-slate-200 py-1.5 rounded shadow-lg overflow-hidden mt-1"
         show={dropdownOpen}
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"
@@ -70,25 +70,25 @@ function UserMenu() {
             </li>
             <li className="last:border-0">
               <Link
-                className="block py-2 px-4 hover:bg-slate-50"
+                className="block py-2 px-4 hover:bg-gray-800 hover:text-white text-slate-500  md:hover:bg-slate-50"
                 to="settings"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <span className="block text-sm text-slate-500  mb-0">Ubah profil</span>
+                <span className="block text-sm   mb-0">Ubah profil</span>
               </Link>
             </li>
             <li className="border-b border-slate-00 last:border-0">
               <Link
-                className="block py-2 px-4 hover:bg-slate-50"
+                className="block py-2 px-4 hover:bg-gray-800 hover:text-white text-slate-500  md:hover:bg-slate-50"
                 to="settings/account"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <span className="block text-sm text-slate-500  mb-0">Pengaturan</span>
+                <span className="block text-sm  mb-0">Pengaturan</span>
               </Link>
             </li>
             <li className="border-b border-slate-200 last:border-0">
               <Link
-                className="flex items-center space-x-2 block py-2 px-4 hover:bg-slate-50"
+                className="flex items-center space-x-2 block py-2 px-4 hover:bg-orange-400"
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >

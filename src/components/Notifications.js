@@ -56,7 +56,7 @@ function Notifications() {
       </button>
 
       <Transition
-        className="origin-top-right z-10 absolute top-full right-0 -mr-48 sm:mr-0 min-w-80 w-72 bg-[#274059] border border-[#274059] py-1.5 rounded shadow-lg overflow-hidden mt-1"
+        className="origin-top-right z-10 absolute top-full right-0 -mr-3 md:-mr-48 sm:mr-0 min-w-80 w-72 bg-[#274059] border border-[#274059] py-1.5 rounded shadow-lg overflow-hidden mt-4 md:mt-1"
         show={dropdownOpen}
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"
@@ -70,7 +70,7 @@ function Notifications() {
           onFocus={() => setDropdownOpen(true)}
           onBlur={() => setDropdownOpen(false)}
         >
-          <div className="text-xs font-semibold text-slate-400 uppercase pt-1.5 pb-2 px-4">
+          <div className="text-xs font-semibold text-slate-400 uppercase pt-1.5 pb-1 md:pb-2 px-4">
             Notifications
           </div>
           <ul>
@@ -80,7 +80,7 @@ function Notifications() {
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <span className="block text-sm mb-2 text-[#9cb3c9]">
+                <span className="block text-sm leading-tight md:leading-normal mb-2 text-[#9cb3c9]">
                   📣{" "}
                   <span className="font-medium text-slate-200">
                     Edit your information in a swipe
@@ -99,7 +99,7 @@ function Notifications() {
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <span className="block text-sm mb-2 text-[#9cb3c9]">
+                <span className="block text-sm leading-tight md:leading-normal mb-2 text-[#9cb3c9]">
                   📣{" "}
                   <span className="font-medium text-slate-200">
                     Edit your information in a swipe
@@ -118,7 +118,7 @@ function Notifications() {
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <span className="block text-sm mb-2 text-[#9cb3c9]">
+                <span className="block text-sm leading-tight md:leading-normal mb-2 text-[#9cb3c9]">
                   🚀
                   <span className="font-medium text-slate-200">
                     Say goodbye to paper receipts!

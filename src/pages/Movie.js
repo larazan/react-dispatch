@@ -6,74 +6,18 @@ import { Link } from "react-router-dom";
 import Medsos from "../components/Medsos";
 import Review from "../components/Review";
 import Comment from "../components/Comment";
+import Tags from "../components/Tags";
+import Networks from "../components/Networks";
+import Casts from "../components/Casts";
 
 import cover from "../assets/images/cover_parasite.jpg";
 import parasite from "../assets/images/parasite.jpg";
-import casts from "../assets/data/casts.json";
-import tags from "../assets/data/tags.json";
-
-import photo1 from "../assets/images/1.jpg";
-import photo2 from "../assets/images/2.jpg";
-import photo3 from "../assets/images/3.jpg";
-import photo4 from "../assets/images/4.jpg";
-import photo5 from "../assets/images/5.jpg";
-import photo6 from "../assets/images/6.jpg";
-import photo7 from "../assets/images/7.jpg";
-import photo8 from "../assets/images/8.jpg";
-import photo9 from "../assets/images/9.jpg";
-import photo10 from "../assets/images/10.jpg";
-import photo11 from "../assets/images/11.jpg";
-import photo12 from "../assets/images/12.jpg";
-
-const photos = (imgName) => {
-  let photo = "";
-  switch (imgName) {
-    case "song kang-ho":
-      photo = photo1;
-      break;
-    case "Lee Sun-kyun":
-      photo = photo2;
-      break;
-    case "Cho Yeo-jeong":
-      photo = photo3;
-      break;
-    case "Choi Woo-shik":
-      photo = photo4;
-      break;
-    case "Park So-dam":
-      photo = photo5;
-      break;
-    case "Lee Jung-eun":
-      photo = photo6;
-      break;
-    case "Jang Hye-jin":
-      photo = photo7;
-      break;
-    case "Park Myung-hoon":
-      photo = photo8;
-      break;
-    case "Jung Ji-so":
-      photo = photo9;
-      break;
-    case "Jung Hyeon-jun":
-      photo = photo10;
-      break;
-    case "Park Keun-rok":
-      photo = photo11;
-      break;
-    case "Jung Yi-seo":
-      photo = photo12;
-      break;
-  }
-
-  return photo;
-};
 
 const Movie = () => {
   return (
     <>
       <div
-        className="flex relative py-9 justify-center bg-[#0e2439] opacity-90"
+        className="flex relative py-9 md:py-9 justify-center bg-[#0e2439] opacity-90"
         style={{
           background: `url(${cover}) center no-repeat`,
           backgroundSize: "cover",
@@ -81,119 +25,130 @@ const Movie = () => {
           height: "500px",
         }}
       >
-        <div className="flex px-6 space-x-7">
-          <div className="flex w-1/3 ">
-            <div className=" w-full">
+        <div className="flex-row md:flex px-4 md:px-6 md:space-x-7">
+          <div className="hidden w-full md:block md:w-1/3 ">
+            <div className="mx-auto w-full">
               <img src={parasite} className="" alt="" />
             </div>
           </div>
-          <div className="flex-col w-2/3 justify-center ">
+          <div className="flex-col mx-auto2 w-full md:w-2/3 justify-center ">
             <div className="items-center">
-              <div className="flex text-white space-x-2">
-                <div className="">
-                  <span className="text-4xl font-bold">Parasite</span>
-                </div>
+              <div className="flex justify-between">
                 <div>
-                  <span className="text-4xl text-gray-200">(2009)</span>
-                </div>
-              </div>
-              <div className="flex text-white">
-                <div className="flex space-x-2">
-                  <div className=" border rounded px-1">
-                    <span className="font-semibold">R</span>
+                  <div className="flex items-center text-white space-x-2">
+                    <div className="">
+                      <span className="text-3xl md:text-4xl font-bold">Parasite</span>
+                    </div>
+                    <div>
+                      <span className="text-lg md:text-4xl text-gray-200">(2009)</span>
+                    </div>
                   </div>
-                  <span>30/05/2019 (KR)</span>
-                  <span>Komedi, Cerita Seru, Drama</span>
-                  <span>2h 13m</span>
-                </div>
-              </div>
-              <div className="flex py-5">
-                <div className="flex items-center space-x-5">
-                  <div className="h-16 w-16 p-1 rounded-full bg-[#0e2439]">
-                    <CircularProgressbar
-                      value={79}
-                      text={`${79}%`}
-                      styles={buildStyles({
-                        textSize: "30px",
-                        pathColor: "#20bd70",
-                        textColor: "#fff",
-                        trailColor: "#d6d6d6",
-                        backgroundColor: "#fff",
-                      })}
-                    />
-                    ;
+                  <div className="flex-row md:flex-col text-white">
+                    <div className="flex space-x-2">
+                      <div className=" border rounded px-1">
+                        <span className="font-semibold">R</span>
+                      </div>
+                      <span>30/05/2019 (KR)</span>
+                      <span className="hidden md:block">Komedi, Cerita Seru, Drama</span>
+                      <span>2h 13m</span>
+                    </div>
+                    <span className="block md:hidden">Komedi, Cerita Seru, Drama</span>
                   </div>
-                  <div className="text-white">
-                    <button className="rounded-full bg-[#032541] p-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div className="text-white">
-                    <button className="rounded-full bg-[#032541] p-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                          clipRule="evenodd"
+                  <div className="flex py-2 md:py-5">
+                    <div className="flex items-center space-x-1.5 md:space-x-5">
+                      <div className="h-11 w-11 md:h-16 md:w-16 p-1 rounded-full bg-[#0e2439]">
+                        <CircularProgressbar
+                          value={79}
+                          text={`${79}%`}
+                          styles={buildStyles({
+                            textSize: "30px",
+                            pathColor: "#20bd70",
+                            textColor: "#fff",
+                            trailColor: "#d6d6d6",
+                            backgroundColor: "#fff",
+                          })}
                         />
-                      </svg>
-                    </button>
+                        ;
+                      </div>
+                      <div className="text-white">
+                        <button className="rounded-full bg-[#032541] p-2.5 md:p-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div className="text-white">
+                        <button className="rounded-full bg-[#032541] p-2.5 md:p-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div className="text-white">
+                        <button className="rounded-full bg-[#032541] p-2.5 md:p-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div className="text-white">
+                        <button className="rounded-full bg-[#032541] p-2.5 md:p-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div className="hidden md:flex ">
+                        <button className="flex items-center text-white hover:text-gray-300 space-x-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-8 w-8"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="font-bold text-lg ">Play Trailer</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-white">
-                    <button className="rounded-full bg-[#032541] p-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div className="text-white">
-                    <button className="rounded-full bg-[#032541] p-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div className="flex ">
-                    <button className="flex items-center text-white hover:text-gray-300 space-x-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-8 w-8"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="font-bold text-lg ">Play Trailer</span>
-                    </button>
+                </div>
+                <div className="block md:hidden">
+                  <div className="mx-auto w-24">
+                    <img src={parasite} className="" alt="" />
                   </div>
                 </div>
               </div>
+              
               <div className="">
                 <div>
                   <span className="text-gray-200 italic text-lg">
@@ -201,14 +156,14 @@ const Movie = () => {
                   </span>
                 </div>
               </div>
-              <div className="flex-col space-y-2">
+              <div className="flex-col space-y-1 md:space-y-2">
                 <div>
                   <span className="text-xl font-bold text-white">
                     Kilasan Singkat
                   </span>
                 </div>
                 <div className="leading-tight">
-                  <span className="text-white">
+                  <span className="text-white ">
                     Semua menganggur, keluarga Ki-taek memiliki minat khusus
                     pada Taman kaya dan glamor untuk mata pencaharian mereka
                     sampai mereka terjerat dalam insiden tak terduga.
@@ -238,59 +193,16 @@ const Movie = () => {
         </div>
       </div>
 
-      <div className="flex-col h-full relative bg-white px-8 py-8">
-        <div className="flex space-x-6">
-          <div className="w-2/3">
-            <div className="border-b pb-8 border-gray-200">
-              <div className="flex justify-between items-center mb-2">
-                <div className="">
-                  <span className="text-lg font-bold capitalize">
-                    Aktor utama
-                  </span>
-                </div>
-                <div>
-                  <Link to={"movies"}>
-                    <div className="flex items-center text-sm text-blue-500 hover:text-blue-600">
-                      <span className="font-bold ">View All</span>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="">
-                <div className="py-2 overflow-auto overflow-y-auto custom-scrollbar">
-                  <div className="inline-flex space-x-3">
-                    {casts.map((cast, id) => (
-                      <div
-                        className="flex-col justify-center w-32 space-y-2"
-                        id={id}
-                      >
-                        <div className="relative block overflow-hidden bg-white shadow flex rounded">
-                          <img
-                            src={photos(cast.name)}
-                            alt=""
-                            className="relative w-full"
-                          />
-                        </div>
-                        <div className="flex-col capitalize">
-                          <div className="text-md">
-                            <span className="font-semibold">{cast.name}</span>
-                          </div>
-                          <div>
-                            <span className="text-sm ">{cast.role}</span>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="flex-col h-full relative bg-white px-4 md:px-8 py-8">
+        <div className="flex flex-col md:flex-row md:space-x-6">
+          <div className="w-full md:w-2/3">
+            <Casts />
 
             <Medsos />
             <Review />
             <Comment />
           </div>
-          <div className="w-1/3">
+          <div className="w-full md:w-1/3">
             <div className="flex-col">
               <div className="">
                 <div className="">
@@ -420,24 +332,8 @@ const Movie = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-5 border-b pb-8 border-gray-200">
-                <div className="flex-col space-y-2">
-                  <div>
-                    <span className="font-bold text-md">
-                      Kata kunci
-                    </span>
-                  </div>
-                  <div className="">
-                    <div className="flex-inline">
-                      {tags.map((tag, id) => (
-                        <button key={id} className="bg-[#5aa3ed] text-white rounded hover:bg-blue-500 leading-none px-2 py-1 mr-2 mb-2">
-                          <span className="text-sm ">{tag.name}</span>
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Tags />
+              <Networks />
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 const PodcastPlayer = () => {
   return (
     <>
-      <div className=" sticky top-0 left-0 flex flex-col justify-between2 items-center w-[3.5rem] md:w-[5rem] h-screen bg-[#ffc500]">
+      <div className=" sticky top-0 left-0 hidden md:flex flex-col justify-between2 items-center w-[3.5rem] md:w-[5rem] h-screen bg-[#ffc500]">
         <div className="flex flex-col mt-5 h-1/4 space-y-2 items-center">
           <button className="text-white p-1.5 md:p-4 rounded-full bg-[#ef5753] shadow-xl cursor-pointer">
             <svg

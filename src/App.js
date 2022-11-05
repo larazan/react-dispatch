@@ -28,6 +28,7 @@ import List from "./pages/List";
 import Overview from "./pages/Overview";
 import Rating from "./pages/Rating";
 import Discuss from "./pages/Discuss";
+import Cast from "./pages/CastsNCrew";
 
 import Frontend from "./hoc/Frontend"
 import Register from "./pages/Register";
@@ -55,6 +56,7 @@ function App() {
           <Route path="musics" element={<Musics />} /> 
           <Route path="music" element={<Music />} /> 
           <Route path="movie" element={<Movie />} /> 
+          <Route path="cast" element={<Cast />} /> 
           <Route path="actors" element={<Actors />} />
           <Route path="person" element={<Person />} />
           <Route path="musics" element={<Musics />} />

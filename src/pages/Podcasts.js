@@ -15,17 +15,17 @@ const Podcasts = () => {
         <PodcastPlayer />
         <div className="w-full ">
           <div
-            className="flex relative bg-gray-100  py-24 justify-center"
+            className="flex relative bg-gray-100  md:py-24 justify-center"
             style={{
               background: `url(${podcast}) center  no-repeat`,
             }}
           >
             <div className="p-12 max-w-3xl hero relative ">
-              <div className="md:text-5xl text-3xl leading-loose font-bold text-white">
+              <div className="md:text-5xl text-2xl leading-tight md:leading-loose font-bold text-white">
               Podcasts from The Verge
 
               </div>
-              <div className='mt-4 text-2xl text-white'>
+              <div className='mt-2 md:mt-4 text-lg md:text-2xl leading-tight text-white'>
               Weekly shows to listen to with earbuds, headphones, Airpods, and more
               </div>
             </div>
@@ -61,18 +61,18 @@ const Podcasts = () => {
                   </div>
                   <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-2 cursor-pointer">
                     <div className="flex space-x-3 justify-center items-center">
-                      <div className="h-32 w-32">
+                      <div className="flex py-3 h-32 w-32">
                         <img src={indie} alt="" className='rounded' />
                       </div>
                       <div className="w-3/4">
-                        <div className="pt-3 pb-2 pr-3">
+                        <div className="md:pt-3 md:pb-2 md:pr-3">
                           <div className="flex justify-between">
                             <div className="flex-col text-lg font-bold leading-tight">
                               <span className="text-[#3cffd0]">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
                             </div>
                           </div>
-                          <div className="mt-2">
-                            <div className="text-sm text-[#9cb3c9]">
+                          <div className="mt-2 hidden md:block">
+                            <div className="text-sm leading-tight text-[#9cb3c9]">
                             <em>Aug 31st —</em>David Kofoed Wind is the co-founder and CEO of Eduflow an education platform started in 2015 as Peergrade, which was a peer to peer ...
                             </div>
                           </div>
@@ -102,18 +102,18 @@ const Podcasts = () => {
                   </div>
                   <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-2 cursor-pointer">
                     <div className="flex space-x-3 justify-center items-center">
-                      <div className="h-32 w-32">
+                      <div className="flex py-3 h-32 w-32">
                         <img src={software} alt="" className='rounded' />
                       </div>
                       <div className="w-3/4">
-                        <div className="pt-3 pb-2 pr-3">
+                        <div className="md:pt-3 md:pb-2 md:pr-3">
                           <div className="flex justify-between">
                             <div className="flex-col text-lg font-bold leading-tight">
                               <span className="text-[#3cffd0]">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
                             </div>
                           </div>
-                          <div className="mt-2">
-                            <div className="text-sm text-[#9cb3c9]">
+                          <div className="mt-2 hidden md:block">
+                            <div className="text-sm leading-tight text-[#9cb3c9]">
                             <em>Aug 31st —</em>David Kofoed Wind is the co-founder and CEO of Eduflow an education platform started in 2015 as Peergrade, which was a peer to peer ...
                             </div>
                           </div>

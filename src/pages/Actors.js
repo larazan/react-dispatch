@@ -73,24 +73,24 @@ const Actors = () => {
         <PodcastPlayer />
         <div className="w-full ">
           <div
-            className="flex relative bg-gray-100  py-24 justify-center"
+            className="flex relative bg-gray-100  md:py-24 justify-center"
             style={{
               background: `url(${suzy}) center  no-repeat`,
             }}
           >
-            <div className="p-12 max-w-2xl hero relative">
-              <div className="md:text-5xl text-3xl leading-loose font-bold text-white">
+            <div className="p-4 md:p-12 max-w-2xl hero relative">
+              <div className="md:text-5xl text-2xl leading-tight md:leading-loose font-semibold md:font-bold text-white">
                 The best free asian movies & musics database.
               </div>
             </div>
           </div>
           {/*  */}
           <div className="flex flex-row space-x-0">
-            <div className="flex w-1/3 px-3">
+            <div className="hidden md:flex w-1/3 px-3">
               <Filter />
             </div>
-            <div className="border-l border-[#0d2134] w-2/3  ">
-              <div className="relative w-full flex px-3 py-5 border-b border-[#0d2134]">
+            <div className="border-l border-[#0d2134] w-full md:w-2/3  ">
+              <div className="relative w-full hidden md:flex px-3 py-5 border-b border-[#0d2134]">
                 <input
                   type="search"
                   name="serch"
@@ -119,7 +119,35 @@ const Actors = () => {
                 </div>
               </div>
               {/*  */}
-              <div className="px-4 ">
+              <div className="px-4 mt-6 md:hidden">
+              <div className="grid grid-cols-3 gap-y-4 gap-2">
+              {casts.map((cast, id) => (
+                <Link to={""}>
+                  <div
+                    className="flex-col2 justify-center w-28 space-y-2"
+                    key={id}
+                  >
+                    <div className="relative block overflow-hidden hover:bg-gray-800 hover:opacity-90 bg-white shadow flex rounded">
+                      <img
+                        src={photos(cast.name)}
+                        alt=""
+                        className="relative w-full"
+                      />
+                    </div>
+                    <div className="flex-col leading-tight capitalize">
+                      <div className="text-sm text-white">
+                        <span className="font-semibold">{cast.name}</span>
+                      </div>
+                      {/* <div>
+                        <span className="text-xs ">{cast.role}</span>
+                      </div> */}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+              </div>
+              <div className="px-4 hidden md:block">
               {casts.map((cast, id) => (
             <div className="my-6 drop-shadow-sm hover:drop-shadow-lg">
               <Link to={"/person"}>

@@ -29,12 +29,12 @@ const Header = () => {
   return (
     <>
       <header className="z-20 w-full h-18 top-0 px-3 md:px-5 py-3 flex items-center justify-between bg-[#1f364d]">
-        <div className="flex w-1/3">
-          <div className="flex items-center text-white space-x-5">
-            <button className="h-6 w-6 flex " onClick={openDrawer}>
+        <div className="flex md:w-1/3">
+          <div className="flex items-center text-white space-x-1 md:space-x-5">
+            <button className="h-5 w-5 md:h-6 md:w-6 flex " onClick={openDrawer}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-5 w-5 md:h-6 md:w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -50,17 +50,22 @@ const Header = () => {
 
             <Explore className="hidden md:block" />
            
+            <div className="flex md:hidden">
+          <Link to="">
+          <img className="h-4 md:h-4 mx-auto" src={logo} alt="tmdb" />
+          </Link>
+        </div>
           </div>
         </div>
 
-        <div className="flex justify-center w-1/3">
+        <div className="hidden md:flex justify-center md:w-1/3">
           <Link to="">
           <img className="h-3 md:h-4 mx-auto" src={logo} alt="tmdb" />
           </Link>
         </div>
 
-        <div className="flex w-1/3 justify-end">
-          <div className="flex flex-end pl-2 space-x-2 md:space-x-4 items-center">
+        <div className="flex md:w-1/3 justify-end">
+          <div className="flex flex-end  items-center">
             <div className="flex flex-col text-[#01b4e4] flex">
               <button
                 className="h-5 w-5 md:h-6 md:w-6 flex"
@@ -92,10 +97,10 @@ const Header = () => {
               modalOpen={searchModalOpen}
               setModalOpen={setSearchModalOpen}
             />
-            <Notifications />
+            <Notifications  />
             <MiniCart />
             <UserMenu />
-            <div className="hidden md:flex ">
+            <div className="hidden md:flex pl-3">
               <Link to={"login"}>
               <button className="flex inline-flex items-center justify-center rounded px-4 py-1.5 bg-[#4799eb] opacity-90 hover:opacity-100">
                 <span className="font-semibold text-white">Login</span>
@@ -103,7 +108,7 @@ const Header = () => {
               </Link>
             </div>
             
-            <div className="hidden md:flex">
+            <div className="hidden md:flex pl-3">
               <Link to={"register"}>
               <button className="flex inline-flex items-center justify-center rounded  px-4 py-1.5 bg-[#fe2c55] opacity-90 hover:opacity-100">
                 <span className="font-semibold text-white">Daftar</span>

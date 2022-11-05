@@ -1,0 +1,22 @@
+[
+    {
+        "name": "netflix",
+        "img": "netflix"
+    },
+    {
+        "name": "hulu",
+        "img": "hulu"
+    },
+    {
+        "name": "prime_video",
+        "img": "prime_video"
+    },
+    {
+        "name": "disney+",
+        "img": "disney+"
+    },
+    {
+        "name": "apple_tv",
+        "img": "apple_tv"
+    }
+]

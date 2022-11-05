@@ -1,10 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 import Filter from "../components/Filter";
-import PodcastPlayer from '../components/PodcastPlayer';
+import PodcastPlayer from "../components/PodcastPlayer";
 
-import hero from '../assets/images/hero.jpg'
+import hero from "../assets/images/hero.jpg";
 
 import Rating from "../components/Rating";
 import Pagination from "../components/Pagination";
@@ -91,28 +93,28 @@ const images = (imgName) => {
 const Movies = () => {
   return (
     <>
-    <div className="relative flex min-h-screen w-full bg-[#0e2439]">
+      <div className="relative flex min-h-screen w-full bg-[#0e2439]">
         <PodcastPlayer />
         <div className="w-full ">
           <div
-            className="flex relative bg-gray-100  py-24 justify-center"
+            className="flex relative bg-gray-100  md:py-24 justify-center"
             style={{
               background: `url(${hero}) center  no-repeat`,
             }}
           >
-            <div className="p-12 max-w-2xl hero relative">
-              <div className="md:text-5xl text-3xl leading-loose font-bold text-white">
+            <div className="p-4 md:p-12 max-w-2xl hero relative">
+              <div className="md:text-5xl text-2xl leading-tight md:leading-loose font-semibold md:font-bold text-white">
                 The best free asian movies & musics database.
               </div>
             </div>
           </div>
           {/*  */}
           <div className="flex flex-row space-x-0">
-            <div className="flex w-1/3 px-3">
+            <div className="hidden md:flex w-1/3 px-3">
               <Filter />
             </div>
-            <div className="border-l border-[#0d2134] w-2/3  ">
-              <div className="relative w-full flex px-3 py-5 border-b border-[#0d2134]">
+            <div className="border-l border-[#0d2134] w-full md:w-2/3  ">
+              <div className="relative w-full hidden md:flex px-3 py-5 border-b border-[#0d2134]">
                 <input
                   type="search"
                   name="serch"
@@ -141,90 +143,130 @@ const Movies = () => {
                 </div>
               </div>
               {/*  */}
-              <div className="px-4 ">
-              {movies.map((movie, id) => (
-            <div className="my-6 drop-shadow-sm hover:drop-shadow-lg">
-              <Link to={"/movie"}>
-              <div className="relative block overflow-hidden bg-[#162c41] hover:bg-[#1f364d] cursor-pointer rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">
-                <div className="w-1/4">
-                  <div className="relative block w-40 h-auto">
-                    <img
-                      src={images(movie.image)}
-                      alt=""
-                      className="relative w-full "
-                    />
-                  </div>
-                </div>
-                <div className="w-3/4">
-                  <div className=" pt-3 pb-2 pr-3">
-                    <div className="flex-col text-lg font-bold">
-                      <span className="text-white text-xl capitalize">{movie.title}</span>
-                      <div className="text-sm text-[#24f4d0]  capitalize">
-                        <span>{movie.category} </span>
-                        <span>{movie.country}</span>
-                        <span> - {movie.year},</span>
-                        <span> 10 episodes</span>
-                      </div>
-                      <div className="text-white">
-                        <Rating count={5} value={3} />
-                      </div>
-                    </div>
-                    <div className="mt-4">
-                      <div className="text-sm text-[#9cb3c9]">
-                        {movie.description.substring(0, 230)}....
-                      </div>
-                    </div>
-                    <div className="flex justify-between">
-                      <div className="absolute bottom-3">
-                      <span className="text-white text-sm">9.6.2022</span>
-                      </div>
-                      <div className="absolute bottom-3 right-3">
-                      
-                        
-                        <div className="flex space-x-3 text-sm">
-                        <button className="flex text-white items-center space-x-1">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={1}
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              <div className="px-4 mt-6 md:hidden">
+                <div className="grid grid-cols-3  gap-2">
+                  {movies.map((movie, id) => (
+                    <div
+                      className="relative flex-col justify-center w-28 "
+                      id={id}
+                    >
+                      <div className="relative block overflow-hidden hover:bg-gray-800 hover:opacity-90 bg-white shadow flex rounded">
+                        <img
+                          src={images(movie.image)}
+                          alt=""
+                          className="relative w-full"
+                        />
+                        <div className="absolute bottom-1 left-1">
+                          <div className="h-8 w-8 rounded-full bg-[#0e2439]">
+                            <CircularProgressbar
+                              value={89}
+                              text={`${89}%`}
+                              styles={buildStyles({
+                                textSize: "30px",
+                                pathColor: "#20bd70",
+                                textColor: "#fff",
+                                trailColor: "#d6d6d6",
+                                backgroundColor: "#fff",
+                              })}
                             />
-                          </svg>
-                          <span>33</span>
-                        </button>
-                        <button className="flex text-white items-center space-x-1">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={1}
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                            />
-                          </svg>
-                          <span>33</span>
-                        </button>
+                            ;
+                          </div>
                         </div>
                       </div>
+
+                      <div className="text-center2 pt-2 text-sm leading-tight text-white capitalize">
+                        <span>{movie.title}</span>
+                      </div>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
-              </Link>
-            </div>
-          ))}
+              <div className="px-4 hidden md:block">
+                {movies.map((movie, id) => (
+                  <div className="my-6 drop-shadow-sm hover:drop-shadow-lg">
+                    <Link to={"/movie"}>
+                      <div className="relative block overflow-hidden bg-[#162c41] hover:bg-[#1f364d] cursor-pointer rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">
+                        <div className="w-1/4">
+                          <div className="relative block w-40 h-auto">
+                            <img
+                              src={images(movie.image)}
+                              alt=""
+                              className="relative w-full "
+                            />
+                          </div>
+                        </div>
+                        <div className="w-3/4">
+                          <div className=" pt-3 pb-2 pr-3">
+                            <div className="flex-col text-lg font-bold">
+                              <span className="text-white text-xl capitalize">
+                                {movie.title}
+                              </span>
+                              <div className="text-sm text-[#24f4d0]  capitalize">
+                                <span>{movie.category} </span>
+                                <span>{movie.country}</span>
+                                <span> - {movie.year},</span>
+                                <span> 10 episodes</span>
+                              </div>
+                              <div className="text-white">
+                                <Rating count={5} value={3} />
+                              </div>
+                            </div>
+                            <div className="mt-4">
+                              <div className="text-sm text-[#9cb3c9]">
+                                {movie.description.substring(0, 230)}....
+                              </div>
+                            </div>
+                            <div className="flex justify-between">
+                              <div className="absolute bottom-3">
+                                <span className="text-white text-sm">
+                                  9.6.2022
+                                </span>
+                              </div>
+                              <div className="absolute bottom-3 right-3">
+                                <div className="flex space-x-3 text-sm">
+                                  <button className="flex text-white items-center space-x-1">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      className="h-5 w-5"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor"
+                                      strokeWidth={1}
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                      />
+                                    </svg>
+                                    <span>33</span>
+                                  </button>
+                                  <button className="flex text-white items-center space-x-1">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      className="h-5 w-5"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor"
+                                      strokeWidth={1}
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                                      />
+                                    </svg>
+                                    <span>33</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
               </div>
               <Pagination />
             </div>
@@ -232,7 +274,7 @@ const Movies = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Movies
+export default Movies;
