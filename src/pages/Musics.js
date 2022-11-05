@@ -9,6 +9,7 @@ import MusicList from '../components/MusicList'
 
 import miletHead from "../assets/images/milet2.jpg";
 import AlbumList from '../components/AlbumList';
+import FilterTop from '../components/FilterTop';
 
 const Musics = () => {
   return (
@@ -64,6 +65,7 @@ const Musics = () => {
               </div>
               {/*  */}
               
+              <FilterTop />
               
               <div className="flex flex-col py-5 px-4 space-y-2">
                 

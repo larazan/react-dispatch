@@ -180,13 +180,13 @@ const CarouselHome = () => {
           setAutoPlay(true);
         }}
       >
-        <div className="flex absolute bottom-0 left-1/2 z-30 space-x-3 -translate-x-1/2 absolute  justify-center p-0 mb-4">
+        <div className="flex absolute bottom-0 left-1/2 z-20 space-x-3 -translate-x-1/2 absolute  justify-center p-0 mb-4">
           {sliders.map((_, index) => {
             return (
               <button
                 type="button"
                 key={index}
-                className={`w-10 h-1.5 rounded-full2 ${
+                className={`w-5 md:w-10 h-1 md:h-1.5 rounded-full2 ${
                   index === current ? "bg-gray-70000 opacity-50" : "bg-white"
                 } bg-white dark:bg-gray-800`}
                 data-bs-target="#carouselExampleCaptions"

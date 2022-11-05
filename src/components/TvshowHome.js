@@ -109,14 +109,14 @@ const images = (imgName) => {
 const TvshowHome = () => {
   return (
     <>
-      <div className="min-h-full w-full px-6">
+      <div className="min-h-full w-full px-4 md:px-6">
         <div className="flex justify-between items-center mb-2">
           <div className="border-l-4 border-red-500 pl-2">
-            <span className="text-white text-lg font-bold uppercase">TV show</span>
+            <span className="text-white text-md md:text-lg font-bold uppercase">TV show</span>
           </div>
           <div>
             <Link to={"movies"}>
-              <div className="flex items-center text-sm text-blue-500 hover:text-blue-600">
+              <div className="flex items-center text-sm text-[#37d36e] hover:text-green-600">
                 <span className="font-bold ">View All</span>
               </div>
             </Link>
@@ -126,7 +126,7 @@ const TvshowHome = () => {
           <div className="inline-flex space-x-4">
             {tv.map((movie, id) => (
               <div
-                className="relative flex-col justify-center w-48 space-y-2"
+                className="relative flex-col justify-center w-32 md:w-48 space-y-2"
                 id={id}
               >
                 <div className="relative block overflow-hidden bg-white shadow flex rounded">
@@ -135,8 +135,8 @@ const TvshowHome = () => {
                     alt=""
                     className="relative w-full"
                   />
-                  <div className="absolute bottom-2 left-2">
-                    <div className="h-10 w-10 rounded-full bg-[#0e2439]">
+                  <div className="absolute bottom-1 left-1 md:bottom-2 md:left-2">
+                    <div className="h-8 w-8 md:h-10 md:w-10 rounded-full bg-[#0e2439]">
                       <CircularProgressbar
                         value={89}
                         text={`${89}%`}
@@ -156,7 +156,7 @@ const TvshowHome = () => {
                   <div className="text-center2 pt-1 text-sm text-white capitalize">
                     <span>{movie.title}</span>
                   </div>
-                  <span className="text-white text-xs font-semibold">
+                  <span className="text-white text-xs md:font-semibold">
                     {" "}
                     12 Episode
                   </span>

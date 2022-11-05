@@ -59,14 +59,14 @@ const images = (imgName) => {
 const MusicsHome = () => {
   return (
     <>
-      <div className="min-h-full w-full px-6">
+      <div className="min-h-full w-full px-4 md:px-6">
         <div className="flex justify-between items-center mb-2">
           <div className="border-l-4 border-red-500 pl-2">
-            <span className="text-white text-lg font-bold uppercase">Musics</span>
+            <span className="text-white text-md md:text-lg font-bold uppercase">Musics</span>
           </div>
           <div>
             <Link to={"musics"}>
-              <div className="flex items-center text-sm text-blue-500 hover:text-blue-600">
+              <div className="flex items-center text-sm text-[#37d36e] hover:text-green-600">
                 <span className="font-bold ">View All</span>
                 {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -85,10 +85,10 @@ const MusicsHome = () => {
           </div>
         </div>
         <div className="py-2 pb-6 overflow-auto overflow-y-auto custom-scrollbar">
-          <div className="inline-flex space-x-4">
+          <div className="inline-flex space-x-2 md:space-x-4">
             {musics.map((music, id) => (
               <div
-                className="relative flex-col rounded-md justify-center w-52 space-y-2 bg-[#162c41] p-4"
+                className="relative flex-col rounded-md justify-center w-40 md:w-52 space-y-2 bg-[#162c41] p-2 md:p-4"
                 id={id}
               >
                 <div className="relative block overflow-hidden bg-white shadow flex rounded">
@@ -99,9 +99,9 @@ const MusicsHome = () => {
                   />
                 </div>
 
-                <div className="flex flex-col text-center2 pt-3 text-sm text-white capitalize space-y-1">
+                <div className="flex flex-col text-center2 pt-1 md:pt-3 text-sm text-white capitalize space-y-1">
                   <span>{music.title}</span>
-                  <div className="text-sm text-[#b6ccd7]">
+                  <div className="text-sm leading-tight text-[#b6ccd7]">
                   Explore the dazzling sound of Japanese City Pop from the ‘80s
                   </div>
                 </div>

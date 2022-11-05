@@ -20,7 +20,7 @@ const Home = () => {
           <PodcastPlayer />
         </div>
        
-        <div className="w-11/12 px-2">
+        <div className="w-full md:w-11/12 md:px-2">
           <CarouselHome />
 
           {/*  */}
@@ -34,13 +34,13 @@ const Home = () => {
               
             </div>
           </div>
-          <div className="relative py-5">
+          <div className="relative md:py-5">
             <MoviesHome />
           </div>
-          <div className="relative py-5">
+          <div className="relative md:py-5">
             <TvshowHome />
           </div>
-          <div className="relative py-5">
+          <div className="relative md:py-5">
             <MusicsHome />
           </div>
          
