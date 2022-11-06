@@ -205,6 +205,7 @@ const Musics = () => {
                     <span>See All Music</span>
                   </div>
                 </div>
+                <Link to={"/music"}>
                 <div className="relative">
                   <div className="absolute left-4 top-4">
                     <button className="text-pink-600">
@@ -223,10 +224,10 @@ const Musics = () => {
                     </button>
                   </div>
                   <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-3 cursor-pointer">
-                    <div className="flex space-x-2">
+                    <div className="flex items-center space-x-2">
                       <button className="w-10 h-10 rounded bg-sky-400"></button>
-                      <div className="flex flex-col">
-                        <button className="hover:text-gray-400 text-white text-md">
+                      <div className="flex  flex-col ">
+                        <button className="hover:text-gray-400 leading-tight text-white text-sm md:text-md">
                           <span>chAnge</span>
                         </button>
                         <span className="text-[#5aa3ed] text-sm cursor-pointer">
@@ -280,6 +281,8 @@ const Musics = () => {
                     </div>
                   </div>
                 </div>
+                </Link>
+                <Link to={"/music"}>
                 <div className="relative">
                   <div className="absolute left-4 top-4">
                     <button className="text-pink-600">
@@ -298,10 +301,10 @@ const Musics = () => {
                     </button>
                   </div>
                   <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-3 cursor-pointer">
-                    <div className="flex space-x-2">
+                    <div className="flex items-center space-x-2">
                       <button className="w-10 h-10 rounded bg-sky-400"></button>
                       <div className="flex flex-col">
-                        <button className="hover:text-gray-400 text-white text-md">
+                        <button className="hover:text-gray-400 text-white leading-tight text-sm md:text-md">
                           <span>chAnge</span>
                         </button>
                         <span className="text-[#5aa3ed] text-sm cursor-pointer">
@@ -355,6 +358,7 @@ const Musics = () => {
                     </div>
                   </div>
                 </div>
+                </Link>
               </div>
             </div>
           </div>

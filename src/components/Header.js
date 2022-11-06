@@ -14,13 +14,13 @@ import logo from "../assets/images/logo.svg";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [searchModalOpen, setSearchModalOpen] = useState(false)
-  const [isOpen, setIsOpen] = useState(false)
-   
+  const [searchModalOpen, setSearchModalOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   const openDrawer = () => {
-    console.log('klik');
-      setIsOpen(!isOpen)
-  }
+    console.log("klik");
+    setIsOpen(!isOpen);
+  };
 
   const navToggle = () => {
     setNavOpen(!navOpen);
@@ -31,7 +31,10 @@ const Header = () => {
       <header className="z-20 w-full h-18 top-0 px-3 md:px-5 py-3 flex items-center justify-between bg-[#1f364d]">
         <div className="flex md:w-1/3">
           <div className="flex items-center text-white space-x-1 md:space-x-5">
-            <button className="h-5 w-5 md:h-6 md:w-6 flex " onClick={openDrawer}>
+            <button
+              className="h-5 w-5 md:h-6 md:w-6 flex "
+              onClick={openDrawer}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 md:h-6 md:w-6"
@@ -49,18 +52,18 @@ const Header = () => {
             </button>
 
             <Explore className="hidden md:block" />
-           
+
             <div className="flex md:hidden">
-          <Link to="">
-          <img className="h-4 md:h-4 mx-auto" src={logo} alt="tmdb" />
-          </Link>
-        </div>
+              <Link to="">
+                <img className="h-4 md:h-4 mx-auto" src={logo} alt="tmdb" />
+              </Link>
+            </div>
           </div>
         </div>
 
         <div className="hidden md:flex justify-center md:w-1/3">
           <Link to="">
-          <img className="h-3 md:h-4 mx-auto" src={logo} alt="tmdb" />
+            <img className="h-3 md:h-4 mx-auto" src={logo} alt="tmdb" />
           </Link>
         </div>
 
@@ -97,22 +100,24 @@ const Header = () => {
               modalOpen={searchModalOpen}
               setModalOpen={setSearchModalOpen}
             />
-            <Notifications  />
+            
+            <Notifications />
             <MiniCart />
             <UserMenu />
-            <div className="hidden md:flex pl-3">
+            
+            <div className="hidden md:flex pl-2 md:pl-3">
               <Link to={"login"}>
-              <button className="flex inline-flex items-center justify-center rounded px-4 py-1.5 bg-[#4799eb] opacity-90 hover:opacity-100">
-                <span className="font-semibold text-white">Login</span>
-              </button>
+                <button className="flex inline-flex items-center justify-center rounded px-3 py-1.5 md:px-4 md:py-1.5 bg-[#4799eb] opacity-90 hover:opacity-100">
+                  <span className="text-sm md:text-base md:font-semibold text-white">Login</span>
+                </button>
               </Link>
             </div>
-            
-            <div className="hidden md:flex pl-3">
+
+            <div className="hidden md:flex pl-2 md:pl-3">
               <Link to={"register"}>
-              <button className="flex inline-flex items-center justify-center rounded  px-4 py-1.5 bg-[#fe2c55] opacity-90 hover:opacity-100">
-                <span className="font-semibold text-white">Daftar</span>
-              </button>
+                <button className="flex inline-flex items-center justify-center rounded  px-3 py-1.5 md:px-4 md:py-1.5 bg-[#fe2c55] opacity-90 hover:opacity-100">
+                  <span className="text-sm md:text-base md:font-semibold text-white">Daftar</span>
+                </button>
               </Link>
             </div>
           </div>

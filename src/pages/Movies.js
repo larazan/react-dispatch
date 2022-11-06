@@ -146,6 +146,7 @@ const Movies = () => {
               <div className="px-4 mt-6 md:hidden">
                 <div className="grid grid-cols-3  gap-2">
                   {movies.map((movie, id) => (
+                    <Link to={"/movie"}>
                     <div
                       className="relative flex-col justify-center w-28 "
                       id={id}
@@ -178,13 +179,15 @@ const Movies = () => {
                         <span>{movie.title}</span>
                       </div>
                     </div>
+                    </Link>
                   ))}
                 </div>
               </div>
               <div className="px-4 hidden md:block">
                 {movies.map((movie, id) => (
+                  <Link to={"movie"}>
                   <div className="my-6 drop-shadow-sm hover:drop-shadow-lg">
-                    <Link to={"/movie"}>
+                    
                       <div className="relative block overflow-hidden bg-[#162c41] hover:bg-[#1f364d] cursor-pointer rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">
                         <div className="w-1/4">
                           <div className="relative block w-40 h-auto">
@@ -264,8 +267,9 @@ const Movies = () => {
                           </div>
                         </div>
                       </div>
-                    </Link>
+                    
                   </div>
+                  </Link>
                 ))}
               </div>
               <Pagination />

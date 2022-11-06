@@ -1,10 +1,13 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const Riwayat = () => {
   return (
     <>
-        <div className="w-full">
-            <div className="bg-white shadow-lg shadow-gray-500/50">
+        <div className="w-full px-0">
+            <div className="bg-white md:shadow-sm md:shadow-gray-500/50">
               <div className="mt-4 overflow-x-auto">
                 <table className="w-full whitespace-nowrap">
                   <thead>
@@ -77,7 +80,7 @@ const Riwayat = () => {
                         </div>
                       </td>
                       <td className="">
-                        <div className="flex-col ">
+                        <div className="flex-col hidden md:block">
                           <div className="flex justify-center items-center">
                             <span className="text-[#ffd600] text-sm">
                               <svg
@@ -134,6 +137,23 @@ const Riwayat = () => {
                             <span className="text-xs">9.0</span>
                           </div>
                         </div>
+                        <div className='flex md:hidden justify-center w-full'>
+                        <div className="h-8 w-8 rounded-full bg-[#0e2439]">
+                            <CircularProgressbar
+                              value={89}
+                              text={`${89}%`}
+                              styles={buildStyles({
+                                textSize: "30px",
+                                pathColor: "#20bd70",
+                                textColor: "#fff",
+                                trailColor: "#d6d6d6",
+                                backgroundColor: "#fff",
+                              })}
+                            />
+                            ;
+                          </div>
+                        </div>
+                        
                       </td>
                     </tr>
                     

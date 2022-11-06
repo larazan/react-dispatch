@@ -113,6 +113,7 @@ const MoviesHome = () => {
         <div className="py-2 pb-5 overflow-auto overflow-y-auto custom-scrollbar">
           <div className="inline-flex space-x-4">
             {movies.map((movie, id) => (
+              <Link to={"movie"}>
               <div
                 className="relative flex-col justify-center w-32 md:w-48 space-y-2"
                 id={id}
@@ -145,6 +146,7 @@ const MoviesHome = () => {
                   <span>{movie.title}</span>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>

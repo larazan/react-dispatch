@@ -44,12 +44,17 @@ const images = (imgName) => {
 const Person = () => {
   return (
     <>
-      <div className="flex-col min-h-screen relative bg-white px-8 pb-10">
+      <div className="flex-col min-h-screen relative bg-white px-4 md:px-8 md:pt-3 pb-10">
         <div className="py-5">
-          <div className="flex space-x-4">
-            <div className="w-1/3">
-              <div className="relative block overflow-hidden bg-white shadow flex rounded">
-                <img src={photo} alt="" className="relative w-full" />
+          <div className="flex flex-col md:flex-row md:space-x-4">
+            <div className="w-full md:w-1/3">
+              <div className="flex flex-col md:no-flex relative block overflow-hidden2 md:bg-white md:shadow md:rounded">
+                <div className="flex justify-center mx-auto w-36 md:w-full">
+                  <img src={photo} alt="" className="relative rounded shadow w-36 md:w-full" />
+                </div>
+                <div className="py-3 md:hidden text-center">
+                  <span className="text-3xl font-semibold">Song Kang Ho</span>
+                </div>
               </div>
               <div className="flex-col py-4">
                 <span className="text-xl font-semibold">Tentang</span>
@@ -59,7 +64,7 @@ const Person = () => {
                       <span className="font-semibold">Peran</span>
                     </div>
                     <div>
-                      <span>Riwayat Perfilman</span>
+                      <span className="text-sm">Riwayat Perfilman</span>
                     </div>
                   </div>
                   <div className="flex-col">
@@ -67,7 +72,7 @@ const Person = () => {
                       <span className="font-semibold">Jenis kelamin</span>
                     </div>
                     <div>
-                      <span>Pria</span>
+                      <span className="text-sm">Pria</span>
                     </div>
                   </div>
                   <div className="flex-col">
@@ -75,23 +80,16 @@ const Person = () => {
                       <span className="font-semibold">Kelahiran</span>
                     </div>
                     <div>
-                      <span>1967-01-17 (55 years old)</span>
+                      <span className="text-sm">1967-01-17 (55 years old)</span>
                     </div>
                   </div>
-                  <div className="flex-col">
-                    <div>
-                      <span className="font-semibold">Peran</span>
-                    </div>
-                    <div>
-                      <span>Riwayat Perfilman</span>
-                    </div>
-                  </div>
+                  
                   <div className="flex-col">
                     <div>
                       <span className="font-semibold">Lokasi Kelahiran</span>
                     </div>
                     <div>
-                      <span>Gimhae, South Gyeongsang, South Korea</span>
+                      <span className="text-sm">Gimhae, South Gyeongsang, South Korea</span>
                     </div>
                   </div>
                   <div className="flex-col">
@@ -101,20 +99,20 @@ const Person = () => {
                       </span>
                     </div>
                     <div>
-                      <span>송강호 Song Kang Ho</span>
+                      <span className="text-sm">송강호 Song Kang Ho</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-2/3 pl-3">
+            <div className="w-full md:w-2/3 md:pl-3">
               <div>
-                <div className="">
+                <div className="hidden md:block">
                   <span className="text-3xl font-bold">Song Kang-ho</span>
                 </div>
                 <div className="pt-6">
                   <div className="text-lg font-semibold">Biografi</div>
-                  <div className="py-2">
+                  <div className="py-2 text-md">
                     <span>
                       Song Kang-ho (송강호) is a South Korean actor. Born on
                       January 17, 1967, he first worked in plays, entering a
@@ -130,7 +128,7 @@ const Person = () => {
                   <div>
                     <span className="text-lg font-semibold">Peran</span>
                   </div>
-                  <div className="py-2 overflow-auto">
+                  <div className="py-2 overflow-auto custom-scrollbar">
                     <div className="inline-flex space-x-3">
                       {roles.map((role, id) => (
                         <div

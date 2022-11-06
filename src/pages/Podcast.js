@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import software from "../assets/images/software.jpg";
 import indie from "../assets/images/Indie.png";
@@ -9,7 +10,7 @@ const Podcast = () => {
       <div className="relative flex min-h-screen w-full bg-[#0e2439]">
         <div className="w-full ">
           <div className="flex relative bg-[#1f364d] h-28 py-10 px-10 mx-auto justify-center mb-20">
-            <div className="absolute w-5/6 -bottom-20 flex justify-between bg-white rounded shadow px-3 py-3">
+            <div className="absolute w-11/12 md:w-5/6 -bottom-20 flex justify-between bg-white rounded shadow px-3 py-3">
               <div className="flex space-x-3 w-full justify-center items-center">
                 <div className="w-1/6">
                   <div className="h-32 w-32">
@@ -95,24 +96,23 @@ const Podcast = () => {
             </div>
           </div>
           {/*  */}
-          <div className="flex flex-row space-x-0">
-            <div className="flex w-1/3 px-3 mt-8">
-              <div className="flex-col py-4 px-4 text-[#9cb3c9]">
+          <div className="flex flex-col md:flex-row space-x-0">
+            <div className="flex w-full md:w-1/3 md:px-3 mt-8">
+              <div className="flex-col md:py-4 px-4 text-[#9cb3c9]">
                 <span className="text-sm font-semibold">AUGUST 30, 2022</span>
-                <div className="flex-col space-y-3 pt-4">
-                 
+                <div className="flex-col space-y-3 md:pt-4">
                     <div>
-                      <span className="text-sm">by Michele Hansen & Colleen Schnettler</span>
+                      <span className="text-sm">by <span className="text-blue-500">Michele Hansen & Colleen Schnettler</span></span>
                     </div>
                   
                 </div>
               </div>
             </div>
-            <div className="border-l border-[#0d2134] w-2/3 mt-8 ">
+            <div className="md:border-l md:border-[#0d2134] w-full md:w-2/3 md:mt-8 ">
               {/*  */}
 
-              <div className="flex flex-col space-y-6 px-4 mt-3">
-                <div className="text-[#9cb3c9]">
+              <div className="flex flex-col space-y-6 px-4 mt-3 text-justify md:text-left">
+                <div className="text-[#9cb3c9] ">
                   <p>
                   David wanted his startup, Peergrade, to be the next big thing in education. He went about it by raising VC funding. But as indies we know this story rarely ends well. So, David pivoted to a slow, sustainable company with Eduflow. Oh, and he's got a Ph.D. You can call him Dr. David.
                   </p>
@@ -127,12 +127,13 @@ const Podcast = () => {
               <div className="flex flex-col py-5 px-4 space-y-4">
                 <div className="flex justify-between">
                   <div>
-                    <span className="text-xl font-bold text-[#9cb3c9]">
+                    <span className="text-xl font-bold text-white">
                       This Week
                     </span>
                   </div>
                 </div>
                 <div className="relative">
+                  <Link to={"/podcast"}>
                   <div className="absolute left-4 top-4">
                     <button className="text-pink-600">
                       <svg
@@ -149,35 +150,31 @@ const Podcast = () => {
                       </svg>
                     </button>
                   </div>
-                  <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-3 cursor-pointer">
+                  <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-2 cursor-pointer">
                     <div className="flex space-x-3 justify-center items-center">
-                      <div className="h-32 w-32">
-                        <img src={indie} alt="" />
+                      <div className="flex py-3 h-32 w-32">
+                        <img src={indie} alt="" className='rounded' />
                       </div>
                       <div className="w-3/4">
-                        <div className="pt-3 pb-2 pr-3">
+                        <div className="md:pt-3 md:pb-2 md:pr-3">
                           <div className="flex justify-between">
-                            <div className="flex-col text-lg font-bold ">
-                              <span className="text-white">
-                                Ending the VC dream and pivoting to an indie
-                                company - David Kofoed Wind, Eduflow
-                              </span>
+                            <div className="flex-col text-lg font-bold leading-none">
+                              <span className="text-[#3cffd0]">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
                             </div>
                           </div>
-                          <div className="mt-4">
-                            <div className="text-sm text-[#9cb3c9]">
-                              <em>Aug 31st —</em>David Kofoed Wind is the
-                              co-founder and CEO of Eduflow an education
-                              platform started in 2015 as Peergrade, which was a
-                              peer to peer ...
+                          <div className="mt-2 hidden md:block">
+                            <div className="text-sm leading-tight text-[#9cb3c9]">
+                            <em>Aug 31st —</em>David Kofoed Wind is the co-founder and CEO of Eduflow an education platform started in 2015 as Peergrade, which was a peer to peer ...
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  </Link>
                 </div>
                 <div className="relative">
+                <Link to={"/podcast"}>
                   <div className="absolute left-4 top-4">
                     <button className="text-pink-600">
                       <svg
@@ -194,33 +191,28 @@ const Podcast = () => {
                       </svg>
                     </button>
                   </div>
-                  <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-3 cursor-pointer">
+                  <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-2 cursor-pointer">
                     <div className="flex space-x-3 justify-center items-center">
-                      <div className="h-32 w-32">
-                        <img className="rounded" src={software} alt="" />
+                      <div className="flex py-3 h-32 w-32">
+                        <img src={software} alt="" className='rounded' />
                       </div>
                       <div className="w-3/4">
-                        <div className="pt-3 pb-2 pr-3">
+                        <div className="md:pt-3 md:pb-2 md:pr-3">
                           <div className="flex justify-between">
-                            <div className="flex-col text-lg font-bold ">
-                              <span className="text-white">
-                                Ending the VC dream and pivoting to an indie
-                                company - David Kofoed Wind, Eduflow
-                              </span>
+                            <div className="flex-col text-lg font-bold leading-none">
+                              <span className="text-[#3cffd0]">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
                             </div>
                           </div>
-                          <div className="mt-4">
-                            <div className="text-sm text-[#9cb3c9]">
-                              <em>Aug 31st —</em>David Kofoed Wind is the
-                              co-founder and CEO of Eduflow an education
-                              platform started in 2015 as Peergrade, which was a
-                              peer to peer ...
+                          <div className="mt-2 hidden md:block">
+                            <div className="text-sm leading-tight text-[#9cb3c9]">
+                            <em>Aug 31st —</em>David Kofoed Wind is the co-founder and CEO of Eduflow an education platform started in 2015 as Peergrade, which was a peer to peer ...
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -34,13 +34,13 @@ const Home = () => {
               
             </div>
           </div>
-          <div className="relative md:py-5">
+          <div className="relative py-2 md:py-5">
             <MoviesHome />
           </div>
-          <div className="relative md:py-5">
+          <div className="relative py-2 md:py-5">
             <TvshowHome />
           </div>
-          <div className="relative md:py-5">
+          <div className="relative py-2 md:py-5">
             <MusicsHome />
           </div>
          

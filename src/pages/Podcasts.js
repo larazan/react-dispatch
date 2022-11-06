@@ -67,7 +67,7 @@ const Podcasts = () => {
                       <div className="w-3/4">
                         <div className="md:pt-3 md:pb-2 md:pr-3">
                           <div className="flex justify-between">
-                            <div className="flex-col text-lg font-bold leading-tight">
+                            <div className="flex-col text-lg font-bold leading-none">
                               <span className="text-[#3cffd0]">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
                             </div>
                           </div>
@@ -108,7 +108,7 @@ const Podcasts = () => {
                       <div className="w-3/4">
                         <div className="md:pt-3 md:pb-2 md:pr-3">
                           <div className="flex justify-between">
-                            <div className="flex-col text-lg font-bold leading-tight">
+                            <div className="flex-col text-lg font-bold leading-none">
                               <span className="text-[#3cffd0]">Ending the VC dream and pivoting to an indie company - David Kofoed Wind, Eduflow</span>
                             </div>
                           </div>

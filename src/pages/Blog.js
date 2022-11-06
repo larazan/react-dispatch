@@ -5,7 +5,7 @@ import DetailComment from "../components/DetailComment";
 const Blog = () => {
   return (
     <>
-      <div className="container w-full md:max-w-3xl mx-auto pt-10">
+      <div className="container w-full md:max-w-3xl mx-auto pt-4 md:pt-10">
         <div className="w-full px-4 md:px-6 text-lg text-gray-800 leading-normal">
           <div className="font-sans">
             <div className=" flex justify-between items-center text-base md:text-sm text-green-500 font-bold">
@@ -24,7 +24,7 @@ const Blog = () => {
               </svg>
               <a
                 href="#"
-                className="text-base md:text-sm text-green-500 font-bold no-underline hover:underline"
+                className="text-sm md:text-sm text-green-500 font-bold no-underline hover:underline"
               >
                 BACK
               </a>
@@ -38,7 +38,7 @@ const Blog = () => {
                 </button>
               </div>
             </div>
-            <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+            <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-2xl md:text-4xl">
               Welcome to Minimal Blog
             </h1>
             <p className="text-sm md:text-base font-normal text-gray-400">

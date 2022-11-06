@@ -122,7 +122,7 @@ const Actors = () => {
               <div className="px-4 mt-6 md:hidden">
               <div className="grid grid-cols-3 gap-y-4 gap-2">
               {casts.map((cast, id) => (
-                <Link to={""}>
+                <Link to={"/person"}>
                   <div
                     className="flex-col2 justify-center w-28 space-y-2"
                     key={id}

@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SongList = () => {
   return (
     <>
-      <div className="flex flex-row flex-wrap justify-center mx-10 md:mx-auto md:max-w-[760px] lg:max-w-container-lg mt-10 mb-16">
+      <div className="flex flex-row flex-wrap justify-center mx-4 md:mx-10 md:mx-auto md:max-w-[760px] lg:max-w-container-lg mt-10 mb-16">
       <div className="flex flex-col-reverse items-center w-full lg:flex-row lg:items-start">
           <div className="flex flex-col flex-1 w-full max-w-[760px] mx-auto sm:max-w-container-lg space-y-2">
           {/*  */}
+          <Link to={"/music"}>
           <div className="relative w-full">
             <div className="absolute left-4 top-4">
               <button className="text-pink-600">
@@ -82,7 +84,9 @@ const SongList = () => {
               </div>
             </div>
           </div>
+          </Link>
           {/*  */}
+          <Link to={"/music"}>
           <div className="relative w-full">
             <div className="absolute left-4 top-4">
               <button className="text-pink-600">
@@ -158,6 +162,7 @@ const SongList = () => {
               </div>
             </div>
           </div>
+          </Link>
           </div>
         </div>
       </div>
