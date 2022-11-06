@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Avatar from "react-avatar";
 
 const Medsos = () => {
   return (
@@ -23,27 +24,27 @@ const Medsos = () => {
                 <div className="pt-3">
                   <div></div>
                   <div className='drop-shadow-md'>
-                    <div className="flex justify-between bg-[#162c41] rounded shadow px-3 py-3">
-                      <div className="flex space-x-2">
-                        <button className="w-10 h-10 rounded-full bg-sky-400"></button>
-                        <button className="hover:text-gray-400 text-white font-semibold">
+                    <div className="flex w-full justify-between bg-white border rounded shadow-sm px-1.5 md:px-3 py-3">
+                      <div className="flex w-4/12 leading-tight items-center space-x-1 md:space-x-2 ">
+                        <Avatar name='Selena gomes' size={"36"} round={true} />
+                        <button className="hover:text-gray-400 text-xs md:text-sm text-left md:font-semibold">
                           <span>Top 10 Films of 2019</span>
                         </button>
                       </div>
-                      <div className="flex items-center justify-center">
-                        <span className="text-sm font-semibold text-white">Open</span>
+                      <div className="flex w-2/12 items-center text-left justify-center">
+                        <span className="text-sm font-semibold">Open</span>
                       </div>
-                      <div className="flex items-center justify-center">
-                        <span className="text-sm font-semibold text-white">33</span>
+                      <div className="flex w-2/12 items-center justify-center ">
+                        <span className="text-sm font-semibold">33</span>
                       </div>
-                      <div className="flex-col items-center justify-center">
-                        <span className="text-xs text-white">
+                      <div className="flex-col w-4/12 leading-tight items-center justify-center">
+                        <span className="text-xs">
                           Feb 11, 2021 at 7:30 PM
                         </span>
-                        <div className="flex text-xs ">
-                          <span className='text-white'>by{" "}</span>
+                        <div className="flex2 text-xs">
+                          <span className=''>by{" "}</span>
                           <button>
-                            <span className='ml-2 text-[#5aa3ed]'> JustinJackFlash</span>
+                            <span className='ml-1 text-[#5aa3ed]'> JustinJackFlash</span>
                           </button>
                         </div>
                       </div>

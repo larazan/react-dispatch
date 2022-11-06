@@ -137,7 +137,7 @@ const MoviesHome = () => {
                           backgroundColor: "#fff",
                         })}
                       />
-                      ;
+                      
                     </div>
                   </div>
                 </div>

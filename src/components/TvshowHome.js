@@ -149,7 +149,7 @@ const TvshowHome = () => {
                           backgroundColor: "#fff",
                         })}
                       />
-                      ;
+                      
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Avatar from "react-avatar";
+
 
 import NavMenu from "./NavMenu";
 import SearchModal from "./SearchModal";

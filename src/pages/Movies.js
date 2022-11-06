@@ -10,6 +10,8 @@ import hero from "../assets/images/hero.jpg";
 
 import Rating from "../components/Rating";
 import Pagination from "../components/Pagination";
+import FilterTop from "../components/FilterTop";
+
 
 import parasite from "../assets/images/parasite.jpg";
 import allofus from "../assets/images/allofus.jpg";
@@ -114,11 +116,11 @@ const Movies = () => {
               <Filter />
             </div>
             <div className="border-l border-[#0d2134] w-full md:w-2/3  ">
-              <div className="relative w-full hidden md:flex px-3 py-5 border-b border-[#0d2134]">
+              <div className="relative w-full hidden2 flex px-3 py-5 border-b border-[#0d2134]">
                 <input
                   type="search"
                   name="serch"
-                  className="w-full border-1 px-4 py-3.5 outline-none bg-[#1f364d] pl-10 rounded-full text-xl text-[#9cb3c9] placeholder-[#9cb3c9] focus:placeholder-[#9cb3c9] focus:border-purple-300 focus:outline-none focus:shadow-outline-purple"
+                  className="w-full border-1 px-4 py-2 md:py-3.5 outline-none bg-[#1f364d] pl-10 rounded-full text-lg md:text-xl text-[#9cb3c9] placeholder-[#9cb3c9] focus:placeholder-[#9cb3c9] focus:border-purple-300 focus:outline-none focus:shadow-outline-purple"
                   // value={value}
                   // onChange={(e) => handleChange(e.target.value)}
                   // onFocus={() => setShowOptions(true)}
@@ -143,6 +145,7 @@ const Movies = () => {
                 </div>
               </div>
               {/*  */}
+              <FilterTop />
               <div className="px-4 mt-6 md:hidden">
                 <div className="grid grid-cols-3  gap-2">
                   {movies.map((movie, id) => (
@@ -170,7 +173,7 @@ const Movies = () => {
                                 backgroundColor: "#fff",
                               })}
                             />
-                            ;
+                            
                           </div>
                         </div>
                       </div>

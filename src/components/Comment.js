@@ -11,8 +11,8 @@ const Comment = () => {
                   </span>
                 </div>
                 <div className="py-4">
-                  <div className="antialiased p-3 mx-auto max-w-screen-sm bg-transparent">
-                    <div className="space-y-4 py-4 ml-2">
+                  <div className="antialiased md:p-3 mx-auto max-w-screen-sm bg-transparent">
+                    <div className="space-y-2 md:space-y-4 md:py-4 md:ml-2">
                       <div className="flex">
                         <div className="flex-shrink-0 mr-0">
                           <img
@@ -92,10 +92,10 @@ const Comment = () => {
                                 className=" focus:outline-none  w-full rounded-lg p-2 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400"
                               ></textarea>
                               <footer className="flex justify-end mt-1 space-x-1">
-                                <button className="flex items-center py-2 px-4 rounded text-sm bg-[#007ac9] text-white shadow">
+                                <button className="flex items-center py-1.5 md:py-2 px-2 md:px-4 rounded text-sm bg-[#007ac9] text-white shadow">
                                   Submit
                                 </button>
-                                <button className="flex items-center py-2 px-4 rounded text-sm bg-[#e5e5e5]">
+                                <button className="flex items-center py-1.5 md:py-2 px-2 md:px-4 rounded text-sm bg-[#e5e5e5]">
                                   Cancel
                                 </button>
                               </footer>
