@@ -6,7 +6,7 @@ import PodcastPlayer from '../components/PodcastPlayer';
 
 import hero from "../assets/images/21.jpg"
 import NewsContent from '../components/NewsContent';
-import PaginationTwo from '../components/PaginationTwo';
+import Pagination from '../components/Pagination';
 import HeadNews from '../components/HeadNews';
 import SosmedNews from '../components/SosmedNews';
 import PodcastHome from '../components/PodcastHome';
@@ -22,7 +22,7 @@ const News = () => {
           <NewsContent />
           <SosmedNews />
           <PodcastHome />
-          <PaginationTwo />
+          <Pagination />
         </div>
       </div>
       {/*  */}

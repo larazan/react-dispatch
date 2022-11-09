@@ -196,8 +196,8 @@ const Movie = () => {
         </div>
       </div>  
 
-      <div className="absolute2 bottom-0 px-2 md:px-3 overflow-x-auto">
-              <ul className="flex items-center md:justify-around md:justify-center space-x-2 md:space-x-4 uppercase md:tracking-widest font-semibold text-xs  ">
+      <div className="absolute2 bottom-0 px-2 md:px-3 overflow-x-auto overflow-hidden">
+              <ul className="flex items-center  md:justify-around md:justify-center space-x-2 md:space-x-4 uppercase md:tracking-widest font-semibold text-xs  ">
                 <li
                   className={` ${
                     lastUrl === "movie"
@@ -221,7 +221,7 @@ const Movie = () => {
                     lastUrl === "cast"
                       ? "border-b-4 border-[#4799eb] "
                       : ""
-                  } w-60 `}
+                  } `}
                 >
                   <NavLink
                     className={({ isActive }) =>
@@ -231,7 +231,7 @@ const Movie = () => {
                     }
                     to="cast"
                   >
-                    <span className="hidden2 md:inline">Aktor</span>
+                    <span className="flex truncate  inline-flex md:inline">Aktor & Kru</span>
                   </NavLink>
                 </li>
                 <li

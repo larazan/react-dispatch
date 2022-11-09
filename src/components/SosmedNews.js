@@ -3,11 +3,14 @@ import React from "react";
 const SosmedNews = () => {
   return (
     <>
-      <div className="flex flex-row flex-wrap justify-center mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-10 mb-16">
-        <div className=" flex flex-row py-6 px-10 border-b last-of-type:border-b-0 border-gray-700 border-solid first-of-type:pt-0 last-of-type:pb-0 max-w-container-sm last-of-type:border-b-0 lg:py-14 lg:px-10 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg">
+      <div className="flex flex-row flex-wrap justify-center md:mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-10 mb-16">
+        <div className=" flex flex-row py-6 px-3 md:px-10 border-b last-of-type:border-b-0 border-gray-700 border-solid first-of-type:pt-0 last-of-type:pb-0 max-w-container-sm last-of-type:border-b-0 lg:py-14 lg:px-10 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg">
           <div className="flex relative flex-col pr-3 min-w-[20px]">
-            <div className="flex flex-col z-10 space-y-1 justify-center items-center rounded-full bg-[#3cffd0] py-7 px-4 w-4 h-4 text-center">
-              <div className="font-bold">E</div>
+            <div className="flex flex-col z-10 space-y-1 justify-center items-center rounded-full py-7 px-4 w-4 h-4 text-center">
+              <div className="flex justify-center items-center font-bold w-7 h-7 p-1 bg-[#3cffd0] rounded-t">
+               <span className="uppercase">e</span>
+              </div>
+              <div className="flex justify-center items-center font-bold w-7 h-7 p-1 bg-[#3cffd0] rounded-b">
               <span className="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -25,13 +28,14 @@ const SosmedNews = () => {
                   <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
                 </svg>
               </span>
+              </div>
             </div>
             <div className="flex z-10 justify-center p-[5px] mt-2 w-4 h-4 text-center text-black"></div>
           </div>
           <div className="flex flex-col flex-1 min-w-0 ">
             <div className="flex flex-wrap items-center mb-[3px] font-polysans text-[12px] tracking-tight leading-tight text-gray-300 uppercase">
               <a
-                className="mr-8 font-bold hover:shadow-underline-inherit"
+                className="mr-8 font-bold hover:shadow-underline-inherit text-green-400"
                 href="/authors/emma-roth"
               >
                 Emma Roth
@@ -53,7 +57,7 @@ const SosmedNews = () => {
                 </button>
               </span>
             </div>
-            <div className="text-[16px] leading-normal text-white">
+            <div className="text-[16px] leading-tight tracking-tight md:leading-normal text-white">
               <div className="inline pr-4 font-bold">
                 Good news for Analogue Pocket preorders.
               </div>
@@ -104,10 +108,13 @@ const SosmedNews = () => {
             </div>
           </div>
         </div>
-        <div className=" flex flex-row py-6 px-10 border-b last-of-type:border-b-0 border-gray-700 border-solid first-of-type:pt-0 last-of-type:pb-0 max-w-container-sm last-of-type:border-b-0 lg:py-14 lg:px-10 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg">
+        <div className=" flex flex-row py-6 px-3 md:px-10 border-b last-of-type:border-b-0 border-gray-700 border-solid first-of-type:pt-0 last-of-type:pb-0 max-w-container-sm last-of-type:border-b-0 lg:py-14 lg:px-10 w-full max-w-container-lg md:mx-auto md:max-w-[560px] lg:flex-row lg:pr-0 lg:mx-auto lg:max-w-container-lg">
           <div className="flex relative flex-col pr-3 min-w-[20px]">
-            <div className="flex flex-col z-10 space-y-1 justify-center items-center rounded-full bg-[#3cffd0] py-7 px-4 w-4 h-4 text-center">
-              <div className="font-bold">E</div>
+            <div className="flex flex-col z-10 space-y-1 justify-center items-center rounded-full py-7 px-4 w-4 h-4 text-center">
+              <div className="flex justify-center items-center font-bold w-7 h-7 p-1 bg-[#3cffd0] rounded-t">
+               <span className="uppercase">e</span>
+              </div>
+              <div className="flex justify-center items-center font-bold w-7 h-7 p-1 bg-[#3cffd0] rounded-b">
               <span className="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,6 +134,7 @@ const SosmedNews = () => {
                   <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
                 </svg>
               </span>
+              </div>
             </div>
             <div className="flex z-10 justify-center p-[5px] mt-2 w-4 h-4 text-center text-black"></div>
           </div>
@@ -155,7 +163,7 @@ const SosmedNews = () => {
                 </button>
               </span>
             </div>
-            <div className="text-[16px] leading-normal text-white">
+            <div className="text-[16px] leading-tight tracking-tight md:leading-normal text-white">
               <div className="inline pr-4 font-bold">
                 “A thumbprint in our cosmos.”
               </div>

@@ -156,7 +156,7 @@ function Explore() {
                 <div className="flex flex-col">
                   <div>
                     <span className="text-lg text-[#49b66d] font-semibold">
-                      Actors
+                      Celebs
                     </span>
                   </div>
                   <span className="text-sm text-white capitalize">explore actors & crew</span>

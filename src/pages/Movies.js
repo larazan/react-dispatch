@@ -188,7 +188,7 @@ const Movies = () => {
               </div>
               <div className="px-4 hidden md:block">
                 {movies.map((movie, id) => (
-                  <Link to={"movie"}>
+                  <Link to={"/movie"}>
                   <div className="my-6 drop-shadow-sm hover:drop-shadow-lg">
                     
                       <div className="relative block overflow-hidden bg-[#162c41] hover:bg-[#1f364d] cursor-pointer rounded shadow aspect-w-16 aspect-h-10 dark:bg-gray-800 flex bg-white rounded space-x-9">

@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const PodcastHome = () => {
   return (
     <>
-      <div className="flex flex-row flex-wrap justify-center mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-10 mb-16">
+      <div className="flex flex-row flex-wrap justify-center px-3 md:mx-10 md:mx-auto md:max-w-[560px] lg:max-w-container-lg mt-10 mb-16">
         <div className="flex flex-col-reverse items-center w-full lg:flex-row lg:items-start">
           <div className="max-w-desktop-breaker h-full2 block z-0 text-white lg:flex lg:flex-col lg:flex-1">
             <div className="flex-auto">
               <div className=" relative p-8 ml:m-auto mt-10 mb-50 ml-[65px] min-h-[300px] rounded-[4px] sm:w-tablet-breaker md:ml-14 lg:overflow-hidden lg:sticky lg:top-40 lg:my-0 lg:mb-10 lg:ml-0 lg:w-desktop-breaker lg:min-h-[300px] lg:rounded-[20px] bg-[#c3dd1e] text-black">
                 <h2
-                  className="flex absolute top-[15px] left-[-55px] -z-10 text-[60px] font-ultra tracking-1 leading-tight text-white rotate-180 lg:hidden"
+                  className="flex absolute top-[15px] left-[-55px] -z-10 text-[60px] font-ultra tracking-tight leading-tight text-white rotate-180 lg:hidden"
                   style={{
                     writingMode: "vertical-rl",
                     textOrientation: "sideways",
@@ -18,7 +18,7 @@ const PodcastHome = () => {
                 >
                   Podcasts
                 </h2>
-                <div className="flex relative z-10 justify-between mb-[20px] font-semibold text-[11px] lg:text-[14px] tracking-15 uppercase ">
+                <div className="flex relative z-10 justify-between mb-[20px] font-semibold text-[11px] lg:text-[14px] tracking-tight uppercase ">
                   <span>Podcasts</span>
                   <Link
                     to="/podcasts"
@@ -58,12 +58,12 @@ const PodcastHome = () => {
                           className="text-black hover:text-[#309875]"
                           href="/2022/10/14/23405083/todays-vergecast-rip-office-hello-quest-pro-whats-up-with-the-surface-laptop"
                         >
-                          <h3 className="mb-1 text-lg font-medium tracking-1 leading-tight">
+                          <h3 className="mb-1 text-lg font-medium tracking-tight leading-tight">
                             Today’s Vergecast: RIP Office, hello Quest Pro,
                             what’s up with the Surface Laptop?
                           </h3>
                         </a>
-                        <p className="font-semibold text-[11px] tracking-15 leading-tight uppercase">
+                        <p className="font-semibold text-[11px] tracking-tight leading-tight uppercase">
                           <a href="/authors/david-pierce">
                             <span className="mr-8 text-gray-700">
                               David Pierce
@@ -95,12 +95,12 @@ const PodcastHome = () => {
                           className="text-black hover:text-[#309875]"
                           href="/2022/10/11/23399525/todays-vergecast-mixed-reality-virtual-reality-actual-reality"
                         >
-                          <h3 className="mb-1 font-semibold text-lg font-medium tracking-1 leading-tight">
+                          <h3 className="mb-1 font-semibold text-lg font-medium tracking-tight leading-tight">
                             Today’s Vergecast: mixed reality, virtual reality,
                             actual reality.
                           </h3>
                         </a>
-                        <p className="font-semibold text-[11px] tracking-15 leading-140 uppercase">
+                        <p className="font-semibold text-[11px] tracking-tight leading-tight uppercase">
                           <a href="/authors/david-pierce">
                             <span className="mr-8 text-gray-700">
                               David Pierce
@@ -132,12 +132,12 @@ const PodcastHome = () => {
                           className="text-black hover:text-[#309875]"
                           href="/23397187/mark-zuckerberg-quest-pro-metaverse-interview-decoder"
                         >
-                          <h3 className="mb-1 font-semibold text-lg font-medium tracking-1 leading-tight">
+                          <h3 className="mb-1 font-semibold text-lg font-medium tracking-tight leading-tight">
                             Mark Zuckerberg on the Quest Pro, building the
                             metaverse, and more
                           </h3>
                         </a>
-                        <p className=" font-semibold text-[11px] tracking-15 leading-140 uppercase">
+                        <p className=" font-semibold text-[11px] tracking-tight leading-tight uppercase">
                           <a href="/authors/alex-heath">
                             <span className="mr-8 text-gray-700">
                               Alex Heath
@@ -169,12 +169,12 @@ const PodcastHome = () => {
                           className="text-black hover:text-[#309875]"
                           href="/2022/10/7/23392733/today-on-the-vergecast-pixel-phones-pixel-watches-and-elon"
                         >
-                          <h3 className="mb-1 font-semibold text-lg font-medium tracking-1 leading-tight">
+                          <h3 className="mb-1 font-semibold text-lg font-medium tracking-tight leading-tight">
                             Today on The Vergecast: Pixel phones, Pixel watches,
                             and Elon.
                           </h3>
                         </a>
-                        <p className=" font-semibold text-[11px] tracking-15 leading-140 uppercase">
+                        <p className=" font-semibold text-[11px] tracking-tight leading-tight uppercase">
                           <a href="/authors/david-pierce">
                             <span className="mr-8 text-gray-700">
                               David Pierce
@@ -206,12 +206,12 @@ const PodcastHome = () => {
                           className="text-black hover:text-[#309875]"
                           href="/2022/10/5/23389020/amazon-dave-limp-interview-hp-printers-airpods-pro-test-podcast"
                         >
-                          <h3 className="mb-1 font-semibold text-lg font-medium tracking-1 leading-tight">
+                          <h3 className="mb-1 font-semibold text-lg font-medium tracking-tight leading-tight">
                             Vergecast: Kindle Scribe feelings, printer problems,
                             and earbuds on a bike
                           </h3>
                         </a>
-                        <p className=" font-semibold text-[11px] tracking-15 leading-140 uppercase">
+                        <p className=" font-semibold text-[11px] tracking-tight leading-tight uppercase">
                           <a href="/authors/andrew-marino">
                             <span className="mr-8 text-gray-700">
                               Andrew Marino

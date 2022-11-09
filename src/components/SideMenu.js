@@ -162,7 +162,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
             <div className="flex flex-col">
               <div>
                 <span className="text-md text-[#49b66d] font-semibold">
-                  Actors
+                  Celebs
                 </span>
               </div>
             </div>
