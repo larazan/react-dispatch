@@ -84,44 +84,70 @@ const images = (imgName) => {
 const NewActivity = () => {
   return (
     <>
-        <div className="h-full w-full px-0">
-      
-        <div className="py-2 pb-5 overflow-auto">
-        
-          <div className="inline-flex space-x-4">
+      <div className="h-full w-full px-0">
+        <div className="flex justify-between items-center mb-2">
+          <div className="">
+            <span className="text-md md:text-lg font-semibold md:font-bold">
+              Aktivitas Terbaru
+            </span>
+          </div>
+          <div>
+            <Link to={"movies"}>
+              <div className="flex items-center text-sm text-[#37d36e] hover:text-green-600">
+                <span className="font-bold ">View All</span>
+                {/* <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg> */}
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="py-2 pb-5 overflow-auto custom-scrollbar">
+          <div className="inline-flex space-x-2">
             {movies.map((movie, id) => (
               <div
-                className="relative flex-col justify-center w-48 space-y-2 border rounded shadow"
+                className="relative flex-col justify-center w-36 md:w-48 space-y-2 border rounded-md shadow"
                 id={id}
               >
-                <div className="relative block overflow-hidden bg-white shadow flex rounded">
+                <div className="relative block overflow-hidden bg-white shadow flex rounded-t">
                   <img
                     src={images(movie.image)}
                     alt=""
                     className="relative w-full"
                   />
-                  
                 </div>
-                
-                <div className="flex flex-col pt-1 space-y-1 px-2 text-sm capitalize">
-                  <span className='font-semibold'>{movie.title}</span>
-                  <div className='flex justify-between text-sm text-gray-600'>
-                    <div>
-                        <span>2 days ago</span>
-                    </div>
-                    <div>
-                        <span>20 edit</span>
-                    </div>
+
+                <div className="flex flex-col pt-0 space-y-1 px-2 text-sm capitalize">
+                  <span className="font-semibold">{movie.title}</span>
+                </div>
+
+                <div className="absolute bottom-2 left-2 flex text-sm text-gray-600">
+                  <div>
+                    <span>2 days ago</span>
                   </div>
                 </div>
-               
+
+                <div className="absolute bottom-2 right-2 flex text-sm text-gray-600">
+                  <div>
+                    <span>20 edit</span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default NewActivity

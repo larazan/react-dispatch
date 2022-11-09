@@ -202,7 +202,7 @@ const ratings = [
           </button>
         </div>
 
-        <div className="flex z-10 w-full2 inline-flex space-x-2 overflow-x-auto">
+        <div className="flex z-10 w-full2 inline-flex space-x-2 overflow-x-auto overflow-hidden">
           <div
             className="flex "
             onMouseEnter={openFilter}

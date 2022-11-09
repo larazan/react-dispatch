@@ -62,13 +62,14 @@ const Profile = () => {
             <div className="mb-1 ">
               <div className="flex flex-row px-2 md:px-4 items-center space-x-4">
                 <div className="inline-flex  ">
-                  <img
+                  {/* <img
                     className="rounded-full border-8 border-[#284057]"
                     src="https://preview.cruip.com/mosaic/images/user-128-01.jpg"
                     width="158"
                     height="158"
                     alt="Avatar"
-                  />
+                  /> */}
+                  <Avatar name={"Selena Gomes"} size={"30"} round={true} />
                 </div>
 
                 <div className="">

@@ -79,7 +79,7 @@ const Actors = () => {
             }}
           >
             <div className="p-4 md:p-12 max-w-2xl hero relative">
-              <div className="md:text-5xl text-2xl leading-tight md:leading-loose font-semibold md:font-bold text-white">
+              <div className="md:text-5xl text-2xl md:leading-loose leading-tight font-bold text-white2 text-green-300">
                 The best free asian movies & musics database.
               </div>
             </div>

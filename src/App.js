@@ -8,7 +8,7 @@ import Dashboard from './layouts/dashboard';
 import Home from "./pages/Home";
 import News from "./pages/News";
 import Movies from "./pages/Movies";
-import Movie from "./pages/Movie";
+// import Movie from "./pages/Movie";
 import Actors from "./pages/Actors";
 import Person from "./pages/Person";
 import Musics from "./pages/Musics";
@@ -35,6 +35,7 @@ import Register from "./pages/Register";
 
 import Profile from "./hoc/Profile"
 import Setting from "./hoc/Setting";
+import Movie from "./hoc/Movie";
 import SettingProfile from "./pages/SettingProfile";
 import SettingAccount from "./pages/SettingAccount";
 import SettingNotification from "./pages/SettingNotification";
@@ -42,6 +43,11 @@ import SettingSharing from "./pages/SettingSharing";
 import SettingSession from "./pages/SettingSession";
 import SettingDelete from "./pages/SettingDelete";
 import Watchlist from "./pages/Watchlist";
+
+import MovieDiscussion from "./pages/MovieDiscussion";
+import MovieReview from "./pages/MovieReview";
+import MovieOverview from "./pages/MovieOverview";
+import MovieMedia from "./pages/MovieMedia";
 
 function App() {
   return (
@@ -55,7 +61,7 @@ function App() {
           <Route path="movies" element={<Movies />} /> 
           <Route path="musics" element={<Musics />} /> 
           <Route path="music" element={<Music />} /> 
-          <Route path="movie" element={<Movie />} /> 
+          
           <Route path="cast" element={<Cast />} /> 
           <Route path="actors" element={<Actors />} />
           <Route path="person" element={<Person />} />
@@ -70,6 +76,13 @@ function App() {
             <Route path="rating" element={<Rating />} />
             <Route path="watchlist" element={<Watchlist />} />
           </Route>
+          <Route path="movie" element={<Movie />} >
+            <Route index element={<MovieOverview />} />
+            <Route path="cast" element={<Cast />} />
+            <Route path="discussion" element={<MovieDiscussion />} />
+            <Route path="review" element={<MovieReview />} />
+            <Route path="media" element={<MovieMedia />} />
+          </Route> 
           <Route path="settings" element={<Setting />} >
             <Route index element={<SettingProfile />} />
             <Route path="account" element={<SettingAccount />} />
