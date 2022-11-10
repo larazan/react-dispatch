@@ -4,7 +4,7 @@ const Menu = ({ catOpen, catToggle }) => {
     return (
         <>
             <aside
-                className={`px-0 transform top-0 left-0 w-full bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 ${
+                className={`px-0 transform top-14 left-0 w-full bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 ${
                     catOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
             >
@@ -17,14 +17,14 @@ const Menu = ({ catOpen, catToggle }) => {
                         </button>
                         
                     </div>
-                    <div className="flex">
+                    <div className="hidden flex">
                         <img
                             className="h-9"
                             src="https://cdn.allbirds.com/image/upload/v1571355713/icons/allbirds-logo.svg"
                             alt="Allbirds"
                         />
                     </div>
-                    <div className="flex inline-flex space-x-4">
+                    <div className="hidden flex inline-flex space-x-4">
                         
                         <button className="h-8 w-8">
                             <svg
@@ -84,10 +84,10 @@ const Menu = ({ catOpen, catToggle }) => {
                                 <a href="#" className="block text-sm font-semibold text-gray-800 uppercase whitespace-nowrap px-8 py-4 border-b">
                                     Stores
                                 </a>
-                                <a href="#" className="block text-sm font-light whitespace-nowrap px-8 py-4 border-b">
+                                <a href="#" className="block text-sm font-semibold whitespace-nowrap px-8 py-4 border-b">
                                     Account
                                 </a>
-                                <a href="#" className="block text-sm font-light whitespace-nowrap px-8 py-4 border-b">
+                                <a href="#" className="block text-sm font-semibold whitespace-nowrap px-8 py-4 border-b">
                                     Help
                                 </a>
                             </div>

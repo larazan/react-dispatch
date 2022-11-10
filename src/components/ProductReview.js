@@ -3,8 +3,8 @@ import React from "react";
 const ProductReview = () => {
   return (
     <>
-      <div className="mt-20 py-4 max-w-sm2 ">
-        <div className="mb-1 tracking-wide px-4 py-4">
+      <div className="md:mt-20 py-4 max-w-sm2 ">
+        <div className="mb-1 tracking-wide md:px-4 py-4">
           <div className="flex items-center py-2">
             <svg
               className="w-5 h-5 text-yellow-400"
@@ -196,7 +196,7 @@ const ProductReview = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-4">
+        <div className="w-full md:px-4">
           <h3 className="font-medium tracking-tight">Review this item</h3>
 
           <button className="bg-gray-100 border border-gray-400 px-3 py-1 rounded  text-gray-800 mt-2">

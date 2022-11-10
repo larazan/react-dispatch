@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import Avatar from "react-avatar";
 import { useLocation, Outlet, Link, NavLink } from "react-router-dom";
 import { useOnClickOutside } from "../hooks/useOnClickOutside";
-import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 import Header from "../components/Header";
 
@@ -178,49 +178,49 @@ function Profile(props) {
                 </div>
 
                 <div className="flex justify-round space-x-6">
-                      <div className="w-1/2 flex flex-col items-center space-y-2">
-                        <div className="h-12 w-12">
-                          <CircularProgressbar
-                            value={89}
-                            text={`${89}%`}
-                            styles={buildStyles({
-                              textSize: "26px",
-                              pathColor: "#01b4e4",
-                              textColor: "#fff",
-                              trailColor: "#d6d6d6",
-                              backgroundColor: "#fff",
-                            })}
-                          />
-                          ;
-                        </div>
-                        <div>
-                          <span className="text-white text-sm">
-                            Rata-rata Penilaian Film
-                          </span>
-                        </div>
-                      </div>
-                      <div className="w-1/2 flex flex-col items-center space-y-2">
-                        <div className="h-12 w-12">
-                          <CircularProgressbar
-                            value={89}
-                            text={`${89}%`}
-                            styles={buildStyles({
-                              textSize: "26px",
-                              pathColor: "#20bd70",
-                              textColor: "#fff",
-                              trailColor: "#d6d6d6",
-                              backgroundColor: "#fff",
-                            })}
-                          />
-                          ;
-                        </div>
-                        <div>
-                          <span className="text-white text-sm">
-                            Rata-rata Penilaian TV
-                          </span>
-                        </div>
-                      </div>
+                  <div className="w-1/2 flex flex-col items-center space-y-2">
+                    <div className="h-12 w-12">
+                      <CircularProgressbar
+                        value={89}
+                        text={`${89}%`}
+                        styles={buildStyles({
+                          textSize: "26px",
+                          pathColor: "#01b4e4",
+                          textColor: "#fff",
+                          trailColor: "#d6d6d6",
+                          backgroundColor: "#fff",
+                        })}
+                      />
+                      ;
                     </div>
+                    <div>
+                      <span className="text-white text-sm">
+                        Rata-rata Penilaian Film
+                      </span>
+                    </div>
+                  </div>
+                  <div className="w-1/2 flex flex-col items-center space-y-2">
+                    <div className="h-12 w-12">
+                      <CircularProgressbar
+                        value={89}
+                        text={`${89}%`}
+                        styles={buildStyles({
+                          textSize: "26px",
+                          pathColor: "#20bd70",
+                          textColor: "#fff",
+                          trailColor: "#d6d6d6",
+                          backgroundColor: "#fff",
+                        })}
+                      />
+                      ;
+                    </div>
+                    <div>
+                      <span className="text-white text-sm">
+                        Rata-rata Penilaian TV
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

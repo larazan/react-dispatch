@@ -13,17 +13,17 @@ const Detail = () => {
         style={{ minHeight: "-webkit-fill-available" }}
       >
         <div className="border-t border-gray-300 mb-0"> </div>
-        <div className="mx-auto max-w-[1920px] px-4 md:px-8 2xl:px-16">
-          <section className="container px-5 py-6 mx-auto">
+        <div className="mx-auto max-w-[1920px] px-3 md:px-8 2xl:px-16">
+          <section className="container px-3 md:px-5 py-6 mx-auto">
             <Breadcrumb />
-            <div className="lg:w-4/5 mx-auto flex flex-wrap2 w-full space-x-2">
-              <div className="w-1/2">
-                <div className="w-4/5 lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <div className="lg:w-4/5 mx-auto flex flex-col md:flex-row flex-wrap2 w-full md:space-x-2">
+              <div className="w-full md:w-1/2">
+                <div className="w-full md:w-4/5 lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                   <img src={a} alt="" />
                 </div>
                <ProductReview />
               </div>
-              <div className="w-1/2">
+              <div className="w-full md:w-1/2">
                 <div class=" w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                   <h2 class="text-sm title-font text-gray-500 tracking-widest">
                     BRAND NAME
@@ -134,7 +134,7 @@ const Detail = () => {
                       $58.00
                     </span>
                   </div>
-                  <div className="text-sm">
+                  <div className="text-sm tracking-tight">
                     <p class="leading-relaxed">
                       Hanna Hijab Blus Cassey Wanita -100% Produk Original Hanna
                       -Material 100% Katun -Model Size S -Tinggi Badan 174 cm,
@@ -219,8 +219,8 @@ const Detail = () => {
             </div>
             
           </section>
-          <section className="w-full px-5 py-6 mx-auto">
-          <ProductRelated />
+          <section className="w-full md:px-5 md:py-6 mx-auto">
+            <ProductRelated />
           </section>
         </div>
       </main>

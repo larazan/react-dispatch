@@ -39,7 +39,7 @@ const images = (imgName) => {
 const NewProduct = () => {
   return (
     <>
-      <div className="min-h-full w-full px-6">
+      <div className="min-h-full w-full px-6 py-6">
         <div className="flex justify-between items-center mb-2">
           <div className=" ">
             <span className="text-xl font-bold capitalize">new products</span>
@@ -52,7 +52,7 @@ const NewProduct = () => {
             </Link>
           </div>
         </div>
-        <div className="py-2 pb-5 overflow-auto">
+        <div className="py-2 pb-5 overflow-auto custom-scrollbar">
           <div className="inline-flex space-x-4">
             {products.map((product, id) => (
               <div

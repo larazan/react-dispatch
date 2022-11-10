@@ -195,7 +195,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
             </div>
           </span>
         </Link>
-        <Link className="block md:hidden" to="stores" onClick={() => setIsOpen(false)}>
+        <Link className="block md:hidden" to="store" onClick={() => setIsOpen(false)}>
           <span className="flex items-center px-4 py-2 md:py-3 space-x-3 hover:bg-[#162c41] text-[#9cb3c9]">
             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-[#9270c2] text-white">
               <svg

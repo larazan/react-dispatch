@@ -8,7 +8,6 @@ import Dashboard from './layouts/dashboard';
 import Home from "./pages/Home";
 import News from "./pages/News";
 import Movies from "./pages/Movies";
-// import Movie from "./pages/Movie";
 import Actors from "./pages/Actors";
 import Person from "./pages/Person";
 import Musics from "./pages/Musics";
@@ -18,7 +17,6 @@ import Login from "./pages/Login";
 import Content from "./pages/Content";
 import Podcasts from "./pages/Podcasts";
 import Podcast from "./pages/Podcast";
-// import Profile from "./pages/Profile";
 import Empat04 from "./pages/Empat04";
 import Checkout from "./pages/Checkout";
 import Store from "./pages/Store";
@@ -36,6 +34,7 @@ import Register from "./pages/Register";
 import Profile from "./hoc/Profile"
 import Setting from "./hoc/Setting";
 import Movie from "./hoc/Movie";
+
 import SettingProfile from "./pages/SettingProfile";
 import SettingAccount from "./pages/SettingAccount";
 import SettingNotification from "./pages/SettingNotification";
@@ -94,8 +93,8 @@ function App() {
           <Route path="podcasts" element={<Podcasts />} />
           <Route path="podcast" element={<Podcast />} />
           <Route path="store" element={<Store />} />
-          <Route path="checkout" element={<Checkout />} />
           <Route path="product" element={<Detail />} />
+          <Route path="checkout" element={<Checkout />} />
           <Route path="blog" element={<Blog />} />
           <Route path="*" element={<Empat04 />} />
         </Route>
