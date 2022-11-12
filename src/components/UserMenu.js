@@ -70,7 +70,7 @@ function UserMenu() {
             </li>
             <li className="last:border-0">
               <Link
-                className="block py-2 px-4 hover:bg-gray-800 hover:text-white text-slate-500  md:hover:bg-slate-50"
+                className="block py-2 px-4 hover:bg-gray-800 hover:text-white text-slate-500  md:hover:bg-slate-50 md:hover:text-gray-900"
                 to="settings"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
@@ -79,7 +79,7 @@ function UserMenu() {
             </li>
             <li className="border-b border-slate-00 last:border-0">
               <Link
-                className="block py-2 px-4 hover:bg-gray-800 hover:text-white text-slate-500  md:hover:bg-slate-50"
+                className="block py-2 px-4 hover:bg-gray-800 hover:text-white text-slate-500  md:hover:bg-slate-50 md:hover:text-gray-900"
                 to="settings/account"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >

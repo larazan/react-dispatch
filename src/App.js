@@ -34,6 +34,7 @@ import Register from "./pages/Register";
 import Profile from "./hoc/Profile"
 import Setting from "./hoc/Setting";
 import Movie from "./hoc/Movie";
+import Celeb from "./hoc/Celeb";
 
 import SettingProfile from "./pages/SettingProfile";
 import SettingAccount from "./pages/SettingAccount";
@@ -47,6 +48,9 @@ import MovieDiscussion from "./pages/MovieDiscussion";
 import MovieReview from "./pages/MovieReview";
 import MovieOverview from "./pages/MovieOverview";
 import MovieMedia from "./pages/MovieMedia";
+
+import CelebMedia from "./pages/CelebMedia";
+import CelebDiscussion from "./pages/CelebDiscussion";
 
 function App() {
   return (
@@ -63,7 +67,11 @@ function App() {
           
           <Route path="cast" element={<Cast />} /> 
           <Route path="actors" element={<Actors />} />
-          <Route path="person" element={<Person />} />
+          <Route path="person" element={<Celeb />} >
+            <Route index element={<Person />} />
+            <Route path="discussion" element={<CelebDiscussion />} />
+            <Route path="media" element={<CelebMedia />} />
+          </Route>
           <Route path="musics" element={<Musics />} />
           <Route path="coba" element={<Coba />} />
           <Route path="login" element={<Login />} />
