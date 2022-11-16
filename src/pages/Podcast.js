@@ -9,23 +9,23 @@ const Podcast = () => {
     <>
       <div className="relative flex min-h-screen w-full bg-[#0e2439]">
         <div className="w-full ">
-          <div className="flex relative bg-[#1f364d] h-28 py-10 px-10 mx-auto justify-center mb-20">
-            <div className="absolute w-11/12 md:w-5/6 -bottom-20 flex justify-between bg-white rounded shadow px-3 py-3">
+          <div className="flex relative bg-[#1f364d] h-28 py-10 px-10 mx-auto justify-center mb-8 md:mb-20">
+            <div className="absolute w-11/12 md:w-5/6 -bottom-22 md:-bottom-20 flex justify-between bg-white rounded shadow px-3 py-1 md:py-3">
               <div className="flex space-x-3 w-full justify-center items-center">
                 <div className="w-1/6">
-                  <div className="h-32 w-32">
+                  <div className="h-16 w-16 md:h-32 md:w-32">
                     <img className="rounded" src={software} alt="" />
                   </div>
                 </div>
                 <div className="w-5/6">
                   <div className="flex flex-col">
-                    <div className="">
-                      <span className="text-2xl font-bold capitalize">
+                    <div className="ml-2">
+                      <span className="text-lg md:text-2xl font-bold capitalize">
                         one weekly win
                       </span>
                     </div>
-                    <div>
-                      <div className="flex items-center text-gray-800 space-x-2 pr-3">
+                    <div className="">
+                      <div className="flex items-center text-gray-800 space-x-2 pr-3 ">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-16 w-16"
@@ -134,7 +134,12 @@ const Podcast = () => {
                 </div>
                 <div className="relative">
                   <Link to={"/podcast"}>
-                  <div className="absolute left-4 top-4">
+                  
+                  <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-1 md:py-2 cursor-pointer">
+                    <div className="flex space-x-1 md:space-x-3 justify-center items-center">
+                      <div className="relative flex py-3 h-32 w-32">
+                        <img src={indie} alt="" className='rounded' />
+                        <div className="absolute left-1 top-4">
                     <button className="text-pink-600">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -150,10 +155,6 @@ const Podcast = () => {
                       </svg>
                     </button>
                   </div>
-                  <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-2 cursor-pointer">
-                    <div className="flex space-x-3 justify-center items-center">
-                      <div className="flex py-3 h-32 w-32">
-                        <img src={indie} alt="" className='rounded' />
                       </div>
                       <div className="w-3/4">
                         <div className="md:pt-3 md:pb-2 md:pr-3">
@@ -175,7 +176,12 @@ const Podcast = () => {
                 </div>
                 <div className="relative">
                 <Link to={"/podcast"}>
-                  <div className="absolute left-4 top-4">
+                  
+                  <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-1 md:py-2 cursor-pointer">
+                    <div className="flex space-x-1 md:space-x-3 justify-center items-center">
+                      <div className="relative flex py-3 h-32 w-32">
+                        <img src={software} alt="" className='rounded' />
+                        <div className="absolute left-1 top-4">
                     <button className="text-pink-600">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -191,10 +197,6 @@ const Podcast = () => {
                       </svg>
                     </button>
                   </div>
-                  <div className="flex justify-between bg-[#162c41] hover:bg-[#1f364d] rounded shadow px-3 py-2 cursor-pointer">
-                    <div className="flex space-x-3 justify-center items-center">
-                      <div className="flex py-3 h-32 w-32">
-                        <img src={software} alt="" className='rounded' />
                       </div>
                       <div className="w-3/4">
                         <div className="md:pt-3 md:pb-2 md:pr-3">

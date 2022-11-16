@@ -25,7 +25,7 @@ const Player = () => {
                 <path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z" />
               </svg>
             </button>
-            <button className="text-gray-100 p-2 hidden md:block">
+            <button className="text-gray-100 p-2">
               <svg
                 className="w-4 h-4"
                 width="16"
@@ -43,7 +43,7 @@ const Player = () => {
             </button>
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex flex-row md:flex-col items-center justify-center">
           <div className="flex items-center justify-center md:mb-3 ">
             <button className="w-5 h-5 text-gray-100 mr-1 md:mr-6">
               <svg
@@ -111,21 +111,21 @@ const Player = () => {
               </svg>
             </button>
           </div>
-          <div className="flex items-center hidden md:block">
-            <span className="text-xs text-gray-100 font-light2">4:18</span>
+          <div className="hidden md:flex flex-row inline-flex w-full items-center ">
+            <div><span className="text-xs text-gray-100 font-light2">4:18</span></div>
             <div className="overflow-hidden relative flex-1 mx-2 rounded">
               <div className="border-b-4 border-gray-600 rounded"></div>
               <div className="absolute inset-x-0 top-0 -translate-x-48 border-b-4 border-gray-100 rounded transform hover:border-green-200"></div>
             </div>
-            <span className="text-xs text-gray-100 font-light2">5:13</span>
+            <div><span className="text-xs text-gray-100 font-light2">5:13</span></div>
           </div>
         </div>
         <div className="flex justify-end w-full mr-6">
           <div className="flex justify-between items-center text-gray-300 space-x-3">
-            <div>
-            <span className="text-xs text-gray-100 font-light2">4:18</span>
+            <div className="block md:hidden">
+              <span className="text-xs text-gray-100 font-light2">4:18</span>
             </div>
-            <button className="text-pink-500 p-2">
+            <button className="text-pink-500 p-2 md:hidden">
               <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
                 <path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z" />
               </svg>
@@ -151,6 +151,7 @@ const Player = () => {
             </svg>
             <VolumeControl />
             <div className="bg-gray-300 border border-gray-300 rounded-full w-20 h-1 hidden md:block"></div>
+           
           </div>
         </div>
       </footer>

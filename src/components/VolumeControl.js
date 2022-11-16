@@ -34,7 +34,7 @@ function VolumeControl() {
 
   return (
     <>
-      <div className="relative inline-flex ml-3">
+      <div className="relative inline-flex ml-3 md:hidden">
         <button
           ref={trigger}
           // className={`w-8 h-8 flex items-center justify-center bg-slate-100 hover:bg-slate-200 transition duration-150 rounded-full ${dropdownOpen && 'bg-slate-200'}`}
@@ -71,7 +71,7 @@ function VolumeControl() {
             onBlur={() => setDropdownOpen(false)}
           >
             <div className="flex flex-col justify-center items-center space-y-1">
-              <div className="bg-gray-300 border border-gray-300 rounded-full w-2 h-24 "></div>
+              <div className="bg-gray-300 border border-gray-300 rounded-full w-1.5 h-24 "></div>
 
               <svg
                 className="fill-current "
