@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "eshal rosas",
+        "subject": "Haters make yourselves known",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 2,
+        "name": "Anita Rodriquez",
+        "subject": "Top 10 Films of 2019",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 3,
+        "name": "Taylan Bush",
+        "subject": "Undeserving of Oscar Best Picture",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 4,
+        "name": "Tarik Novak",
+        "subject": "Chicken joints and cake: Parasite reflects South Korea's middle class failures",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 5,
+        "name": "Oscar Howard",
+        "subject": "Oscars",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 6,
+        "name": "Melisa Moon",
+        "subject": "Why do you think this film resonates with the USA and Americans so much?",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 7,
+        "name": "Cora Key",
+        "subject": "South Korea's Oscar entry",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 8,
+        "name": "Kylan Dorsey",
+        "subject": "See this with an audience...",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 9,
+        "name": "Taylor oatwell",
+        "subject": "[SPOILERS] Parasite Empire",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 10,
+        "name": "Sophia myles",
+        "subject": "Bloody funny, bloody good",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    },
+    {
+        "id": 11,
+        "name": "kate winslet",
+        "subject": "Why did they have to go with something all different?",
+        "status": "open",
+        "reply": 8,
+        "created_at": "2022-06-09 06:16:48",
+        "updated_at": "2022-06-09 06:16:48"
+    }
+]
