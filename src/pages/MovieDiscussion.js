@@ -34,7 +34,7 @@ const MovieDiscussion = () => {
         <div class="overflow-x-auto">
           <div class="min-w-screen bg-white flex items-center justify-center bg-gray-100 font-sans overflow-hidden">
             <div class="w-full py-4 lg:w-5/6 px-4">
-              <div className="flex flex-col md:flex-row mb-3 justify-between">
+              <div className="flex flex-col md:flex-row mb-3 justify-between space-y-2">
                 <span className="text-2xl">Discuss Parasite</span>
                 <div className="justify-center items-center text-center">
                   <button className="border border-blue-500 bg-sky-600 hover:bg-sky-700  text-white block rounded-lg font-bold py-2 w-full  px-4 ">

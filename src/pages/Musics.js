@@ -80,7 +80,7 @@ const Musics = () => {
                   </div>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-3 md:px-4 py-3 md:py-4 cursor-pointer">
                     
                     <div className="relative pt-full mb-4">
                       <img
@@ -107,7 +107,7 @@ const Musics = () => {
                       </button>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-3 md:px-4 py-3 md:py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -124,7 +124,7 @@ const Musics = () => {
                       </span>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-3 md:px-4 py-3 md:py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -141,7 +141,7 @@ const Musics = () => {
                       </span>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-3 md:px-4 py-3 md:py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -158,7 +158,7 @@ const Musics = () => {
                       </span>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-3 md:px-4 py-3 md:py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
@@ -175,7 +175,7 @@ const Musics = () => {
                       </span>
                     </div>
                   </Link>
-                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-4 py-4 cursor-pointer">
+                  <Link to={"/music"} className="bg-[#4c02e8] opacity-90 hover:opacity-100 rounded-md shadow px-3 md:px-4 py-3 md:py-4 cursor-pointer">
                     <div className="relative pt-full mb-4">
                       <img
                         className="block w-full rounded-md inset-0"
