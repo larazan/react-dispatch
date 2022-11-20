@@ -5,6 +5,7 @@ import PodcastPlayer from '../components/PodcastPlayer';
 
 import AW from "../assets/images/AW.jpg";
 import SongList from '../components/SongList';
+import AlbumRelated from '../components/AlbumRelated';
 
 const Music = () => {
   return (
@@ -124,8 +125,11 @@ const Music = () => {
             </div>
           </div>
           {/*  */}
-          <div className="flex flex-row space-x-0">
+          <div className="relative flex flex-row space-x-0 w-full">
             <div className="w-full">
+            <div className="relative py-4 md:py-5">
+              <AlbumRelated />
+              </div>
               
                 <SongList />
               

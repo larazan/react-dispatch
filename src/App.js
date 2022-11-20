@@ -45,6 +45,7 @@ import SettingDelete from "./pages/SettingDelete";
 import Watchlist from "./pages/Watchlist";
 
 import MovieDiscussion from "./pages/MovieDiscussion";
+import MovieDiscuss from "./pages/MovieDiscuss";
 import MovieReview from "./pages/MovieReview";
 import MovieOverview from "./pages/MovieOverview";
 import MovieMedia from "./pages/MovieMedia";
@@ -87,6 +88,7 @@ function App() {
             <Route index element={<MovieOverview />} />
             <Route path="cast" element={<Cast />} />
             <Route path="discussion" element={<MovieDiscussion />} />
+            <Route path="discuss" element={<MovieDiscuss />} />
             <Route path="review" element={<MovieReview />} />
             <Route path="media" element={<MovieMedia />} />
           </Route> 
