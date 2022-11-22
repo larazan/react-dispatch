@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import RatingChart from '../components/RatingChart'
 import { UserData } from "../assets/data/users";
+import MoviesList from '../components/MoviesList';
 
 const Rating = () => {
   const [openTab, setOpenTab] = useState(1);
@@ -47,7 +48,7 @@ const Rating = () => {
             </div>
             <div className="flex justify-between w-full items-center">
               <ul
-                className="flex mb-0 list-none flex-row2 border-b justify-start"
+                className="flex mb-0 list-none flex-row2 justify-start"
                 role="tablist"
               >
                 <li
@@ -97,16 +98,14 @@ const Rating = () => {
                   </a>
                 </li>
               </ul>
-              <div>
-                <span>urutkan</span>
-              </div>
+              
             </div>
             <div className="tab-content tab-space">
               <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                tab 1
+                <MoviesList />
               </div>
               <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                tab 2
+              <MoviesList />
               </div>
             </div>
           </div>

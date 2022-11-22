@@ -225,7 +225,7 @@ function Profile(props) {
             </div>
 
             <div className="absolute2 bottom-0 px-2 md:px-3 overflow-x-auto">
-              <ul className="flex items-center md:justify-around md:justify-center space-x-2 md:space-x-4 uppercase md:tracking-widest font-semibold text-xs text-[#b6cce2] ">
+              <ul className="flex items-center md:justify-center space-x-2 md:space-x-4 uppercase md:tracking-widest font-semibold text-xs text-[#b6cce2] ">
                 <li
                   className={` ${
                     lastUrl === "profile"
