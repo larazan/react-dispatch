@@ -3,6 +3,7 @@ import { useLocation, Outlet } from "react-router-dom";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer2";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Frontend(props) {
   const location = useLocation();
@@ -27,6 +28,7 @@ function Frontend(props) {
         {renderHeader()}
         <Outlet />
         {renderFooter()}
+        <ScrollToTop />
       </div>
     </>
   );

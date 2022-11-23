@@ -19,7 +19,7 @@ const Rating = ({
   ));
 
   return (
-    <div className="flex pt-2 items-center">
+    <div className="flex pt-0 items-center">
       {stars.map((s, index) => {
         let style = inactiveColor;
         if (index < value) {

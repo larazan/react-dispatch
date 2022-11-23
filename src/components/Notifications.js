@@ -56,7 +56,7 @@ function Notifications() {
       </button>
 
       <Transition
-        className="origin-top-right z-10 absolute top-full right-0 -mr-3 md:-mr-48 sm:mr-0 min-w-80 w-72 bg-[#274059] border border-[#274059] py-1.5 rounded shadow-lg overflow-hidden mt-4 md:mt-1"
+        className="origin-top-right z-10 absolute top-full right-0 -mr-6 md:-mr-48 sm:mr-0 min-w-80 w-72 bg-[#274059] border border-[#274059] py-1.5 rounded shadow-lg overflow-hidden mt-4 md:mt-1"
         show={dropdownOpen}
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"

@@ -1338,8 +1338,50 @@ const Coba = () => {
         list.classList.toggle("hidden");
   }
 </script> */}
+{/* 
+<main class="flex min-h-screen w-full items-center justify-center">
+    
+    <div x-data="select" class="relative w-[30rem]" @click.outside="open = false">
+        
+        <button type="button" @click="toggle"
+            class="flex w-full items-center justify-between rounded bg-white p-2 ring-1 ring-gray-300"
+            :class="(open) && 'ring-blue-600'">
+            <span x-text="(language == '') ? 'Choose language' : language"></span>
+            <span class="text-2xl w-5 h-5 grid place-content-center"><i class='bx bx-chevron-down'></i></span>
+        </button>
 
+       
+        <ul class="z-2 absolute mt-2 w-full rounded bg-gray-50 ring-1 ring-gray-300" x-show="open">
+            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" @click="setLanguage('Python')">
+                Python
+            </li>
+            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" @click="setLanguage('PHP')">
+                PHP
+            </li>
+            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" @click="setLanguage('C#')">
+                C#
+            </li>
+        </ul>
+    </div>
+</main> */}
 
+{/* // <script>
+//     document.addEventListener("alpine:init", () => {
+//         Alpine.data("select", () => ({
+//             open: false,
+//             language: "",
+
+//             toggle() {
+//                 this.open = !this.open;
+//             },
+
+//             setLanguage(val) {
+//                 this.language = val;
+//                 this.open = false;
+//             },
+//         }));
+//     });
+// </script> */}
         </div>
       </main>
     </>

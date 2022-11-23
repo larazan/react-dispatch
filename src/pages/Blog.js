@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import DetailComment from "../components/DetailComment";
 
 const Blog = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container w-full md:max-w-3xl mx-auto pt-4 md:pt-10">

@@ -51,7 +51,7 @@ function Profile(props) {
             alt="Profile background"
           /> */}
             <button
-              className="absolute left-2 block md:hidden text-white top-0 -mt-2 cursor-pointer"
+              className="absolute left-2 block md:hidden text-white top-0 -mt-2 cursor-pointer rounded-full border2 bg-gray-800"
               aria-controls="profile-sidebar"
               aria-expanded="false"
             >
@@ -236,8 +236,8 @@ function Profile(props) {
                   <Link
                     className={` ${
                       lastUrl === "profile"
-                        ? "inline-block p-3 text-white font-bold"
-                        : "inline-block p-3 text-[#b6cce2]"
+                        ? "inline-block py-3 px-2 md:p-3 text-white font-bold"
+                        : "inline-block py-3 px-2 md:p-3 text-[#b6cce2]"
                     }`}
                     to="/profile"
                   >
@@ -254,8 +254,8 @@ function Profile(props) {
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "inline-block p-3 text-white md:text-white font-bold"
-                        : "inline-block p-3"
+                        ? "inline-block py-3 px-2 md:p-3 text-white md:text-white font-bold"
+                        : "inline-block py-3 px-2 md:p-3"
                     }
                     to="discussion"
                   >
@@ -272,8 +272,8 @@ function Profile(props) {
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "inline-block p-3 text-white md:text-white font-bold"
-                        : "inline-block p-3"
+                        ? "inline-block py-3 px-2 md:p-3 text-white md:text-white font-bold"
+                        : "inline-block py-3 px-2 md:p-3"
                     }
                     to="list"
                   >
@@ -290,8 +290,8 @@ function Profile(props) {
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "inline-block p-3 text-white md:text-white font-bold"
-                        : "inline-block p-3"
+                        ? "inline-block py-3 px-2 md:p-3 text-white md:text-white font-bold"
+                        : "inline-block py-3 px-2 md:p-3"
                     }
                     to="rating"
                   >
@@ -308,8 +308,8 @@ function Profile(props) {
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "inline-block p-3 text-white md:text-white font-bold"
-                        : "inline-block p-3"
+                        ? "inline-block py-3 px-2 md:p-3 text-white md:text-white font-bold"
+                        : "inline-block py-3 px-2 md:p-3"
                     }
                     to="watchlist"
                   >

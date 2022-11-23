@@ -203,8 +203,8 @@ const Movies = () => {
                         </div>
                         <div className="w-3/4">
                           <div className=" pt-3 pb-2 pr-3">
-                            <div className="flex-col text-lg font-bold">
-                              <span className="text-white text-xl capitalize">
+                            <div className="flex-col text-lg font-bold leading-tight">
+                              <span className="text-white text-xl capitalize leading-tight">
                                 {movie.title}
                               </span>
                               <div className="text-sm text-[#24f4d0]  capitalize">
@@ -217,9 +217,9 @@ const Movies = () => {
                                 <Rating count={5} value={3} />
                               </div>
                             </div>
-                            <div className="mt-4">
+                            <div className="mt-2">
                               <div className="text-sm text-[#9cb3c9]">
-                                {movie.description.substring(0, 230)}....
+                                {movie.description.substring(0, 200)}....
                               </div>
                             </div>
                             <div className="flex justify-between">

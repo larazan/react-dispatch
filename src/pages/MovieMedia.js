@@ -33,10 +33,10 @@ const MovieMedia = () => {
                   <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 md:mb-1">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="title-font text-base md:text-lg font-medium text-gray-900 mb-3">
+                  <h1 class="title-font text-base md:text-lg font-medium text-gray-900 mb-3 leading-tight">
                     Ditambahkan oleh: Selena Gomes
                   </h1>
-                  <p class="leading-tight md:leading-relaxed text-sm md:text-base mb-2">
+                  <p class="leading-tight md:leading-tight text-sm md:text-base mb-2">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>

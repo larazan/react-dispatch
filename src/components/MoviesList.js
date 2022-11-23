@@ -12,8 +12,8 @@ const MoviesList = () => {
 
   return (
     <>
-      <div className="w-full">
-        <div className="py-2 md:py-4">
+      <div className="w-full py-2 md:py-4">
+        {/* <div className="py-2 md:py-4">
           <div className="flex items-center justify-end">
             <div className="py-3 px-4 flex items-center text-sm font-medium leading-none text-gray-600 bg-gray-200 hover:bg-gray-300 cursor-pointer rounded">
               <p>Sort By:</p>
@@ -27,7 +27,7 @@ const MoviesList = () => {
               </select>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="bg-white py-2 md:py-2 px-2 md:px-2 xl:px-10">
           {/* <div className="sm:flex items-center justify-between">
             <div className="flex items-center">

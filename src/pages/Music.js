@@ -49,8 +49,8 @@ const Music = () => {
                 </svg>
               </button>
             </div>
-            <div className="hidden flex justify-between md:flex">
-              <div className="flex">
+            <div className="hidden2 flex justify-between md:flex">
+              <div className="hidden md:flex">
                 <svg
                   className="bg-black rounded-full bg-opacity-60 p-1"
                   role="img"
@@ -67,7 +67,26 @@ const Music = () => {
                 </svg>
                 
               </div>
-              
+              <button
+              className="absolute left-2 block md:hidden text-white top-5 -mt-2 cursor-pointer rounded-full border2 bg-gray-800 bg-opacity-60"
+              aria-controls="profile-sidebar"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 opacity-80"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M11 17l-5-5m0 0l5-5m-5 5h12"
+                />
+              </svg>
+            </button>
             </div>
             <div className="flex flex-col justify-center items-center md:hidden">
               <img
