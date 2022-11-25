@@ -95,6 +95,7 @@ const ProductRelated = () => {
         <div className="py-2 pb-5 overflow-auto custom-scrollbar">
           <div className="inline-flex space-x-4">
             {products.map((product, id) => (
+              <Link to={"/product"}>
               <div
                 className="relative flex-col justify-center w-52 space-y-2"
                 id={id}
@@ -115,6 +116,7 @@ const ProductRelated = () => {
                   <span>{product.price}</span>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>

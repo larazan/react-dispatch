@@ -51,7 +51,7 @@ const FilterSide = ({ isOpen, toggle }) => {
   return (
     <>
         <aside
-        className={`px-8 transform top-12 right-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 ${
+        className={`px-5 md:px-8 transform top-12 right-0 w-56 md:w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -59,7 +59,7 @@ const FilterSide = ({ isOpen, toggle }) => {
           <div className="mt-4">
             <button className="h-8 w-8" onClick={toggle}>
               <svg
-                className="h-8 w-8"
+                className="h-6 w-6 md:h-8 md:w-8"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

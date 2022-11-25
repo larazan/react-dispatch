@@ -2,6 +2,14 @@ import React, { useState } from "react";
 
 import Rate from "../components/Rate";
 import CarouselWrapper from "../components/CarouselWrapper";
+import ProductImagesSlider from "../components/ProductImagesSlider";
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/thumbs'
+
+import { productImages } from "../assets/data/productImages";
+import Gallery from "../components/Gallery";
 
 const Coba = () => {
   const [rating, setRating] = useState(3);
@@ -1317,6 +1325,11 @@ const Coba = () => {
                     </table>
                 </div>
             </div>
+        </div>
+
+        <div className="">
+            <Gallery />
+        {/* <ProductImagesSlider images={productImages} /> */}
         </div>
         
 {/* <style>

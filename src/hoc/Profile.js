@@ -75,7 +75,7 @@ function Profile(props) {
           <div className="px-2  relative">
             <div className="mb-1">
               <div className="hidden md:flex flex-col md:flex-row w-full px-2 md:px-4 items-center">
-                <div className="md:w-1/4 ">
+                <div className="hidden md:block md:w-1/4 ">
                   {/* <img
                   className="rounded-full border-8 border-[#284057]"
                   src="https://preview.cruip.com/mosaic/images/user-128-01.jpg"
@@ -86,6 +86,21 @@ function Profile(props) {
                   <Avatar
                     name={"Selena gomes"}
                     size={"140"}
+                    round={true}
+                    textSizeRatio={3}
+                  />
+                </div>
+                <div className="block md:hidden">
+                  {/* <img
+                  className="rounded-full border-8 border-[#284057]"
+                  src="https://preview.cruip.com/mosaic/images/user-128-01.jpg"
+                  width="158"
+                  height="158"
+                  alt="Avatar"
+                /> */}
+                  <Avatar
+                    name={"Selena gomes"}
+                    size={"90"}
                     round={true}
                     textSizeRatio={3}
                   />

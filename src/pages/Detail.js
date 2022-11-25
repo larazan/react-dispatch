@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import a from "../assets/products/1.jpg";
 import Breadcrumb from "../components/Breadcrumb";
+import Gallery from "../components/Gallery";
 import ProductRelated from "../components/ProductRelated";
 import ProductReview from "../components/ProductReview";
 
 const Detail = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <main
@@ -19,7 +25,8 @@ const Detail = () => {
             <div className="lg:w-4/5 mx-auto flex flex-col md:flex-row flex-wrap2 w-full md:space-x-2">
               <div className="w-full md:w-1/2">
                 <div className="w-full md:w-4/5 lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                  <img src={a} alt="" />
+                  {/* <img src={a} alt="" /> */}
+                  <Gallery />
                 </div>
                <ProductReview />
               </div>

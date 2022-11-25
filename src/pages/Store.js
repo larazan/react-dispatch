@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 import Carousel from "../components/Carousel"
 import FilterStore from "../components/FilterStore";
@@ -24,6 +25,7 @@ const Store = () => {
           </div>
         
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-x-3 md:gap-x-5 xl:gap-x-7 gap-y-3 xl:gap-y-5 2xl:gap-y-8">
+           <Link to={"/product"}>
             <div
               className="group box-border overflow-hidden flex rounded-md cursor-pointer pe-0 pb-2 lg:pb-3 flex-col items-start bg-white transition duration-200 ease-in-out transform hover:-translate-y-1 hover:md:-translate-y-1.5 hover:shadow-product"
               role="button"
@@ -70,6 +72,8 @@ const Store = () => {
                 </div>
               </div>
             </div>
+            </Link> 
+            <Link to={"/product"}>
             <div
               className="group box-border overflow-hidden flex rounded-md cursor-pointer pe-0 pb-2 lg:pb-3 flex-col items-start bg-white transition duration-200 ease-in-out transform hover:-translate-y-1 hover:md:-translate-y-1.5 hover:shadow-product"
               role="button"
@@ -116,6 +120,8 @@ const Store = () => {
                 </div>
               </div>
             </div>
+            </Link>
+            <Link to={"/product"}>
             <div
               className="group box-border overflow-hidden flex rounded-md cursor-pointer pe-0 pb-2 lg:pb-3 flex-col items-start bg-white transition duration-200 ease-in-out transform hover:-translate-y-1 hover:md:-translate-y-1.5 hover:shadow-product"
               role="button"
@@ -162,6 +168,7 @@ const Store = () => {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
           </div>
           
